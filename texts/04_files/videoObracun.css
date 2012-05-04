@@ -1,0 +1,174 @@
+﻿/* videoobracun */
+a.logoObracun
+{
+	width:290px;
+	height:73px;
+	margin:0px;
+	padding:0px;
+	display:block;
+	background:url('/WebResources/Izbori2011/Img/videoBox/obracunLogo.png') no-repeat top left;
+}
+
+a.logoObracun span
+{
+	display:none;	
+}
+
+div.videoObracun
+{
+	width:300px;
+	height:278px;
+	overflow:hidden;
+	margin:0px;
+	background:url('/WebResources/Izbori2011/Img/videoBox/obracunBG.jpg') no-repeat top left;
+}
+
+div.videoObracun a
+{
+	color:#444;
+	text-decoration:none;
+}
+
+/* Item display */
+div.videoObracun div.items
+{
+	width:280px;
+	height:268px;
+	margin:0px;
+	padding:10px 10px 0px 10px;
+	
+}
+
+div.videoObracun a
+{	text-decoration:none;	}
+
+div.videoObracun div.items h2
+{	display:none;	}
+
+div.videoObracun div.items a.big
+{
+	overflow:hidden;
+	display:block;
+	width:280px;
+	height:170px;
+	position:relative;
+	margin:0px 0px 10px 0px;
+}
+
+div.videoObracun div.items a.big img
+{
+	width:280px;
+	height:200px;
+}
+
+div.videoObracun div.items a.big span.title
+{
+	position:absolute;
+	width:260px;
+	bottom:0px;
+	left:0px;
+	display:block;
+	padding:10px;
+	color:#fff;
+	font:16px/18px 'MuseoSans500', sans-serif;
+	background:url('/WebResources/Izbori2011/Img/videoBox/blackBG.png') repeat 0 0;
+}
+
+div.videoObracun div.items a.big span.play
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:block;
+	width:280px;
+	height:170px;
+	font-size:0px;
+	background:transparent url('/WebResources/Izbori2011/Img/videoBox/playBig.png') no-repeat 50% 31%;
+}
+
+div.videoObracun div.items ul
+{	
+	width:288px;
+	margin:0px;
+	padding:0px;
+}
+
+div.videoObracun div.items ul li
+{
+	float:left;
+	margin:0px;
+	padding:0px 8px 0px 0px;
+	list-style:none;
+}
+
+/* TODO: Fix for IE6 */
+div.videoObracun div.items ul li a
+{
+	position:relative;
+	display:block;
+	width:88px;
+	height:60px;
+}
+
+div.videoObracun div.items ul li a img
+{
+	width:88px;
+	height:60px;
+}
+
+div.videoObracun div.foto ul li a span
+{
+	display:none;
+}
+
+div.videoObracun div.items ul li a span
+{
+	position:absolute;
+	overflow:hidden;
+	top:0px;
+	left:0px;
+	width:88px;
+	height:60px;
+	font-size:0px;
+	background:transparent url('/WebResources/Izbori2011/Img/videoBox/playSmall.png') no-repeat 50% 50%;
+}
+
+div.videoObracun div.items ul li a:hover span
+{	
+	display: block;
+	position:absolute;
+	overflow:hidden;
+	top:0px;
+	left:0px;
+	width:70px;
+	height:51px;
+	padding:4px 9px 5px 9px;
+	color:#fff;
+	font:11px/14px 'Trebuchet MS', sans-serif;
+	background:url('/WebResources/Izbori2011/Img/videoBox/blackBG.png') repeat 0px 0px;	
+}
+
+/*More Link*/
+div.videoObracun div.items .more-link
+{
+	clear:both;
+	margin:0px;
+	padding:0px;
+	text-align:right;
+	
+}
+div.videoObracun div.items .more-link a
+{
+	font:normal normal normal 11px/25px Arial;
+	text-decoration:underline;
+	float:right;
+	margin:0px;
+	padding:0px;
+	color:#db4b94;
+}
+
+div.videoObracun div.items .more-link a:hover
+{
+ 	text-decoration:none;	
+}
+

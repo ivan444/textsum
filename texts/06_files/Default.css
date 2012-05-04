@@ -1,0 +1,2753 @@
+/*Import fixes */
+@import url("textSnippets.css");
+@import url("tportalTypeWriter.css");
+@import url("tportalArticleGroups.css");
+@import url("../tportal/css/ctrl/tportalArticleDetails.css");
+@import url("../tportal/css/ctrl/tportalPagination.css");
+@import url("../tportal/css/ctrl/tportalBourseFunds.css");
+@import url("../tportal/css/ctrl/tportalTabNew.css");
+@import url("../tportal/css/ctrl/tportalVideoBox.css");
+@import url("../tportal/css/ctrl/maxZonaVideoBox.css");
+@import url("../tportal/css/ctrl/tportalEcards.css");
+@import url("../tportal/css/ctrl/kemijaStilaVideoBox.css");
+@import url("../tportal/css/ctrl/tportalMeteoNew.css");
+@import url("../tportal/css/ctrl/tportalSpecialCarousel.css");
+@import url("../tportal/css/ctrl/komentatoriBlogeri.css");				/* komentatori blogeri */
+@import url("../tportal/css/ctrl/quizTcom.css");						/* new quiz */
+
+body, img, span, div, br, a, ul, li
+{	margin:0;
+	padding:0;
+	font:11px Verdana;
+	color:#333333 ;
+	}
+body,form
+{	width:100%;
+	height:100%;
+	background-color:#e1e1d7;
+	
+	}
+a
+{	
+	text-decoration:none;
+	}
+a:hover
+{	
+	text-decoration:none;
+	}
+a:active, a:focus 
+{	outline: 0
+}
+H1, H2, H3
+{	font-size:0px;
+ 	margin:0px;
+ 	padding:0px;
+ 	line-height:0px;
+	}
+H1
+{	display:inline;
+	}
+img
+{	border:none;
+	}
+
+div.mainLayoutwrapper
+{
+	width:981px;
+	margin:0 auto;
+	
+	}
+
+/* Footer bijeli*/
+
+div.footer
+{
+	width:970px;
+	margin:10px auto 0px auto;
+	padding:4px 0px 20px 0px;
+	position:relative;
+	color:#ffffff;
+	font:normal normal normal 11px/21px Verdana;
+}
+
+div.footer span
+{
+	color:#ffffff	
+}
+
+div.footer a
+{
+	color:#ffffff;
+	text-decoration:underline;
+}
+
+div.footer a:hover
+{	text-decoration:none;	}
+
+div.footer a.unicefLogo
+{
+	position:absolute;
+	width:255px;
+	height:56px;
+	top:-5px;
+	right:275px;
+	background:transparent url('../img/footer/UNICEFfooterBIJELI-trans.png') no-repeat left top;
+}
+
+div.footer a.tportalLogo
+{
+	position:absolute;
+	width:121px;
+	height:31px;
+	top:15px;
+	right:139px;
+	background:transparent url('../img/footer/logo-tportal-trans.png') no-repeat left top;
+}
+
+div.footer a.htLogo
+{
+	position:absolute;
+	width:129px;
+	height:37px;
+	top:7px;
+	right:0px;
+	background: url('../img/footer/logo-tht-trans.png') no-repeat left top;
+}
+
+div.footer a.htLogo span, 
+div.footer a.tportalLogo span, 
+div.footer a.unicefLogo span 
+{
+	display:none;
+}
+
+/* End Footer bijeli*/
+
+
+div.uvijetiKoristenja
+{	margin:21px auto;
+	padding:0px 6px;
+	width:969px;
+	}
+div.uvijetiKoristenjaLinkovi
+{	height:30px;
+	width:711px;
+	padding-left:6px;
+	float:left;
+	color:#333333;
+	}
+div.uvijetiKoristenjaLinkovi a
+{	color:#03659d;
+	text-decoration:underline;
+	}
+div.uvijetiKoristenjaLinkovi span
+{	display:inline-block;
+	color:#333333;
+	padding-top:8px;
+	}
+div.uvijetiKoristenjaLogoi
+{	width:252px;
+	height:30px;
+	}
+div.uvijetiKoristenjaLogo1
+{	width:107px;
+	height:30px;
+	margin-right:21px;
+	float:right;
+	vertical-align:middle;
+	background:url(../img/logo-tportal-sivi.png) no-repeat left 5px;
+	}
+div.uvijetiKoristenjaLogo2
+{	width:124px;
+	height:30px;
+	float:right;
+	vertical-align:middle;
+	background:url(../img/logo-tht-sivi.png) no-repeat center left;
+	}
+div.mainBannerwrapper
+{	background:url('../img/shadow_left-right_front.png') repeat-y left top;
+	padding:0px 6px 12px 6px;
+	font-size:1px;
+	width:969px;
+	text-align:center;
+	font-size:0px;
+	line-height:0px;
+	}
+div.TopMenuMainwrapper
+{	width:969px;
+	padding:0 6px;
+	height:25px;
+	background:url('../img/shadow_left-right_front.png') repeat-y left top;
+}
+div.TopMenuInnerwrapper
+{	border-top:solid 1px #f0f0f0;
+	height:11px;
+	width:auto;
+	border-collapse:collapse;
+	padding:4px 0px 9px 0px;
+	}
+div.boxDownShadow, div.boxTopShadow
+{	height:7px;
+	width:981px;
+	overflow:hidden;
+	}
+div.boxDownShadow
+{	background:url('../img/shadow_down_front.png') no-repeat left top;
+}
+div.boxTopShadow
+{	background:url('../img/shadow_top_front.png') no-repeat left top;
+	margin-top:10px;
+	height:6px;
+	}
+div.topMenuItem, div.topMenuLastItem, div.subMenuLastItem
+{	border-right:solid 1px #dddddd;
+	border-collapse:collapse;
+	padding:0px 7px 0px 7px;
+	display:inline-block;
+	float:left;
+	}
+div.topMenuLastItem img, div.topMenuItem img
+{	margin-right:3px;
+	}
+div.topMenuLastItem
+{	border-right:none;
+	border-left:solid 1px #696969;
+	margin-left:-1px;
+	}
+div.subMenuLastItem
+{	border:none 0px;
+	}
+div.loginLijevi, div.loginDesni
+{	float:right;
+	padding:0px 10px;
+	}
+div.loginLijevi
+{	border-right:solid 1px #696969;
+	position:relative;
+	}
+	
+
+div.lightboxBackground
+{	position:fixed;
+ 	_position:absolute;
+	z-index:1000;
+	width:100%;
+	height:100%;
+	_height:expression(document.body.clientHeight + 'px');
+	top:0;
+	left:0;
+	background:url(../img/bck_transparency.gif) repeat bottom right;
+	opacity:.75;
+	filter:alpha(opacity=75);
+	
+	}
+div.prijavawrapper
+{	width:404px;
+	height:auto;
+	position:fixed;
+ 	_position:absolute;
+	padding:20px;
+	z-index:1100;
+	background-color:White;
+	text-align:center;
+	left:50%;
+	top:50%;
+	margin-top:-100px;
+	margin-left:-222px;
+	}
+
+table.prijavaTable
+{	width:400px;
+ 	table-layout:fixed;
+	}
+table.prijavaTable td
+{	text-align:left;
+ 	height:20px;
+ 	padding-top:10px;
+	}
+table.prijavaTable td.lightboxInputGreska, table.netIDTable td.lightboxInputGreska, table.posaljiPrijateljuTable td.lightboxInputGreska
+{	color:#9e0309;
+ 	vertical-align:top;
+	}
+table.netIDTable td.netIDSpolInput input
+{	width:auto;
+	}
+td.netIDSpolInput span input
+{	margin:0px 3px;
+	}
+td.netIDSpolInput span label
+{	top:-5px;
+ 	position:relative;
+ 	display:inline-block;
+ 	margin-right:10px;
+	}
+td.netIDSpolInput
+{	padding-top:5px;
+ 	
+	}
+table.netIDTable td select
+{	width:80px;
+	}
+table.netIDTable td.netIDpotvrdaRegObj
+{	height:30px;
+ 	vertical-align:bottom;
+ 	font:11px Verdana ;
+ 	color:#333333;
+	}
+table.netIDTable tr.netIDveriCode td
+{	padding:5px 0px;
+	}
+table.netIDTable td.lightboxInputGreska input, table.prijavaTable td.lightboxInputGreska input, table.posaljiPrijateljuTable td.lightboxInputGreska input
+{	color:#9e0309;
+ 	border:solid 1px #9e0309;
+ 	background:none;
+	}
+table.prijavaTable td input
+{	width:269px;
+ 	height:14px;
+ 	background:url(../img/select_background.gif) top left no-repeat;
+ 	border:solid 1px #d4d0c8;
+	}
+col.prijavaTableCol1
+{	width:127px;
+	}
+col.prijavaTableCol2
+{	width:273px;
+	}
+div.registracijawrapper
+{	position:fixed;
+	z-index:100;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	}
+table.netIDTable
+{	width:100%;
+ 	table-layout:fixed;
+	}
+table.netIDTable td
+{	text-align:left;
+ 	height:20px;
+ 	vertical-align:middle;
+	}
+table.netIDTable td input
+{	width:292px;
+ 	height:14px;
+ 	background:url(../img/select_background.gif) top left no-repeat;
+ 	border:solid 1px #d4d0c8;
+	}
+col.netIDTableCol1
+{	width:292px;
+	}
+col.netIDTableCol2
+{	width:20px;
+	}
+col.netIDTableCol3
+{	width:146px;
+	}
+col.netIDTableCol4
+{	width:146px;
+	}
+div.prijavljenWrapper
+{	width:404px;
+ 	height:93px;
+	}
+div.prijavljenTekst
+{	height:20px;
+ 	font:11px Verdana;
+ 	color:#333333;
+ 	text-align:left;
+	}
+div.posaljiPrijateljuWrapper
+{	width:614px;
+ 	height:auto;
+ 	position:fixed;
+ 	_position:absolute;
+	padding:20px;
+	z-index:1100;
+	background-color:White;
+	text-align:center;
+	left:50%;
+	top:50%;
+	margin-top:-128px;
+	margin-left:-327px;
+	
+	}
+table.posaljiPrijateljuTable
+{	width:100%;
+ 	table-layout:fixed;
+	}
+table.posaljiPrijateljuTable tr td.posaljiPrijateljuContent a.clanakUkratkoNaslov
+{	margin-right:7px;
+ 	width:185px;
+ 	display:inline-block;
+	}
+table.posaljiPrijateljuTable td textarea
+{	width:272px;
+ 	height:77px;
+ 	background:url(../img/select_background.gif) top left no-repeat;
+	border:solid 1px #d4d0c8;
+	}
+table.posaljiPrijateljuTable td
+{	text-align:left;
+ 	height:20px;
+ 	padding-top:10px;
+	}
+table.posaljiPrijateljuTable td.posaljiPrijateljuContent
+{	background:url(../img/big_dotted_limiter.gif) 193px top repeat-y;
+ 	vertical-align:top;
+	}
+
+table.posaljiPrijateljuTable td input
+{	width:272px;
+ 	height:18px;
+ 	background:url(../img/select_background.gif) top left no-repeat;
+ 	border:solid 1px #d4d0c8;
+	}
+col.posaljiPrijateljuCol1
+{	width:200px;
+	}
+col.posaljiPrijateljuCol2
+{	width:137px;
+	}
+col.posaljiPrijateljuCol3
+{	width:317px;
+	}
+div.infowrapper
+{	width:969px;
+	height:64px;
+	margin-top:-6px;
+	padding:0px 6px;
+	z-index:100;
+	position:relative;
+	}	
+div.widgetTwo
+{	width:214px;
+	}
+div.widgetOne
+{	margin-left:20px;
+ 	width:210px;
+	}
+div.strNaslovwrapper, div.widgetOne, div.trazilicawrapper,div.widgetTwo, div.sexpressoWrapper, div.prognozaWrapper
+{	height:64px;
+	float:left;
+	overflow:hidden;
+	}
+div.strNaslovwrapper
+{	width:210px;
+	}
+div.sexpressoWrapper
+{	background:url(../img/sexpresso.png) no-repeat bottom left;
+	width:190px;
+	position:relative;
+	z-index:10;
+	}
+div.sexpressoImeGosta
+{	margin-left:103px;
+	margin-top:40px;
+	font:bold 10px  Verdana;
+	}
+div.prognozaWrapper
+{	text-align:right;
+	width:190px;
+	float:left;
+	background:url(../img/prognoza.png) no-repeat top left;
+	position:relative;
+	z-index:10;
+	}
+div.prognozaTextwrapper
+{	float:right;
+	margin-top:12px;
+	display:inline-block;
+	text-align:left;
+	
+	}
+div.infoBoxLimiter, div.infoBoxLimiter2
+{	height:45px;
+	width:20px;
+	background:url(../img/info_limiter.gif) repeat-y top;
+	float:left;
+	margin-top:10px;
+	}
+div.infoBoxLimiter2
+{	width:24px;
+	}
+div.trazilicawrapper
+{	width:315px;
+	text-align:right;
+	overflow:hidden;
+	}
+div.trazilicaInputwrapper
+{	border:solid 1px #cccccc;
+	border-right:none;
+	float:right;
+	width:230px;
+	height:24px;
+	margin-top:15px;
+	background:white url(../img/google.gif) no-repeat 10px 50%;
+	}
+div.trazilicaButtonwrapper
+{	border:solid 1px #cccccc;
+	border-left:none;
+	background-color:White;
+	line-height:0px;
+	font-size:0px;
+	float:right;
+	height:18px;
+	_padding-top:1px;
+	width:76px;
+	padding:3px;
+	margin-top:15px;
+	}
+div.Googlewrapper
+{	margin-top:7px;
+	float:right;
+	width:108px;
+	height:17px;
+	background:url(../img/google_powered_front_bck.gif) no-repeat top left;
+	}
+div.mainMenuwrapper
+{	padding:0px 6px;
+	width:969px;
+	background:url('../img/shadow_left-right_front.png') repeat-y left top;
+	position:relative;
+	
+}
+div.mainMenuTopShadow
+{	padding:0px;
+ 	margin:0px;
+ 	z-index:1;
+ 	position:absolute; 
+ 	bottom:0;
+ 	left:0;
+	}
+div.mainMenuInnerwrapper
+{	height:24px;
+	position:relative;
+	z-index:1;
+	width:968px;
+	border-right:solid 1px #222020;
+	border-top:solid 1px #8d8d8d;
+	background:url(../img/main_meni_bck.gif) repeat-x top left;
+	}
+a.mainMenuItemNeaktivan, a.mainMenuItemAktivan, div.mainMenuItemZadnji
+{	float:left;
+	font:bold 10px Verdana;
+	padding:6px 8px 0px 8px;
+	margin-top:-1px;
+	display:block;
+	}
+a.mainMenuItemNeaktivan, div.mainMenuItemZadnji
+{	border-top:solid 1px #8d8d8d;
+	border-left:solid 1px #8d8d8d;
+	border-right:solid 1px #222020;
+	height:18px;
+	text-transform:uppercase;
+	color:White;
+	background:url(../img/main_meni_bck.gif) repeat-x top left;
+	}
+a.mainMenuItemNeaktivan:hover
+{	background:url(../img/main_meni_bck_hover.gif) repeat-x top left;
+	}
+div.mainMenuItemZadnji
+{	border-right:none 0px;
+	}
+a.mainMenuItemAktivan
+{	background-color:White;
+	color:#333333;
+	height:19px;
+	position:relative;
+	z-index:2;
+	text-transform:uppercase;
+	}
+div.contentwrapper
+{	padding:0px 6px 20px 6px; 
+	width:969px;
+	background:url('../img/shadow_left-right_front.png') repeat-y left top;
+}
+div.contentInnerwrapper
+{	width:969px;
+	background-color:White;
+	}
+div.sitemapWrapper
+{	padding:10px;
+	width:949px;
+	background-color:White;
+	}
+div.vruceVijestiwrapper
+{	padding-left:10px;
+	line-height:25px;
+	}
+div.subGlavniMeniWrapper
+{	padding-left:0px;
+ 	line-height:25px;
+	}
+
+div.vruceVijestiwrapper
+{	padding-top:3px;
+	height:22px;
+	width:610px;
+	}
+div.subGlavniMeniWrapper
+{	padding-top:7px;
+	height:18px;
+	width:949px;
+	}
+div.contentLimiter
+{	width:969px;
+	height:6px;
+	line-height:0px;
+	font-size:0px;
+	margin-bottom:16px;
+	background:url(../img/content_limiter.gif) repeat-x left top;
+	}
+div.izvanrednaVijest
+{	height:27px;
+ 	background:White url(../img/izvanredna_vijest.gif) bottom left no-repeat;
+ 	padding:12px 0px 0px 124px;
+ 	margin:0px 0px 15px 0px;
+	}
+div.izvanrednaVijest a
+{	font:18px Georgia;
+ 	color:#333333;
+	}
+div.izvanrednaVijest a:hover
+{	text-decoration:underline;
+	}
+div.contentLimiter, div.contentLeftContainer, div.contentRightContainer
+{	float:left;
+	}
+div.contentLeftContainer
+{	width:630px;
+	background: url(../img/info_limiter.gif) repeat-y right -2px;
+	padding-right:12px;
+	}
+div.contentRightContainer
+{	width:315px;
+	float:left;
+	padding-left:12px;
+	margin-left:-1px;
+	background:url(../img/info_limiter.gif) repeat-y left -2px;
+	}
+div.leftModulesContainer
+{	width:630px;
+	padding-bottom:25px;
+	margin-bottom:20px;
+	background:url(../img/content_limiter.gif) repeat-x left bottom;
+	}
+div.temaContainer
+{	width:295px;
+	margin-left:20px;
+	_margin-left:10px;
+	float:left;
+	}
+div.temaContainerBig
+{	width:610px;
+	margin-left:20px;
+	_margin-left:10px;
+	}
+div.temaSlideControls
+{	float:right;
+	text-align:right;
+	padding-right:1px;
+	}
+div.naslovTemaContainer
+{	padding:14px 0px 0px 9px;
+	width:286px;
+	height:80px;
+	overflow:hidden;
+	background-color:#2d648a;
+	}
+div.slikaTemaContainer
+{	width:295px;
+	position:relative;
+	overflow:hidden;
+	padding:0px;
+	margin:0px;
+	line-height:0px;
+	font-size:0px;
+	}
+div.temaSkrivenContainer
+{	Width:275px;
+	background:url(../img/bck_transp_black.png) repeat top left;
+	padding:10px;
+	color:White;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	z-index:10;
+	}
+	
+.vijestiContainer
+{	width:295px;
+	padding-left:20px;
+	float:left;
+	/*overflow:hidden;*/
+	}
+div.modulNaslovLimiter
+{	border-bottom:solid 4px #cccccc;
+	margin-bottom:10px;
+	}
+div.subModulClanakUkratko, div.subModulClanakUkratkoKraci
+{	padding:0px 0px 7px 0px;
+	margin:0px;
+	}
+div.subModulClanakUkratko
+{	width:295px;
+	}
+div.subModulClanakUkratkoKraci
+{	width:285px;
+	}
+div.subModulClanakUkratkoDuzi
+{	width:590px;
+	padding:0px 0px 5px 0px;
+	}
+div.subModulClanakUkratkoDuziKultura
+{	width:610px;
+	}
+div.subModulClanakUkratkoDuzi div.clanakUkratkoSlikaWrapper, div.subModulClanakUkratkoDuziKultura div.clanakUkratkoSlikaWrapper
+{	margin-right:10px;
+	}
+.subModulClanakUkratkoDuzi .noPicture, .subModulClanakUkratko .noPicture
+{	width:auto;
+	margin-left:0px;
+	padding:0px;
+	}
+div.clanakUkratkoSlikaWrapper, div.clanakUkratkoSlikaWrapperShowtime, div.clanakUkratkoSlikaWrapperFotke, div.curaDeckoDanaSlikaWrapper, div.clanakUkratkoSlikaWrapperFotkeBig
+{	border:solid 1px #cccccc;
+	background-color:White;
+	padding:3px;
+	font-size:0px;
+	line-height:0px;
+	overflow:hidden;
+	}
+div.clanakUkratkoSlikaWrapper
+{	z-index:0;
+	float:left;
+	width:77px;
+	}
+div.clanakUkratkoSlikaWrapperShowtime
+{	z-index:0;
+	margin-bottom:8px;
+	width:182px;
+	}
+div.clanakUkratkoSlikaWrapperFotke
+{	background-color:White;
+	margin-bottom:5px;
+	width:122px;
+	float:left;
+	}
+div.clanakUkratkoSlikaWrapperFotkeBig
+{	width:287px;
+	}
+div.bigBlogSlikaWrapper
+{	height:60px;
+	overflow:hidden;
+	font-size:0px;
+	line-height:0px;
+	float:left;
+	width:60px;
+	}
+div.vremenskaPrognozaSlikaWrapper
+{	width:33px;
+ 	height:31px;
+ 	padding:7px 0px 0px 5px;
+ 	float:left;
+ 	overflow:hidden;
+	font-size:0px;
+	line-height:0px;
+	background:url(../img/kalendar_background.gif) -38px top no-repeat;
+	}
+div.citatSlikaWrapper
+{	padding:0px 8px 10px 0px;
+	float:left;
+	font-size:0px;
+	line-height:0px;
+	}
+div.maxTVpreporukaSlikaWrapperBig
+{	border:solid 1px #cccccc;
+	background-color:White;
+	padding:3px;
+	font-size:0px;
+	line-height:0px;
+	overflow:hidden;
+	width:77px;
+	}
+div.maxTVpreporukaSlikaWrapperBigShadow, div.maxTVpreporukaSlikaWrapperSmallShadow
+{	width:85px;
+ 	padding:0px 10px 0px 9px;
+ 	margin-left:-10px;
+ 	text-align:center;
+	float:left;
+	padding-bottom:25px;
+	background:url(../img/maxtv-sjena-velika.png) center bottom no-repeat;
+	}
+div.maxTVpreporukaSlikaWrapperSmallShadow
+{	background:url(../img/maxtv-sjena-mala.png) center bottom no-repeat;
+ 	width:85px;
+	}
+div.maxTVpreporukaSlikaWrapperSmall
+{	border:solid 1px #cccccc;
+	background-color:White;
+	padding:3px;
+	font-size:0px;
+	line-height:0px;
+	overflow:hidden;
+	width:54px;
+	float:left;
+	margin:0px 11px 0px 12px;
+}
+
+div.clearingDiv
+{	clear:both;
+	line-height:0px;
+	font-size:0px;
+	height:0px;
+}
+
+div.clanakNaslovWrapper, div.clanakNaslovWrapperKraci, div.clanakNaslovWrapperKinaKalendar, div.clanakNaslovWrapperKino
+{	width:200px;
+	padding-left:9px;
+	float:left;
+	}
+div.clanakNaslovWrapperKinaKalendar
+{	width:155px;
+	}
+
+div.clanakNaslovWrapperKino
+{	width:270px;
+	}
+
+div.clanakNaslovWrapperKraci
+{	width:181px;
+	}
+div.clanakTekstWrapper
+{	padding-top:10px;
+	}
+div.vremenskaPrognozaOpisWrapper, div.vremenskaPrognozaOpisWrapperBig
+{	width:246px;
+ 	float:left;
+ 	margin-left:10px;
+	}
+div.vremenskaPrognozaOpisWrapperBig
+{	width:562px;
+	}
+div.pictureBoxTekstWrapper
+{	width:160px;
+ 	height:174px;
+ 	overflow:hidden;
+ 	padding:20px 10px 20px 20px;
+ 	float:right;
+	}
+.pictureBoxTekstWrapper span.clanakUkratkoTekst
+{	margin-top:10px;
+	}
+.pictureBoxTekstWrapper img
+{	margin-top:10px;
+	}
+div.pictureBoxTekstWrapper span, div.pictureBoxTekstWrapper a, div.pictureBoxTekstWrapper div, div.bmiBoxTekstWrapper div 
+{	color:White;
+	}
+div.pictureBoxWrapper
+{	width:295px;
+ 	height:214px;
+ 	overflow:hidden;
+ 	font-size:0px;
+ 	line-height:0px;
+ 	padding:0px;
+ 	position:relative;
+	}
+div.bmiBoxTekstWrapper
+{	width:275px;
+ 	height:78px;
+ 	margin-top:116px;
+ 	color:White;
+ 	overflow:hidden;
+ 	padding:10px;
+	}
+div.bmiBoxTekstWrapper table td
+{	width:33%;
+ 	padding-top:3px;
+	}
+div.bmiBoxTekstWrapper table td input
+{	width:79px;
+ 	height:13px;
+ 	font:10px Verdana;
+ 	background:white url(../img/select_background.gif) top left no-repeat;
+ 	border-bottom:solid 1px #d4d0c8;
+ 	border-right:solid 1px #d4d0c8;
+	}
+div.bmiBoxTekstWrapper table
+{	table-layout:fixed;
+ 	width:100%;
+	}
+div.bmiButtonLKut, div.bmiButtonRKut, div.bmiButtonSredina
+{	height:18px;
+ 	float:right;
+	}
+div.bmiButtonLKut
+{	width:4px;
+ 	background:url(../img/button_kutevi_plavi.png) top left no-repeat;
+	}
+div.bmiButtonRKut
+{	width:4px;
+ 	background:url(../img/button_kutevi_plavi.png) no-repeat -4px top ;
+	}
+div.bmiButtonRKut
+{	width:4px;
+ 	background:url(../img/button_kutevi_plavi.png) top -4px no-repeat;
+	}
+div.bmiButtonSredina
+{	background:url(../img/button_sredina_plavi.gif) top left repeat-x;
+ 	padding:2px 5px 0px 5px;
+	}
+div.bmiButtonSredina a
+{	display:block;
+ 	height:18px;
+ 	color:White;
+	}
+td.bmiTDButton
+{	padding-right:7px;
+ 	text-align:right;
+ 	height:28px;
+ 	vertical-align:bottom;
+	}
+div.clanakLimiter, div.rezultatiLimiter
+{	border-top:solid 1px #cccccc;
+	padding-bottom:5px;
+	line-height:0px;
+	font-size:0px;
+	}
+div.rezultatiLimiter
+{	margin:5px 0px;
+	}
+div.dividerClanakBox
+{	height:5px;
+	}
+div.leftModulesContainerLimiter
+{	background:url(../img/big_dotted_limiter.gif) no-repeat 324px 37px;
+	line-height:0px;
+	font-size:0px;
+	padding:0px;
+	z-index:10;
+	}
+div.kvizLimiter
+{	background:url('../img/big_dotted_limiter.gif') repeat-y center top;
+	line-height:0px;
+	font-size:0px;
+	padding:0px;
+	margin-top:10px;
+	zoom:1;
+	}
+div.kvizLimiter .vijestiContainer
+{	padding-right:10px;
+ 	width:285px;
+ 	background-color:Transparent;
+	}
+div.kvizLimiter .vijestiContainer td
+{	vertical-align:middle;
+	}
+div.kvizLimiter .vijestiContainer table
+{	margin:0px 0px 10px 0px;
+	}
+div.kvizLimiter .vijestiContainer td input
+ {	display:inline-block;
+  	float:left;
+ 	}
+div.kvizLimiter .vijestiContainer td label
+{	display:inline-block;
+ 	margin-top:2px;
+ 	font-size:11px;
+	}
+span.kvizErrorNaPitanju, table.kvizErrorNaPitanju tr td label
+{	color:#9e0309;
+	}
+img.kvizTocanNetocan
+{	padding-left:5px;
+	position:relative;
+	margin-bottom:-2px;
+	margin-top:2px;
+	}
+	
+div.kvizPitanja div.kvizLijevo span,
+div.kvizPitanja div.kvizDesno span
+{
+	/*line-height: 20px;*/
+}
+
+
+
+	
+.vijestiContainerBig
+{	width:610px;
+	padding-left:20px;
+	overflow:hidden;
+	position:relative;
+	z-index:10;
+	margin-bottom:10px;
+	}
+div.showtimeClanakWrapper
+{	width:190px;
+	float:left;
+	padding:0px 20px 6px 0px;
+	}
+div.showtimeClanciWrapper
+{	width:630px;
+	position:relative;
+	z-index:5;
+	overflow:hidden;
+	}
+div.showtimeClanciInnerWrapper
+{	width:1890px;
+	margin-left:0px;
+	background:url(../img/showtime_limiter.gif) repeat top left;
+	}
+div.tripleBigBox
+{	background:url(../img/showtime_limiter.gif) repeat top left;
+	}
+div.fotkeInnerWrapper
+{	width:599px;
+	margin-left:20px;
+	_margin-left:10px;
+	padding:9px 0px 9px 9px;
+	float:left;
+	background-color:#ebebe7;
+	border:solid 1px #cccccc;
+	}
+div.fotkaBigContainer
+{	width:296px;
+	float:left;
+	background:url(../img/info_limiter.gif) repeat-y top right;
+	padding-right:10px;
+	}
+div.fotkeSmallWrapper
+{	width:294px;
+	margin-left:-1px;
+	float:left;
+	background:url(../img/info_limiter.gif) repeat-y top left;
+	}
+div.fotkeSmallContainer
+{	width:289px;
+	margin-left:1px;
+	padding:0px 1px 0px 1px;
+	background:url(../img/big_dotted_limiter.gif) no-repeat 146px 98px ;
+	}
+div.fotkaSmallContainer
+{	width:129px;
+	padding:0px 7px 0px 8px;
+	float:left;
+	}
+div.fotkeSmallDivider
+{	width:275px;
+	margin:10px 0px 10px 11px;
+	height:0px;
+	font-size:0px;
+	line-height:0px;
+	border-top:solid 1px #b4b4ac;
+	border-bottom:solid 1px #ffffff;
+	}
+div.fotkeSmallNaslovContainer
+{	padding:3px 0px 4px 0px;
+	}
+div.horoskopSlikawrapper
+{	font-size:0px;
+	line-height:0px;
+	width:85px;
+	height:73px;
+	float:left;
+	background:url(../img/horoskop_znakovi_small.gif)  -595px top no-repeat;
+	}
+div.igriceMainWrapper
+{	width:275px;
+	padding:10px;
+	background:url(../img/igrice_bck.gif) repeat bottom right;
+	margin-bottom:20px;
+	margin-top:1px;
+	position:relative;
+	z-index:10;
+	}
+div.videoMainWrapper
+{	background:#2d648a;
+	margin-bottom:0px;
+	}
+div.igriceInnerWrapper
+{	width:275px;
+	overflow:hidden;
+	position:relative;
+	z-index:10;
+	}
+div.igriceSlideWrapper
+{	width:855px;
+	background:url(../img/igrice_limiter_big.gif) repeat-x left 69px;
+	}
+div.videoSlideWrapper
+{	width:855px;
+	background:url(../img/video_limiter_big.gif) repeat-x left 69px;
+	}
+div.igricaWrapper
+{	width:85px;
+	float:left;
+	padding-right:10px;
+	}
+div.igriceSlikaWrapper, div.videoSlikaWrapper, div.wallSlikaWrapper
+{	border:solid 1px #e37c04;
+	background-color:#ffc923;
+	float:none;
+	margin-bottom:9px;
+	}
+div.videoSlikaWrapper
+{	background-color:#1a456a;
+	border:solid 1px #0f3051;
+	}
+div.igricaNaslovWrapper
+{	width:55px;
+	float:left;
+	word-wrap:break-word;
+	}
+div.igricaNaslovWrapper a
+{	font:bold 11px Verdana;
+	color:White;
+	}
+div.videoNaslovWrapper
+{	width:86px;
+	float:left;
+	margin-left:-1px;
+	}
+div.videoNaslovWrapper a
+{	color:White;
+	}
+div.igricaTipWrapper
+{	width:29px;
+	height:23px;
+	float:right;
+	padding-top:3px;
+	text-align:right;
+	}
+div.kalendarWrapper
+{	width:296px;
+	overflow:hidden;
+	margin-bottom:11px;
+	}
+.kalendarDanWrapper
+{	height:31px;
+	width:33px;
+	float:left;
+	margin-right:5px;
+	background:url(../img/kalendar_background.gif) no-repeat -38px top;
+	padding:7px 0px 0px 5px;
+	line-height:0px;
+	font:0px;
+	}
+div.kalendarWrapper .kalendarDanWrapperAktivan
+{	background:url(../img/kalendar_background.gif) no-repeat 0px top;
+	}
+div.donjiContainer
+{	background:none;
+	padding-bottom:0px;
+	margin-bottom:0px;
+	}
+div.noBackground
+{	background:transparent;
+	}
+div.kalendarContainer
+{	_padding-left:19px;
+	}
+div.kalendarTopContainer, div.kalendarBottomContainer
+{	width:611px;
+	}
+div.kalendarTopContainer
+{	width:611px;
+	height:49px;
+	}
+div.kalendarClanakHolder, div.kalendarPopisHolder
+{	display:none;
+	}
+	
+div.rightModulesContainer
+{	width:295px;
+	margin-bottom:20px;
+	}
+div.popularnoTabsWrapper
+{	
+	z-index:10;
+	font-size:0px;
+	line-height:0px;
+	}
+div.popularnoContentWrapper
+{	border:solid 1px #cccccc;
+	width:275px;
+	background-color:#ebebe7;
+	padding:10px 9px 9px 9px;
+	margin-top:-1px;
+	display:none;
+	}
+div.tabliceContent
+{	width:908px;
+	}
+div.tabDKutWrapper, div.tabMiddleWrapper, div.tabLKutWrapper
+{	float:left;
+	height:24px;
+	}
+div.tabDKutWrapper, div.tabLKutWrapper
+{	width:4px;
+	}
+
+div.tabDKutWrapper
+{	background:url(../img/tab_kutevi.gif) no-repeat -4px top;
+	}
+div.tabMiddleWrapper
+{	background:url(../img/tab_neaktivan_middle.gif) repeat left top;
+	padding:0px 3px;
+	font:bold 10px Verdana;
+	line-height:24px;
+	color:#2d648a;
+	}
+div.tabLKutWrapper
+{	background:url(../img/tab_kutevi.gif) no-repeat -8px top;
+	}
+div.bigBlogHeaderPic
+{	width:295px;
+	height:96px;
+	font-size:0px;
+	line-height:0px;
+	}
+div.bigBlogHeaderNaslov
+{	width:275px;
+	background-color:#2d648a;
+	padding:10px;
+	}
+div.bigBlogContentWrapper
+{	width:275px;
+	padding:6px 9px 0px 9px;
+	border:solid 1px #cccccc;
+	
+	background-color:#ebebe7;
+	}
+div.bigBlogFooter
+{	width:295px;
+	height:28px;
+	background:url(../img/blog_footer_bck.gif) repeat-x top left;
+	}
+div.bigBlogNoviButton
+{	height:28px;
+	margin-top:-1px;
+	position:absolute;
+	margin-left:151px;
+	}
+div.bigBlogNoviButtonLKut, div.bigBlogNoviButtonDKut
+{	height:28px;
+	width:7px;
+	float:left;
+	background:url(../img/novi_blog_kutevi.gif) no-repeat;
+	}
+div.bigBlogNoviButtonSredina
+{	float:left;
+	height:28px;
+	background:url(../img/novi_blog_sredina.gif) repeat-x top left;
+	
+	}
+div.bigBlogNoviButtonDKut
+{	background-position:-7px top;
+	}
+div.bigBlogNoviButtonLKut
+{	background-position:left top;
+	}
+div.curaDeckoDanaWrapper
+{	background-color:#9e0309;
+	width:295px;
+	padding-bottom:8px;
+	position:relative;
+	z-index:1;
+	}
+div.curaDeckoDanaLimiter
+{	background:url(../img/big_dotted_limiter.gif) no-repeat 147px 108px; 
+	position:relative;
+	z-index:10;
+	font-size:0px;
+	line-height:0px;
+	padding:10px 3px 2px 2px;
+	width:290px;
+	
+	}
+div.curaDeckoDanaSlikaWrapper
+{	font-size:0px;
+	line-height:0px;
+	padding:3px;
+	margin-bottom:9px;
+	border:solid 1px #670002;
+	background-color:#800104;
+	width:122px;
+	height:80px;
+	}
+div.curaDeckoDanaSingleWrapper
+{	padding:0px 7px 0px 8px;
+	float:left;
+	width:130px;
+	}
+div.curaDeckoDanaNaslovWrapper
+{	width:122px;
+	}
+div.curaDeckoDanaNaslovWrapper a
+{	color:White;
+	}
+div.anketaWrapper
+{	padding:0px 0px 5px 0px;
+	}
+div.anketaRezultatWrapper
+{	height:12px;
+ 	position:relative;
+ 	width:100%;
+ 	overflow:hidden;
+	}
+div.anketaRezultatNeaktivan
+{	width:295px;
+ 	height:12px;
+	}
+div.anketaRezultatNeaktivanLKut, div.anketaRezultatNeaktivanSredina, div.anketaRezultatNeaktivanRKut, div.anketaRezultatAktivanLKut, div.anketaRezultatAktivanSredina, div.anketaRezultatAktivanRKut
+{	height:12px;
+ 	float:left;
+	}
+div.anketaRezultatNeaktivanLKut
+{	background:url(../img/anketaNEA_Lkut.gif) no-repeat top left;
+ 	width:3px;
+	}
+div.anketaRezultatNeaktivanSredina
+{	background:url(../img/anketaNEA_sredina.gif) repeat-x top left;
+ 	width:289px;
+	}
+div.anketaRezultatNeaktivanRKut
+{	background:url(../img/anketaNEA_Rkut.gif) no-repeat top left;
+ 	width:3px;
+	}
+div.anketaRezultatAktivanWrapper
+{	width:0%;
+ 	position:absolute;
+ 	z-index:10;
+ 	height:12px;
+ 	top:0px;
+ 	left:0px;
+ 	overflow:hidden;
+	}
+table.anketaRezultatAktivan
+{	width:100%;
+ 	
+	}
+.anketaRezultatAktivanLKut
+{	background:url(../img/anketaA_Lkut.gif) no-repeat top left;
+ 	width:3px;
+	}
+.anketaRezultatAktivanSredina
+{	background:url(../img/anketaA_sredina.gif) repeat-x top left;
+	}
+.anketaRezultatAktivanRKut
+{	background:url(../img/anketaA_Rkut.gif) no-repeat top left;
+ 	width:3px;
+	}
+div.anketaPitanjeWrapper
+{
+	float:none;
+	clear:both;
+ 	margin:3px 0px;
+ 	line-height:14px;
+ 	font:11px Verdana;
+	}
+div.siteMapListHolder
+{	float:left;
+	width:152px;
+	margin-top:5px;
+	}
+div.siteMapListHolderRight
+{	float:left;
+	width:152px;
+	}
+div.nagradnjacaImgWrapper
+{	width:295px;
+	height:80px;
+	overflow:hidden;
+	padding-bottom:10px;
+	}	
+
+/* Article page styles*/
+
+
+
+a.infoToolsIcoWrapper
+{	display:inline-block;
+	width:16px;
+	margin-top:5px;
+	}
+
+
+
+
+
+
+div.noviButton
+{	float:right;
+ 	display:inline-block;
+ 	width:auto;
+ 	height:18px;
+	}
+div.ButtonDKut
+{	background:url(../img/button_kutevi.gif) no-repeat -3px top;
+	width:3px;
+	height:18px;
+	float:right;
+	}
+div.ButtonSredina
+{	background:url(../img/button_sredina.gif) repeat-x left top;
+	padding:0px 10px;
+	height:18px;
+	float:right;
+	}
+div.ButtonLKut
+{	background:url(../img/button_kutevi.gif) repeat-x left top;
+	width:3px;
+	margin-left:10px;
+	height:18px;
+	float:right;
+	}
+div.ButtonDKutRed
+{	background:url(../img/button_kutevi_crveni.gif) no-repeat -3px top;
+	}
+div.ButtonSredinaRed
+{	background:url(../img/button_sredina_crveni.gif) repeat-x left top;
+	}
+div.ButtonSredinaRed a
+{	color:White;
+	}
+div.ButtonLKutRed
+{	background:url(../img/button_kutevi_crveni.gif) repeat-x left top;
+	}
+div.kategorijeSlide
+{	padding:0 24px;
+	}
+div.kategorijeSlideWrapperBorder
+{	width:819px;
+	border-left:solid 1px #cccccc;
+	border-right:solid 1px #cccccc;
+	float:left;
+	padding:0px 10px;
+	
+	}
+div.kategorijaSlideWrapper
+{	width:820px;
+	background-color:Transparent;
+	position:relative;
+	overflow:hidden;
+	}
+div.kategorijeSlideInnerWrapper
+{	width:2520px;
+	position:relative;
+	z-index:10;
+	background:url(../img/kategorija_Slide_limiter.gif) repeat-x left 37px;
+	}
+
+div.fotoPricaWrapper
+{	border:solid 1px #cccccc;
+	background-color:#ebebe7;
+	padding:3px 3px 20px 3px;
+	width:287px;
+	}
+div.fotoPricaImgWrapper
+{	width:287px;
+	height:189px;
+	overflow:hidden;
+	float:left;
+	}
+div.popularnoDuzi
+{	width:590px;
+	}
+div.dugiNaslovTekstWrapper
+{	float:left;
+	width:450px;
+	margin-left:10px;
+	}
+div.dugiNaslovTekstWrapperKultura
+{	float:left;
+	width:470px;
+	margin-left:10px;
+	}
+div.horoskopDnevniTekst
+{	width:515px;
+ 	float:left;
+ 	margin:0px 0px 10px 10px;
+ 	display:inline-block;
+	}
+table.tablicaGray
+{	width:100%;
+	}
+table.tablicaGray tr.tablicaGrayHead td
+{	background:#ebebe7;
+ 	padding:5px 0px 5px 0px;
+	}
+table.prognoze tr td
+{	padding:0px 10px 0px 0px;
+	}
+table.prognoze tr td img
+{	float:left;
+ 	margin-right:3px;
+ 	margin-top:4px;
+	}
+table.tablicaGray tr th
+{	font:bold 11px Verdana;
+ 	height:20px;
+ 	text-align:left;
+ 	vertical-align:middle;
+	}
+table.tablicaGray tr td
+{	border-top:solid 1px #cccccc;
+ 	height:20px;
+ 	text-align:left;
+ 	vertical-align:middle;
+	}
+table.burzovniIndexi tr td
+{	table-layout:auto;
+	}
+table.tecajnaLista tr td
+{	text-align:right;
+	}
+table.fixedLayout
+{	table-layout:fixed;
+	}
+table.tablicaGray tr.noBorder td, ul.topDestinacijeList li.noBorder
+{	border:none 0px;
+	}
+div.vremenskaPrognozaSubmeni
+{	height:84px;
+ 	background:url(../img/vremenska_menu_bck.gif) top left repeat-x;
+	}
+div.vremenskaPrognozaSubmeniHolder1
+{	width:304px;
+ 	margin:13px 0px 0px 20px;
+ 	background:url(../img/info_limiter.gif) top right repeat-y;
+ 	display:inline;
+ 	float:left;
+ 	}
+div.vremenskaPrognozaSubmeniHolder2
+{	width:306px;
+ 	margin:13px 0px 0px 11px;
+ 	background:url(../img/info_limiter.gif) top right repeat-y;
+ 	display:inline;
+ 	float:left;
+ 	}
+div.vremenskaPrognozaSubmeniHolder3
+{	width:310px;
+ 	margin:13px 0px 0px 15px;
+ 	display:inline;
+ 	float:left;
+ 	}
+ col.hrvatskaSedamDanaCol1
+ {	width:210px;
+ 	}
+ col.hrvatskaSedamDanaCol2
+ {	width:65px;
+ 	}
+ col.hrvatskaSedamDanaCol3
+ {	width:75px;
+ 	}
+ table.hrvatskaSedamDana
+ {	table-layout:fixed;
+  	width:100%;
+  	margin-top:-10px;
+ 	}
+ table.hrvatskaSedamDana td
+ {	text-align:center;
+  	vertical-align:middle;
+  	padding:10px 0px;
+  	border-bottom:solid 1px #cccccc;
+ 	}
+ div.hrvatskaSedamDanaLeft
+ {	width:210px;
+  	float:left;
+ 	}
+div.hrvatskaSedamDanaRight
+ {	width:400px;
+  	float:left;
+ 	}
+ div.hrvatskaSedamDanaLeft select
+ {	background:url(../img/select_background.gif) top left no-repeat;
+  	width:125px;
+  	font:11px Verdana;
+  	border-bottom:solid 1px #d4d0c8;
+  	border-right:solid 1px #d4d0c8;
+  	border-top:solid 1px #808080;
+  	border-left:solid 1px #808080;
+ 	}
+ table.hrvatskaSedamDana td.hrvatskaSedamDanaIzborGrada
+ {	text-align:left;
+  	border:none 0px;
+  	vertical-align:top;
+ 	}
+ table.hrvatskaSedamDana td.hrvatskaSedamDanaMaxTemp
+ {	background:url(../img/Prognoza/prognoza_max.gif) center 10px no-repeat;
+  	padding-top:30px;
+ 	}
+table.hrvatskaSedamDana td.hrvatskaSedamDanaMinTemp
+ {	background:url(../img/Prognoza/prognoza_min.gif) center 10px no-repeat;
+  	padding-top:30px;
+ 	}
+table.hrvatskaSedamDana td .vremenskaPrognozaSlikaWrapper
+{	padding-left:0px;
+ 	padding-top:4px;
+	}
+col.nautickaPrognozaTempMora1
+{	width:23%
+	}
+col.nautickaPrognozaTempMora2
+{	width:8%
+	}
+div.slikeDanaWrapper
+{	width:100%;
+ 	overflow:hidden;
+	}
+div.slikeDanaImgsHolder
+{	width:550px;
+ 	overflow:hidden;
+ 	float:left;
+	}
+div.slikaDanaImgHolder
+{	width:610px;
+ 	overflow:hidden;
+ 	text-align:center;
+ 	padding-bottom:20px;
+	}
+div.slikaDanaCopyright, div.slikaDanaOcjena
+{	float:left;
+ 	width:445px;
+ 	padding-bottom:10px;
+	}
+div.slikaDanaOcjena
+{	width:165px;
+	}
+span.slikaDanaOcjeneHolder
+{	display:inline-block;
+ 	height:19px;
+ 	width:100px;
+ 	background:url(../img/slika_dana_ocjena.jpg) left 0 repeat;
+ 	position:relative;
+ 	bottom:-4px;
+	}
+span.slikaDanaOcjenaTrenutna
+{	display:block;
+ 	position:absolute;
+ 	height:19px;
+ 	background:url(../img/slika_dana_ocjena.jpg) left -40px repeat;
+	}
+span.slikaDanaOcjeneHolder a
+{	position:absolute;
+ 	height:19px;
+ 	display:block;
+	}
+span.slikaDanaOcjeneHolder a:hover
+{	background:url(../img/slika_dana_ocjena.jpg) left -20px repeat;
+	}
+span.slikaDanaOcjeneHolder a.slikaDanaOcjena1
+{	width:20px;
+	}
+span.slikaDanaOcjeneHolder a.slikaDanaOcjena2
+{	width:40px;
+	}
+span.slikaDanaOcjeneHolder a.slikaDanaOcjena3
+{	width:60px;
+	}
+span.slikaDanaOcjeneHolder a.slikaDanaOcjena4
+{	width:80px;
+	}
+span.slikaDanaOcjeneHolder a.slikaDanaOcjena5
+{	width:100px;
+	}
+div.slikaDanaOcjenaTrenutna
+{	position:absolute;
+ 	width:75px; /*Sirina pune zvijezde je 22px, da se dobije polovnica ocjena treba pomnoziti broj zvijezda sa 22 i dodati 9*/
+ 	height:21px;
+ 	background:url(../img/slika_dana_ocjena_trenutna.gif) left center no-repeat;
+	}
+div.horoskopBigPictureHolder
+{	width:294px;
+ 	height:335px;
+ 	overflow:hidden;
+ 	background:url(../img/horoskop_znakovi_big.gif) 0px 0px no-repeat;
+	}
+div.horoskopSmallSignsWrapper
+{	width:284px;
+ 	padding:7px 0px 17px 9px;
+ 	border:solid 1px #cccccc;
+ 	background:#ebebe7;
+ 	overflow:hidden;
+	}
+a.horoskopSmallSignHolder
+{	display:block;
+ 	width:85px;
+ 	height:89px;
+ 	float:left;
+ 	margin:10px 9px 10px 0px;
+ 	font-size:0px;
+ 	line-height:0px;
+ 	
+	}
+a.horoskopSmallSignOvan, div.horoskopSmallSignOvan
+{	background: url(../img/horoskop_znakovi_small.gif) 0px top no-repeat;
+	}
+a.horoskopSmallSignBik, div.horoskopSmallSignBik
+{	background: url(../img/horoskop_znakovi_small.gif) -85px top no-repeat;
+	}
+a.horoskopSmallSignBlizanci, div.horoskopSmallSignBlizanci
+{	background: url(../img/horoskop_znakovi_small.gif) -170px top no-repeat;
+	}
+a.horoskopSmallSignRak, div.horoskopSmallSignRak
+{	background: url(../img/horoskop_znakovi_small.gif) -255px top no-repeat;
+	}
+a.horoskopSmallSignLav, div.horoskopSmallSignLav
+{	background: url(../img/horoskop_znakovi_small.gif) -340px top no-repeat;
+	}
+a.horoskopSmallSignDjevica, div.horoskopSmallSignDjevica
+{	background: url(../img/horoskop_znakovi_small.gif) -425px top no-repeat;
+	}
+a.horoskopSmallSignVaga, div.horoskopSmallSignVaga
+{	background: url(../img/horoskop_znakovi_small.gif) -510px top no-repeat;
+	}
+a.horoskopSmallSignSkorpion, div.horoskopSmallSignSkorpion
+{	background: url(../img/horoskop_znakovi_small.gif) -595px top no-repeat;
+	}
+a.horoskopSmallSignStrijelac, div.horoskopSmallSignStrijelac
+{	background: url(../img/horoskop_znakovi_small.gif) -680px top no-repeat;
+	}
+a.horoskopSmallSignJarac, div.horoskopSmallSignJarac
+{	background: url(../img/horoskop_znakovi_small.gif) -765px top no-repeat;
+	}
+a.horoskopSmallSignVodenjak, div.horoskopSmallSignVodenjak
+{	background: url(../img/horoskop_znakovi_small.gif) -850px top no-repeat;
+	}
+a.horoskopSmallSignRibe, div.horoskopSmallSignRibe
+{	background: url(../img/horoskop_znakovi_small.gif) -935px top no-repeat;
+	}
+div.horoskopZnakoviLimiter
+{	height:0px;
+ 	line-height:0px;
+ 	font-size:0px;
+ 	border-top:solid 1px #cccccc;
+ 	clear:both;
+ 	width:275px;
+	}
+.tecajnaListaKonverter td
+{  padding-top:10px;
+	}
+.tecajnaListaKonverter td input
+{	width:52px;
+ 	height:18px;
+ 	background:url(../img/select_background.gif) top left no-repeat;
+ 	border-bottom:solid 1px #d4d0c8;
+  	border-right:solid 1px #d4d0c8;
+  	border-top:solid 1px #808080;
+  	border-left:solid 1px #808080;
+	}
+.tecajnaListaKonverter td select option
+{	width:30px;
+ 	height:18px;
+	}
+div.kinoHolder
+{	width:610px;
+ 	overflow:hidden;
+ 	margin:10px 0px 15px 0px
+	}
+div.kinoSlikaInfoHolder
+{	width:411px;
+ 	background:url(../img/info_limiter.gif) top right repeat-y;
+ 	float:left;
+	}
+
+div.kinoSlikaInfoHolder div.clanakUkratkoSlikaWrapperFotke
+{	margin-right:9px;	}
+
+div.kinoSlikaInfoHolder div.clanakNaslovWrapperKino
+{	padding-left:0px;	}
+
+div.kinoPrikazivanjeHolder
+{	width:181px;
+ 	background:url(../img/info_limiter.gif) top left repeat-y;
+ 	float:left;
+ 	padding-left:10px;
+ 	margin-left:-1px;
+	}
+.filmPopisKina div.leftModulesContainerLimiter
+{	margin:10px 0px;
+	}
+div.teenKolacicMudrostiTekst
+{	width:205px;
+ 	overflow:hidden;
+ 	height:45px;
+ 	font:18px Georgia;
+ 	position:absolute;
+ 	bottom:28px;
+ 	right:20px;
+	}
+div.pictureBoxWrapper a.teenKolacicMudrostiOpsirnije
+{	position:absolute;
+ 	bottom:5px;
+ 	right:5px;
+ 	color:White;
+	}
+div.autoMotoSplashbox
+{	width:630px;
+ 	height:273px;
+ 	overflow:hidden;
+ 	padding-top:20px;
+ 	z-index:10;
+ 	position:relative;
+	}
+div.autoMotoSplashbox div.vijestiContainer div.clanakLimiter
+{	width:275px;
+ 	border-top:solid 1px White;
+	}
+div.autoMotoSplashbox div.vijestiContainer a.clanakUkratkoMaliNaslov
+{	width:267px;
+ 	overflow:hidden;
+	}
+div.splashIcoHolder
+{	padding-left:24px;
+ 	width:291px;
+ 	height:100%;
+	}
+div#splashBackground1, div#splashBackground2, div#splashBackground3, div#splashBackground4, div#splashBackground5 
+{	position:absolute;
+ 	z-index:1;
+ 	width:630px;
+ 	height:293px;
+ 	overflow:hidden;
+ 	visibility:hidden;
+	}
+
+table.infoHRVremenskaBoxTableTop
+{	width:100%;
+	}
+table.infoHRVremenskaBoxTableTop tr td
+{	text-align:center;
+ 	padding:5px 0px;
+	}
+col.infoHRVremenskaBoxColTop
+{	width:73px;
+	}
+col.infoHRVremenskaBoxColLimiterTop
+{	width:1px;
+ 	background:url(../img/info_limiter.gif) right top repeat-y;
+	}
+table.infoHRVremenskaBoxTableTop tr td.minTemperature
+{	background:url(../img/prognoza/prognoza_min.gif) center center no-repeat;
+ 	padding-top:35px;
+	}
+table.infoHRVremenskaBoxTableTop tr td.maxTemperature
+{	background:url(../img/prognoza/prognoza_max.gif) center center no-repeat;
+ 	padding-top:35px;
+	}
+col.infoHRVremenskaBoxColBottom
+{	width:85px;
+	}
+col.infoHRVremenskaBoxColLimiterBottom
+{	width:10px;
+	}
+table.infoHRVremenskaBoxTableBottom
+{	width:100%;
+	}
+td.infoHRVremenskaBoxLimiterBottom
+{	background:url(../img/info_limiter.gif) center center repeat-y;
+	}
+tr.infoHRVremenskaBoxTableBottomZg td
+{	padding-bottom:10px;
+	}
+tr.infoHRVremenskaBoxTableBottomOstali td
+{	text-align:center;
+	}
+div.infoHRVremenskaBoxTableBottomMinHolder
+{	float:left;
+ 	width:30px;
+ 	height:15px;
+ 	padding-top:15px;
+ 	text-align:center;
+ 	background:url(../img/prognoza/prognoza_min.gif) left top no-repeat;
+ 	margin:12px 0px 0px 4px;
+ 	color:#2d648a;
+ 	font:11px Verdana
+	}
+div.infoHRVremenskaBoxTableBottomMaxHolder
+{	float:right;
+ 	width:30px;
+ 	height:15px;
+ 	padding-top:15px;
+ 	text-align:center;
+ 	background:url(../img/prognoza/prognoza_max.gif) right top no-repeat;
+ 	margin:12px 4px 0px 0px;
+ 	color:#2d648a;
+ 	font:11px Verdana
+	}
+div.vremenskaPrognozaInfoHRGray
+{	margin:10px 0px;
+ 	display:block;
+	}
+div.showtimeKupiButtonHolder
+{	margin:0px;
+ 	padding:0px;
+	margin-top:10px;
+ 	font-size:0px;
+ 	line-height:0px;
+ 	
+	}
+div.splashIconBackground
+{	width:28px;
+ 	height:100%;
+ 	background:url(../img/bck_transparency.gif) repeat bottom right;
+	opacity:.75;
+	filter:alpha(opacity=75);
+ 	margin:-20px 0px 0px -4px;
+ 	padding:20px 0px 0px 4px;
+	}
+img#splashScreenIcon1, img#splashScreenIcon2, img#splashScreenIcon3, img#splashScreenIcon4, img#splashScreenIcon5 
+{	position:relative;
+ 	z-index:10;
+	}
+div.maxTVcontainer
+{	height:372px;
+ 	overflow:hidden;
+ 	background:url(../img/showtime_maxtv_background.jpg) top right no-repeat;
+ 	padding:20px 0px 0px 20px;
+ 	width:285px;
+ 	margin-left:10px;
+	}
+span.maxTVSvePreporuke
+{	display:inline-block;
+ 	float:left;
+ 	margin:7px 0px 0px 5px;
+	}
+div.maxTVclanakUkratko
+{	width:285px;
+	}
+div.maxTVclanakUkratko div.clanakNaslovWrapper
+{	width:190px;
+ 	padding-left:0px;
+	}
+h1.maxTVpreporukaNAslov
+{	margin-bottom:28px;
+	}
+	
+div.temaNasloviWrapper
+{	background:#1a456a;
+	padding:0px 0px 5px 10px;
+	width:285px;
+	}
+div.temaNasloviWrapper div.subModulClanakUkratko a.clanakTekstOpsirnije, div.temaNasloviWrapper div.subModulClanakUkratko span.clanakUkratkoTekst
+{	color:White;
+	}
+div.temaNasloviWrapper div.subModulClanakUkratko
+{	width:275px;
+	}
+div.carousellImageHolder
+{	width:610px;
+ 	height:293px;
+ 	position:relative; 
+ 	font:0px;
+ 	line-height:0px;
+ 	padding:0px;
+ 	overflow:hidden;
+	}
+div.carousellTextWraper
+{	width:610px;
+ 	position:absolute;
+ 	bottom:0;
+ 	left:0;
+ 	_margin-bottom:-1px;
+	}
+div.carousellTextHolder
+{	padding:10px 10px;
+ 	width:590px;
+	background:url(../img/bck_transparency.gif) repeat bottom right;
+	opacity:.70;
+	filter:alpha(opacity=70);
+	color:White;
+	}
+div.carousellTextHolder span, div.carousellTextHolder a, div.carousellTextHolder div
+{	color:White;
+	}
+div.carousellImagePreload
+{	position:absolute;
+ 	width:610px;
+ 	height:293px;
+ 	visibility:hidden;
+	}
+div.eCardWrapper
+{	width:610px;
+ 	text-align:center;
+	}
+span.eCardHolder
+{	display:inline-block;
+	}
+/* Div sa zaobljenim kutevima!*/
+		tr.noUnderline td ul li  a
+		{text-decoration:none; border:none;}
+		.roundDivWrap{display:block; width:500px;}
+        .roundDivUpDownBorder
+            {   display:block;
+                border-top:solid 1px #4e4d4d;
+                margin:0 3px;
+                height:0px;
+                overflow:hidden;
+                }
+        .roundDivAngleOne
+            {   display:block;
+                border-left:solid 1px #4e4d4d;
+                border-right:solid 1px #4e4d4d;
+                margin:0 2px;
+                height:1px;
+                background-color:#efefef;
+                overflow:hidden;
+                }
+        .roundDivAngleTwo
+            {   display:block;
+                border-left:solid 1px #4e4d4d;
+                border-right:solid 1px #4e4d4d;
+                margin:0 1px;
+                height:1px;
+                background-color:#efefef;
+                overflow:hidden;
+                }
+        .roundDivContent
+            {   padding:2px 5px 2px 5px;
+                border-left:solid 1px #4e4d4d;
+                border-right:solid 1px #4e4d4d;
+                background-color:#efefef;
+                }
+		/* Kraj Div-a sa zaobljenim kutevima!*/
+
+span.pijavljenIme
+{	color:#990000;
+	}	
+span.prognozaGrad, span.prognozaDonjaTemp, span.prognozaGornjaTemp, span.prognozaTempLimiter
+{	font:bold 10px Verdana;
+	line-height:14px;
+	}
+span.prognozaDonjaTemp
+{	color:#03659d;
+	}
+span.prognozaGornjaTemp
+{	color:#9e0309;
+	}
+span.modulNaslov, h1.modulNaslov
+{	font:bold 18px Georgia;
+	display:inline-block;
+	margin-bottom:5px;
+	
+	}
+span.modulNaslov, h1.modulNaslov
+{	*display:inline;}
+span.clanakUkratkoTekst
+{	color:#333333;
+	display:inline-block;
+	padding-bottom:2px;
+	line-height:14px;
+	}
+span.sviClanciLink a
+{	color:#2d648a;
+ 	font-size:10px;
+ 	display:inline-block;
+ 	margin-bottom:5px;
+	}
+span.fotkeNaslov, h1.fotkeNaslov
+{	display:block;
+	margin:0px 0px 10px 19px;
+	}	
+span.HRInfoTipDogadaja
+{	color:White;
+	background-color:#9e0309;
+	height:13px;
+	padding:0px 3px;
+	text-transform:uppercase;
+	margin-right:5px;
+	}
+span.fotoPricaWrapper
+{	display:inline-block;
+	margin:10px;
+	}
+span.kalendarDanTekst
+{	font:8px Georgia;
+	line-height:6px;
+	text-transform:uppercase;
+	padding:0px;
+	}
+span.kalendarDatumTekst
+{	font:24px Georgia;
+	line-height:24px;
+	margin-top:-3px;
+	}
+
+
+ul.topDestinacijeList
+{	list-style:none none;
+	}
+ul.topDestinacijeList li
+{	margin:0px;
+ 	height:14px;
+ 	display:block;
+ 	border-bottom:solid 1px White;
+ 	font:11px Verdana;
+ 	color:White;
+ 	line-height:13px;
+ 	padding:3px 0px;
+	}
+ul.topDestinacijeList li div
+{	height:1px;
+ 	line-height:0px;
+ 	font-size:0px;
+ 	background:white;
+	}
+a.Georgia30Naslov, span.Georgia30Naslov
+{	font:30px Georgia;
+	line-height:34px;
+	display:inline-block;
+	padding-top:2px;
+		}
+a.Georgia24Naslov, span.Georgia30Naslov
+{	font:24px Georgia;
+	line-height:28px;
+	display:inline-block;
+	padding-top:2px;
+		}
+	
+a.clanakUkratkoPodNaslov, .clanakUkratkoPodNaslov
+{	font:11px Verdana;
+	line-height:13px;
+	padding-bottom:3px;
+	display:inline-block;
+	text-transform:uppercase;
+	}
+.clanakUkratkoNaslov,a.clanakUkratkoNaslov
+{	font:18px Georgia;
+	line-height:22px;
+	}  
+
+div.clanakUkratkoNaslov
+{	margin-bottom:10px;
+	}
+a.linkImageWrap
+{	font-size:0px;
+	line-height:0px;
+	display:inline-block;
+	position:relative;
+	overflow:hidden;
+	}
+a.bigBlogButton
+{	font:bold 10px Verdana;
+	color:#2d648a;
+	display:inline-block;
+	height:21px;
+	padding:7px 8px 0px 8px;
+	}
+a.Button
+{	font:10px Verdana;
+	color:#2d648a;
+	display:inline-block;
+	height:18px;
+	padding-top:2px;
+	}
+	
+a.clanakUkratkoMaliNaslov, a.clanakUkratkoMaliNaslovKraci
+{	line-height:14px;
+	font:11px Verdana;
+	display:block;
+	float:left;
+	max-width:285px;
+	}		
+a.clanakUkratkoMaliNaslovKraci
+{	width:277px;
+	}
+a.hrInfoMaliNaslov
+{	color:#2d648a;
+	line-height:14px;
+	font:11px Verdana;
+	}
+a.hrInfoEventTypeTitle
+{	font:11px Verdana;
+	text-transform:uppercase;
+	margin:0px 5px 0px 0px;
+	padding:1px 3px;
+	color:White;
+	background:#9E0309;
+	float:left;
+}
+
+a.prognozaOpsirnije
+{	font-weight:bold;
+	text-decoration:underline;
+	}
+a.traziButton
+{	display:block;
+	width:76px;
+	height:33px;
+	}
+a.temaGumb
+{	height:18px;
+	width:23px;
+	display:block;
+	float:left;
+	position:relative;
+	margin-bottom:-1px;
+	font:bold 10px Verdana;
+	text-align:center;
+	padding-top:6px;
+	color:White;
+	background:url(../img/tema_link.gif) no-repeat top left;
+	}
+a.carouselGumb
+{	height:18px;
+	width:23px;
+	display:block;
+	float:left;
+	position:relative;
+	font:bold 10px Verdana;
+	z-index:100;
+	text-align:center;
+	padding-top:5px;
+	color:#066572;
+	background:url(../img/carousel_link.gif) no-repeat top left;
+	}
+
+a.clanakTekstOpsirnije
+{	color:#03659d;
+	line-height:16px;
+	font:10px Verdana;
+	}
+a.curaDeckoDanaOpsirnije
+{	text-decoration:underline;
+	color:White;
+	line-height:16px;
+	}
+a.temaSlidePosition
+{	display:inline-block;
+	width:8px;
+	height:10px;
+	margin:0px 3px 4px 0px;
+	}
+a.clanakFullPrethodna, a.clanakFullSljedeca
+{	display:block;
+	}
+a.clanakFullPrethodna
+{	float:left;
+	}
+a.clanakFullSljedeca
+{	float:right;
+	}
+a.clanakFullPrethodna img
+{	vertical-align:middle;
+	margin-right:5px;
+	}
+a.clanakFullSljedeca img
+{	vertical-align:middle;
+	margin-left:5px;
+	}
+a#temaSlidePosition1, a#igriceSlidePosition1, a#videoSlidePosition1, a#wallSlidePosition1, a#kategorijaSlidePosition1
+{	background:url(../img/slide_numbers.gif) no-repeat 0px 0px;
+	}
+a#temaSlidePosition2, a#igriceSlidePosition2, a#videoSlidePosition2, a#wallSlidePosition2, a#kategorijaSlidePosition2
+{	background:url(../img/slide_numbers.gif) no-repeat -36px 0px;
+	}
+a#temaSlidePosition3, a#igriceSlidePosition3, a#videoSlidePosition3, a#wallSlidePosition3, a#kategorijaSlidePosition3
+{	background:url(../img/slide_numbers.gif) no-repeat -45px 0px;
+	}
+a.kategorijeSlideButtonLeft
+{	margin:116px 23px 0px 0px;
+	float:left;
+	display:inline-block;
+	}
+a.kategorijeSlideButtonRight
+{	margin:116px 0px 0px 23px;
+	float:right;
+	display:inline-block;
+	}
+/*
+a.tickerLink
+{	
+	height:15px;
+	line-height:15px;
+	float:left;
+	padding-top:2px;
+	}
+*/
+a.fotoPricaLink
+{	margin:10px;
+	}
+a.slikeDanaLeft, a.slikeDanaRight
+{	display:block;
+ 	width:30px;
+ 	height:88px;
+ 	float:left;
+ 	background:url(../img/slide_left_big.gif) left center no-repeat;
+	}
+a.slikeDanaRight
+{	background:url(../img/slide_right_big.gif) right center no-repeat;
+	}
+a.slikaDanaOcjenaImgLeft, a.slikaDanaOcjenaImgRight
+{	display:inline-block;
+ 	width:10px;
+ 	height:19px;
+ 	line-height:1px;
+ 	font-size:1px;
+ 	margin:0px;
+ 	padding:0px;
+ 	background:url(../img/slika_dana_ocjena_neaktivna_left.gif) right center no-repeat;
+	}
+a.slikaDanaOcjenaImgRight
+{	background:url(../img/slika_dana_ocjena_neaktivna_right.gif) left center no-repeat;
+	}
+
+a.slikaDanaOcjenaImgTrenutnaLeft
+{	background:url(../img/slika_dana_ocjena_trenutna_left.gif) right center no-repeat;
+	}
+a.slikaDanaOcjenaImgTrenutnaRight
+{	background:url(../img/slika_dana_ocjena_trenutna_right.gif) left center no-repeat;
+	}
+.colorBlue
+{	color:#2d648a;
+	}
+.colorRed
+{	color:#540000;
+	}
+.colorStarRed
+{	color:#ff2700;
+	}
+.colorWhite, a.colorWhite, span.colorWhite
+{	color:White;
+	}
+.colorGrey
+{	color:#666666;
+	}
+.colorDarkGrey
+{	color:#333333;
+	}
+.colorLightGrey
+{	color:#cccccc;
+	}
+.colorGreen
+{	color:#31610d;
+	}
+.indexRed
+{	color:#9e0309;
+	}
+.indexGreen
+{	color:#31610c;
+	}
+.Verdana11
+{	font:11px Verdana;
+	}
+.BoldVerdana11
+{	font:bold 11px Verdana;
+	}
+.Verdana10
+{	font:10px Verdana;
+	}
+.BoldVerdana10
+{	font:bold 10px Verdana;
+	}
+.boldGeorgia50
+{	font:bold 50px Georgia;
+	}
+.lineHeight18
+{	line-height:18px;
+	}
+.Georgia18
+{	font:18px Georgia;
+	}
+.Georgia24
+{	font:24px Georgia;
+	}
+.underlineLink
+{	text-decoration:underline;
+	}
+.floatLeft, div.floatLeft
+{	float:left;
+	}
+.floatRight
+{	float:right;
+	}
+.borderNone, table tr.borderNone td
+{	border:none 0px;
+	}
+
+input.LoginInput
+{	width:100px;
+	border:solid 1px #dddddd;
+	margin-bottom:10px;
+	}
+input.traziInput
+{	border:0px;
+	width:229px;
+	margin-top:3px;
+	background-color:Transparent;
+	}
+.HRinfoGradSelect
+{	background:transparent url(../img/select_background.gif) no-repeat top left;
+	width:229px;
+	height:19px;
+	font:11px Verdana;
+	border-top:solid 1px #808080;
+	border-left:solid 1px #808080;
+	border-bottom:solid 1px #d4d0c8;
+	border-right:solid 1px #d4d0c8;
+	line-height:1px;
+	padding-top:1px;
+	display:inline-block;
+	margin-bottom:10px;
+	}
+.HRinfoGradSelect option
+{	background:white;
+	}
+	
+.tipDogadajaImg
+{	margin:0px 5px -2px 0px;
+	
+	}
+
+img.listImage
+{	float:left;
+	margin:3px 5px 0px 0px;
+	width:3px;
+	}
+img.fotoVideoBottom
+{	position:absolute;
+	left:0px;
+	bottom:0px;
+	_bottom:-1px;
+	}
+
+img.fotoVideoTop
+{	position:absolute;
+	top:0px;
+	left:0px;
+	}
+img.fotoVideoCarousell
+{	position:absolute;
+ 	z-index:100;
+	bottom:0;
+	}
+img.fotoVideoMiddle
+{	padding-left:5px;
+	position:relative;
+	margin-bottom:-2px;
+	margin-top:2px;
+	}
+/*
+img.typeWritter
+{	margin:3px 5px 0px 0px;
+	float:left;
+	}
+*/
+
+ul.siteMapLevelOne, ul.siteMapLevelTwo, ul.siteMapLevelOne li, ul.siteMapLevelTwo li,ul.siteMapBoldList, ul.siteMapBoldList li
+{	margin:0px;
+	padding:0px;
+	}
+ul.siteMapLevelOne li
+{	list-style-type:none;
+	margin:5px 0px;
+	}
+ul.siteMapLevelOne a
+{	color:#333333;
+	}
+ul.siteMapLevelTwo li
+{	list-style-image:url(../img/list_image.gif);
+	margin:5px 0px 5px 27px;
+	}
+ul.siteMapLevelTwo a
+{	color:#03659d;
+	}
+ul.siteMapBoldList li
+{	list-style-image:url(../img/list_image_bold.gif);
+	
+	color:#333333;
+	margin:5px 0px 5px 27px;
+	}
+ul.siteMapBoldList a
+{	font:bold 11px Verdana;
+	color:#2d648a;
+	}
+.eCardSlanjeTekst
+{	width:290px;
+	height:57px;
+	border:solid 1px gray;
+	margin-top:10px;
+	}
+.eCardSlanjeTekst
+{	height:168px;
+ 	*height:172px;
+	}
+.eCardSlanjeInput
+{	width:290px;
+	height:16px;
+	border:solid 1px gray;
+	margin:10px 0px 22px 0px;
+	}
+.eCardSlanjeInput
+{	margin-bottom:7px;
+	}
+table tr td.alignRight, .alignRight
+{	text-align:right;
+	}
+table tr td.alignLeft , .alignLeft 
+{	text-align:left;
+	}
+table tr td.alignCenter, .alignCenter 
+{	text-align:center;
+	}
+table tr td.vAlignTop
+{	vertical-align:top;
+	}
+table tr td.vAlignBottom
+{	vertical-align:bottom;
+	}
+table tr td.vAlignMiddle
+{	vertical-align:middle;
+	}
+.marginBottom20
+{	margin-bottom:20px;
+	}
+.marginTop20, div.marginTop20
+{	margin-top:10px;
+ 	display:block;
+	}
+.maginLeft20
+{	margin-left:20px;
+	}
+.paddingTop20
+{	padding-top:20px;
+	}
+.paddingRight10
+{	padding-right:10px;
+	}
+.paddingLeft10
+{	padding-left:10px;
+	}
+.paddingBottom10
+{	padding-bottom:10px;
+	}
+.paddingBottom5
+{	padding-bottom:5px;
+	}
+.marginRight10
+{	margin-right:10px;
+	}
+.noMargin
+{	margin-bottom:0px;
+	}
+	
+/*ASP Calndera classes*/
+.aspCalendarOtherMonth
+{	background:url(../img/kalendar_background.gif) -76px top no-repeat;
+	}
+.aspCalendarOtherMonth a
+{	font:24px Georgia;
+ 	line-height:24px;
+	}
+.aspCalendarCurrentMonth
+{	background: white url(../img/kalendar_background.gif) no-repeat -38px top;
+	}
+.aspCalendarCurrentMonth a
+{	font:24px Georgia;
+ 	line-height:24px;
+	}
+
+.aspCalendarSelectedDay
+{	background: transparent url(../img/kalendar_background.gif) no-repeat left top;
+	}
+.aspCalendarSelectedDay a
+{	font:24px Georgia;
+	line-height:24px;
+	
+	}
+.aspCalendarTitle
+{	font:24px Georgia;
+ 	margin-bottom:10px;
+ 	border-bottom:solid 4px #cccccc;
+	}
+.aspCalendarDayName
+{	position:relative;
+ 	font:8px Georgia;
+ 	line-height:6px;
+ 	text-transform:uppercase;
+ 	padding:0px;
+ 	margin-top:-8px;
+ 	text-align:left;
+ 	padding-left:3px;
+	}
+.aspCalendarNext
+{	width:17px;
+ 	height:17px;
+ 	display:inline-block;
+ 	background:url(../img/slide_right.gif) top left no-repeat;
+	}
+.aspCalendarPrev
+{	width:17px;
+ 	height:17px;
+ 	display:inline-block;
+ 	background:url(../img/slide_left.gif) top left no-repeat;
+	}
+.aspCalendar
+{	margin-top:-15px;
+ 	margin-left:-5px;
+	}
+	
+/*Hrvatska sedam dana - smjer vjetra background klase*/
+table tr td.H7DSmjerVjetraE
+{	background:url(../img/Prognoza/smjer_vjetra_big_E.gif) center 10px no-repeat;
+ 	padding-top:30px;
+	}
+table tr td.H7DSmjerVjetraN
+{	background:url(../img/Prognoza/smjer_vjetra_big_N.gif) center 10px no-repeat;
+ 	padding-top:30px;
+	}
+table tr td.H7DSmjerVjetraNE
+{	background:url(../img/Prognoza/smjer_vjetra_big_NE.gif) center 10px no-repeat;
+ 	padding-top:30px;
+	}
+table tr td.H7DSmjerVjetraNW
+{	background:url(../img/Prognoza/smjer_vjetra_big_NW.gif) center 10px no-repeat;
+ 	padding-top:30px;
+	}
+table tr td.H7DSmjerVjetraS
+{	background:url(../img/Prognoza/smjer_vjetra_big_S.gif)  center 10px no-repeat;
+ 	padding-top:30px;
+	}
+table tr td.H7DSmjerVjetraSE
+{	background:url(../img/Prognoza/smjer_vjetra_big_SE.gif) center 10px no-repeat;
+ 	padding-top:30px;
+	}
+table tr td.H7DSmjerVjetraSW
+{	background:url(../img/Prognoza/smjer_vjetra_big_SW.gif) center 10px no-repeat;
+ 	padding-top:30px;
+	}
+table tr td.H7DSmjerVjetraW
+{	background:url(../img/Prognoza/smjer_vjetra_big_W.gif) center 10px no-repeat;
+ 	padding-top:30px;
+	}
+table tr td.H7DSmjerVjetraNone
+{	padding-top:30px;
+	}
+table tr td.H7DTlak
+{	background:url(../img/prognoza/tlak_bck.gif) center 10px no-repeat;
+ 	padding-top:30px;
+	}
+
+
+/* Separator used in comments */
+div.infoLimiter
+{
+	border-top:solid 1px #cccccc;
+	margin: 3px 0px;
+	line-height:0px;
+	font-size:0px;
+	height:1px;
+}
+
+/* Article details commnads */
+
+
+
+
+
+div.hotTopics
+{
+	float: left;
+	height: 19px;
+	overflow: hidden;
+	width: 632px;
+	margin: 8px 0px 0px 8px;
+}	
+
+div.hotTopics,
+div.hotTopics a
+{
+	color: #2D648A;
+	line-height:13px;
+}
+	
+div.hotTopics span
+{
+	color: #9E0309;
+	font-weight: bold;
+	line-height:13px;
+}
+
+
+	
+/* Hot topics, service links */	
+div.hotTopics
+{
+	float: left;
+	height: 19px;
+	overflow: hidden;
+	width: 632px;
+	margin: 8px 0px 0px 9px;
+}	
+
+div.hotTopics,
+div.hotTopics a
+{
+	color: #2D648A;
+	line-height:13px;
+	font-size: 10px;
+}
+	
+div.hotTopics span
+{
+	color: #9E0309;
+	font-weight: bold;
+	line-height:13px;
+	font-size: 10px;
+}
+
+	
+div.portalServices
+{	
+	background:transparent url(http://www.tportal.hr/WebResources/img/info_limiter.gif) repeat-y scroll left -6px;
+	float: right;
+	width: 310px;
+	margin-right: 18px;
+}
+
+div.portalServices div.pServices
+{
+	float: left;
+	margin: 6px 10px 0px 10px;
+	line-height:16px;
+	font-size: 10px;
+	color: #666666;
+}
+
+div.portalServices div.pServices a
+{
+	padding:3px 0px 3px 16px;
+	text-decoration: none;
+	font: normal 10px/16px Verdana;
+}
+
+div.portalServices div.pArchive
+{
+	float: right;
+	margin: 8px 10px 0px 20px;
+	text-decoration: underline;
+	line-height:16px;
+}
+
+div.portalServices div.pArchive a
+{
+	color: #2D648A;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+
+a.facebook
+{ background:transparent url('http://www.tportal.hr/WebResources/tportal/Img/socialIcons/facebook16x16.gif') no-repeat left top; }
+a.twitter
+{ background:transparent url('http://www.tportal.hr/WebResources/tportal/Img/socialIcons/twitter16x16.gif') no-repeat left top; }
+a.rss
+{ background:transparent url('http://www.tportal.hr/WebResources/tportal/Img/socialIcons/rss16x16.gif') no-repeat left top; }
+a.bookmark
+{ background:transparent url('http://www.tportal.hr/WebResources/tportal/Img/socialIcons/home16x16.gif') no-repeat left top; }

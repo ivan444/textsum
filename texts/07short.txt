@@ -1,0 +1,1 @@
+Gmail Meter je novi Googleov alat koji otkriva kako i koliko koristite svoj e-mail inbox. Radi se o tzv. Apps skripti koja početkom svakog mjeseca šalje izvještaj o navikama korisnika, prometu, duljini mailova i koliko brzo na njih odgovara

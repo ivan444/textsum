@@ -1,0 +1,10 @@
+Britanski su znanstvenici danas objavili da su u laboratoriju po prvi put u povijesti uspjeli stvoriti umjetne verzije molekule DNA i RNA koje su se potom kopirale i nastavile proces evolucije
+Prema izvješću predstavljenom u novom broju časopisa Science, studija je pokazala da sposobnost DNA i RNA da prenose nasljedne informacije nije jedinstvena. Otkriće bi moglo imati revolucionarno značenje za budući razvoj sintetičke biologije i biotehnologije. Ono također pokazuje da bi život, ako postoji negdje drugdje u svemiru, mogao biti određen evolucijom, ali ne nužno i sličnom kemijom.
+
+Znanstvenici već godinama pokušavaju oponašati funkcije DNA i RNA da bi, među ostalim, otkrili kako su one nastale u ranom razdoblju razvoja života na Zemlji. Naime, mnogi stručnjaci vjeruju da je RNA nastala prva, ali i da je toj kemikaliji prethodila neka jednostavnija koja je obavljala iste funkcije. No do sada nije bilo jasno može li neka druga molekula sudjelovati u istim procesima koji DNA i RNA omogućuju prenošenje informacija sadržanih u njihovim bazama nukleotida (popularnih pet slova kojima je ispisan genetski kod).
+
+DNA i RNA imaju oblik dvostruke zavojnice nalik na spiralne ljestve u kojima su prečke izgrađene od parova nukleobaza. Njihov kemijski lanac sastoji se od niza nukleotida, a svaki se nukleotid sastoji od šećera, fosfata i nukleobaza.
+
+Voditelj novog istraživanja, Philipp Holliger iz Laboratorija za molekularnu biologiju Medical Research Councila u Velikoj Britaniji i njegovi suradnici kreirali su šest različitih molekula sličnih DNA i RNA, tzv. ksenonukleinskih kiselina (XNA) tako što su zamijenili skupine šećera od kojih su izgrađene njihove stranice ljestava.
+
+'Mnogi kemičari pokušavaju izgraditi alternativne nukleinske kiseline i uspjeli su modificirati njihove baze, šećere i okosnicu, međutim mi smo se usredotočili na onu vrstu nukleinske kiseline koja bi zadržala sposobnost komunikacije s prirodnom DNA', rekao je dr. Holliger za Science.

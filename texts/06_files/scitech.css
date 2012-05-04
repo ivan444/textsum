@@ -1,0 +1,63 @@
+﻿body, form
+{
+	background:#195053 url(../img/scitechBG.jpg) center top no-repeat;
+}
+div.uvijetiKoristenjaLinkovi, div.uvijetiKoristenjaLinkovi a, div.uvijetiKoristenjaLinkovi span
+{	color:White;
+	}
+div.uvijetiKoristenjaLogo1
+{	background:url(../img/logo-tportal.png) no-repeat left 5px;
+	}
+div.uvijetiKoristenjaLogo2
+{	background:url(../img/logo-tht.png) no-repeat center left;
+	}
+div.mainBannerwrapper
+{	background:url('../img/shadow_left-right_lifestyle.png') repeat-y left top;
+}
+div.TopMenuMainwrapper
+{	background:url('../img/shadow_left-right_lifestyle.png') repeat-y left top;
+}
+div.mainMenuwrapper
+{	background:url('../img/shadow_left-right_lifestyle.png') repeat-y left top;
+}
+div.contentwrapper
+{	background:url('../img/shadow_left-right_lifestyle.png') repeat-y left top;
+}
+div.boxTopShadow
+{	background:url('../img/shadow_top_lifestyle.png') no-repeat left top;
+}
+div.boxDownShadow
+{	background:url('../img/shadow_down_lifestyle.png') no-repeat left top;
+}
+div.videoMainWrapper
+{	background-color:#185c69;
+	}
+div.videoSlikaWrapper
+{	background-color:#195053;
+	border:solid 1px #1a5c68;
+	}
+div.vruceVijestiwrapper
+{	height:12px;
+	margin-top:-16px;
+	line-height:12px;
+	padding-top:0px;
+	position:relative;
+	z-index:10;
+	}
+div.naslovTemaContainer
+{	background-color:#195053;
+	padding:8px 0px 10px 9px;
+	height:62px;
+	}
+div.temaNasloviWrapper
+{	background-color:#185c69;
+	}
+div.temaNasloviWrapper div.subModulClanakUkratko, div.temaNasloviWrapper div.clanakLimiter
+{	width:275px;
+	}
+div.temaNasloviWrapper div.clanakLimiter
+{	border-top:solid 1px #195053;
+	}
+div.temaNasloviWrapper a.clanakUkratkoMaliNaslov
+{	width:265px;
+	}

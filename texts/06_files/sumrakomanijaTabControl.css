@@ -1,0 +1,78 @@
+﻿/* Tab Control Gneric Css */
+div.sumTabControl
+{
+	width:300px;
+	margin:0px 0px 10px 0px;
+}
+
+div.sumTabControl div.tabs
+{
+	color:#f3f3f3;
+	font:normal normal bold 11px/24px Verdana;
+	margin:0px 0px -1px 0px;
+}
+
+div.sumTabControl div.tabs a
+{
+	font-family:Verdana;
+	font-size:11px;
+	line-height:23px;
+	font-weight:bold;
+	position:relative;
+	cursor:pointer;
+	float:left;
+	display:block;
+	margin:0px;
+   	padding:0px 6px 0px 0px;
+   	background:url(sumrakomanijaTabRight.png) no-repeat right top;
+   	text-decoration:none;
+}
+
+div.sumTabControl div.tabs a span
+{
+	font-family:Verdana;
+	font-size:11px;
+	line-height:23px;
+	font-weight:bold;
+	display:block;
+	width:88px;
+	color:#000000;
+	display:block;
+	text-align:center;
+	text-decoration:none;
+   	background:url(sumrakomanijaTabLeft.png) no-repeat left top;
+   	padding:0px 0px 0px 6px;
+}
+
+div.sumTabControl div.tabs a:hover
+{    
+	text-decoration:none;
+	background-position:right -23px;
+}
+
+div.sumTabControl div.tabs a:hover span
+{
+	background-position:left -23px;
+}
+
+div.sumTabControl div.tabs a.sel,
+div.sumTabControl div.tabs a.sel:hover
+{
+	color:#e1e1e1;
+	background-position:right -46px;
+}
+
+div.sumTabControl div.tabs a.sel span,
+div.sumTabControl div.tabs a.sel:hover span
+{
+	color:#e1e1e1;
+	background-position:left -46px;
+}
+
+
+div.sumTabControl div.ag
+{
+	width:286px;
+	padding:10px 7px;
+	background:transparent url(tabBGVijesti.png) repeat-x left top;
+}

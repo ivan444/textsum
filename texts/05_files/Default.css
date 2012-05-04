@@ -1,0 +1,76 @@
+#CSSTabContainer{
+
+}
+
+.CSSTabDiv {
+	position: relative;
+}
+
+.shadetabs {
+	background: url(images/titleBgRepeat.jpg) repeat-x top left;
+	padding: 6px;
+	padding-bottom: 10px;
+	position: relative;
+	margin-bottom: 5px;
+	margin-top: -2px
+}
+
+.shadetabs li{
+	display: inline;
+	margin: 0;
+	background: url(images/slashBold.png) no-repeat right;
+	padding-right: 5px;
+}
+
+
+.shadetabs li.last {
+	background: none;
+}
+
+.shadetabs li a{
+	text-decoration: none;
+	padding: 3px 3px 3px 0;
+	margin-right: 3px;
+}
+
+.shadetabs li a,
+.shadetabs li a:link,
+.shadetabs li a:visited{
+color: #B1B3B4;
+font-weight: bold;
+}
+
+.shadetabs li a:hover{
+color: #2d2b02b;
+}
+
+.shadetabs li.selected{
+position: relative;
+}
+
+.shadetabs li.selected a,
+.shadetabs li.selected a:link,
+.shadetabs li.selected a:visited,
+.shadetabs li.selected a:active{
+	color: #000;
+}
+
+.shadetabs li.selected a:hover{ /*selected main tab style */
+text-decoration: none;
+}
+
+.tabcontentstyle{ /*style of tab content oontainer*/
+float:left;
+margin-bottom: 1em;
+padding: 0 0 10px;
+}
+
+.tabcontent{
+display:none;
+}
+
+@media print {
+.tabcontent {
+display:block!important;
+}
+}

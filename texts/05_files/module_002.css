@@ -1,0 +1,32 @@
+.ArticleWrapper {width:100%;}
+.nowrap {white-space: nowrap;}
+.STFButton {cursor: pointer;cursor: hand;}
+.CategoryList {color: maroon;font-weight: bold;}
+.Author {font-size: 11px;font-weight: bold;color: #000099;}
+.PublishDate {font-size: 11px;font-weight: bold;color: #440088;}
+.SearchPanel{text-align:center;}
+.SearchResultsPanel{font-weight:bold;color: #933;font-size: 14px;background: #F1F5FF;
+border: 1px solid #CCC6FF;padding:10px;}
+#panelAddComment{text-align:left;padding: 5px; width: 90%;}
+.MoreArticlesLink {text-align:right;font-weight:bold;}
+.CommentsLink{line-height: 30px;font-size: 1.15em;}
+.CommentsContainer {border: 1px solid #CCC; background-color: #FFF;padding: 1px;}
+.CommentItemStyle {background-color: #F8F8F8; border: 1px solid #CCC;padding: 5px;}
+.CommentAlternatingItemStyle {border: 1px solid #CCC;padding: 5px;}
+.CommentAuthor {font-size: 1.25em; font-weight: bold;}
+.CommentDate {font-size: .8em; color: #5F68AD;margin-bottom:10px;}
+.Reply {font-style:italic;background-color:#DDE8EA;border:1px dashed #ADB8BA;padding: 3px;}
+.thumbnail {margin: 5px;margin-top: 0px;}
+.instruction {font-style:italic;}
+.threeColumn {vertical-align:top;width: 30%;}
+.twoColumn{vertical-align:top;width: 45%;}
+.ArticleSettings {width:650px;}
+.ArticleSettings {text-align:left;}
+.ArticleSettings td.SubHead{text-align:right;width: 225px;}
+.ArticleEditPage {text-align:left;}
+.ArticleEditPage .SubHead {text-align:right;}
+.detailButtonRow { padding-top:15px;}
+/* This is required because if the details are rendered on a new page,
+the module is wrapped with a div with a class of DNNAligncenter*/
+.Article {text-align:left;}
+.BlueAlert{color:Blue;}
