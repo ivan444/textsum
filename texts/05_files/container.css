@@ -1,0 +1,169 @@
+.Actions {
+	position: relative;
+	float: left;
+	z-index: 900;
+}
+.Actions td {
+	vertical-align: middle;
+	padding: 2px;
+}
+
+.ModuleWrapper {
+	border-bottom: 2px groove #ccc;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	clear: both;
+}
+
+.ModuleWrapper.DvijeCrte {
+	border-top: 2px groove #ccc;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.BezOkvira.ModuleWrapper,
+.Newsletter.ModuleWrapper {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+.BezOkvira.ModuleWrapper {
+	*padding-bottom: 5px;
+}
+
+.ModuleTitle {
+	background: url(images/titleBgRepeat.jpg) repeat-x top left;
+	padding: 6px;
+	padding-bottom: 10px;
+	position: relative;
+	margin-bottom: 5px;
+	margin-top: -2px
+}	
+
+
+.SiviNaslov .ModuleTitle {
+	background: none;
+	color: #666;
+	font-weight: bold;
+	padding-left: 0px;
+	padding-bottom: 6px;
+	/*display: block;*/
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+.Newsletter .ModuleTitle {
+	background: #f0f0f0;
+	margin: 0 0 5px 0;
+	padding: 5px;
+}
+
+.ModuleFooter {
+	text-align: right;
+}
+
+.TitleLeft {
+	position: absolute;
+	background: url(images/titleBgLeft.jpg) no-repeat top left;
+	width: 10px;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	margin-left:-3px;
+}
+
+.TitleRight {
+	position: absolute;
+	background: url(images/titleBgRight.jpg) no-repeat top right;
+	width: 10px;
+	height: 100%;
+	top: 0px;
+	right: 0px;
+	margin-right:-4px;
+}
+
+/* Siva pozadina */
+.SivaPozadina .ModuleTitle {
+	margin-bottom: 0;
+	margin-top: -3px;
+	padding-bottom: 7px;
+	background: url(images/titleBgRepeat2.jpg) repeat-x top left;
+}
+.SivaPozadina .TitleLeft {
+	background: url(images/titleBgLeft2.jpg) no-repeat bottom left;
+}
+.SivaPozadina .TitleRight {
+	background: url(images/titleBgRight2.jpg) no-repeat bottom right;
+}
+.SivaPozadina .ModuleContentWrapper {
+	background: #e1e1e1;
+	padding: 5px 8px;
+	position: relative;
+}
+
+.Newsletter .ModuleContent {
+	padding: 5px;
+}
+
+.BorderLeft {
+	position: absolute;
+	height: 100%;
+	width: 6px;
+	left: 0;
+	top: 0;
+	margin-left: -4px;
+	background: url(images/fadeBorderLeft.jpg) repeat-y top left;
+}
+.BorderRight {
+	position: absolute;
+	height: 100%;
+	width: 8px;
+	right: 0;
+	top: 0;
+	margin-right: -7px;
+	background: url(images/fadeBorderRight.jpg) repeat-y top left;
+}
+.BorderBottom {
+	position: absolute;
+	height: 8px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	margin-bottom: -8px;
+	background: url(images/fadeBorderBottom.jpg) repeat-x top left;
+}
+
+
+.ModuleTitle_MenuBreak td {
+	font-size: 1px;
+	line-height: 1px;
+	height: 5px;
+}
+
+/* Plava pozadina */ 
+.PlavaPozadina {
+	background-color: #239CD3;
+	border: 0 none;
+	padding: 5px;
+	-webkit-box-shadow: 3px 3px 10px rgba(100, 100, 100, 0.4);
+	-moz-box-shadow: 3px 3px 10px rgba(100, 100, 100, 0.4);
+	box-shadow: 3px 3px 10px rgba(100, 100, 100, 0.4);
+}
+
+.PlavaPozadina .ModuleTitle {
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+
+.PlavaPozadina .Normal {
+	color: #fff;
+}
+
+.PlavaPozadina .TitleHead {
+	color: #fff;
+}
+
+.PlavaPozadina a.NormalBold {
+	color: #fff;
+}

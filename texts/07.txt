@@ -1,0 +1,19 @@
+Gmail Meter je novi alat za Googleovu popularnu webmail uslugu koji vam otkriva sve što si možda i niste htjeli priznati o tome kako i koliko koristite svoj inbox. Radi se o tzv. Apps skripti koja će vam nakon 10 minuta jednokratnog namještanja početkom svakog mjeseca poslati email sa svim informacijama koje ste ikada željeli znati o svojim navikama korištenja emaila. Možda čak i previše informacija :)
+
+Gmail Meter će vam pokazati neke vrlo zanimljive podatke, primjerice kada dobivate najviše email poruka te koliko ih spremate ili pak brišete. Zahvaljujući tome znati ćete kako se prilagoditi vlastitom inboxu, kako ne biste primjerice sredinom tjedna trošili previše vremena na email. Koliko ste emailova poslali, na koliko ste ih odgovorili, primili…?
+Kako piše Saurabh Gupta na Gmailovom blogu, skriptu je razvio Romain Vialard koji je već razvio niz popularnih skripti za Google Apps. Gmail Meter će vam u konačnici dati podatke i grafove koji pokazuju:
+
+    Strukturu vaših emailova: koliko ih je stiglo, koliko ste ih izbrisali itd.;
+    Dnevni promet odnosno kada dobivate najviše poruka, a kad ih najviše šaljete;
+    Tjedni promet odnosno kojim danima se najviše bavite emailom;
+    Duljinu vaših emailova odnosno koliko duge poruke pišete;
+    Koliko vam treba da reagirate odnosno odgovorite na email;
+    …
+
+Jednom mjesečno pogledat ćete podatke koje generira Gmail Meter, a koje ćete vidjeti u Googleovim vlastitim Docsima kao tablicu. Instalacija je prilično jednostavna:
+
+    Otvorite tablicu u Google Docsu;
+    Kliknite na Tools > Script Gallery te nađite “Gmail Meter” i instalirajte ga;
+    U meniju ćete sad imati opciju Gmail Meter koju kliknete i odabere Get a report nakon čega odabere vrstu izvještaja.
+
+…i sad znate nešto više o tome kako koristite Gmail, kako biste, uz malo sreće, manje vremena provodili u toj web aplikaciji. Preporučam vam da, ukoliko želite biti učinkovitiji, pročitate i Netokracijin vodič za postizanje praznog inboxa odnosno tzv. Inbox Zero.

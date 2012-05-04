@@ -1,0 +1,1 @@
+document.write('<!-- Template ID = 12283 Template Name = AdLink_HR - Image banner (No link) -->\n<img src=\"http://s0.2mdn.net/2559145/spacer-2.gif\" width=\"0\" height=\"0\" alt=\"http://ad.hr.doubleclick.net/click%3Bh%3Dv8/3c5d/3/0/%2a/u%3B236595318%3B0-0%3B0%3B57066300%3B4307-300/250%3B40761064/40778851/1%3B%3B%7Eaopt%3D2/1/ac/2%3B%7Esscs%3D%3fhttp://www\" border=\"0\" />');

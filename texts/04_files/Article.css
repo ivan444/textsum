@@ -1,0 +1,7 @@
+@import url("detailsSep.css");		/* image,text */
+@import url("detailsSepInfo.css");	/* info box */
+@import url("detailsTextSnippets.css");	/* snippets */
+@import url("detailsSepToolbar.css");	/* image,text */
+@import url("detailsSepRelated.css");	/* related */
+@import url("detailsSepComments.css");	/* comments */
+@import url("/WebResources/Styles/tportalPrintable.css");	/* print */

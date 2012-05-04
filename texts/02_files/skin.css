@@ -1,0 +1,1424 @@
+body { font-family: Arial, Helvetica, sans-serif; background: #eee url(images/layout/body.gif) top repeat-x; }
+body.blankpage { background-image: none; background-color: #FFF; }
+* { margin: 0; padding: 0; list-style: none; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+.clr { font-size: 0; clear: both; display: block; }
+/* End hide from IE-mac */
+a { color: #ED1D26; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+@font-face {
+    font-family: 'FoundryFormSansBold';
+    src: url('font/foundfsb-webfont.eot');
+    src: url('font/foundfsb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/foundfsb-webfont.woff') format('woff'),
+         url('font/foundfsb-webfont.ttf') format('truetype'),
+         url('font/foundfsb-webfont.svg#FoundryFormSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.newsPicture, #fotoNewsGal .gallery_item a { background-position: center center!important; }
+.portalTitle { display: none; }
+
+#pageTopNav { margin: 0 auto; width: 960px; position: relative; height: 30px; }
+#pageTopNav .utilityNav li, #pageTopNav #userNav li { display: inline; }
+#pageTopNav .utilityNav li a, #pageTopNav #userNav li a { font-size: 11px; color: #fff; text-decoration: none; text-shadow: 1px 1px 1px #a3141a; height: 22px; padding-top: 7px; display: block; float: left; padding-right: 14px; margin-right: 8px; background: url(images/layout/verytop_divider.gif) right 13px no-repeat; }
+#pageTopNav .utilityNav li a:hover { text-decoration: underline; color: #ffdda6!important; }
+#pageTopNav .utilityNav li.active a { color: #ffdda6; }
+#pageTopNav .utilityNav li.last-item a,
+#pageTopNav #userNav li.btnReg a { background: none; padding-right: 0; margin-right: 0; }
+#pageTopNav .utilityNav li.active a span { display: block; height: 23px; background: url(images/layout/verytop_active.gif) bottom center no-repeat; }
+
+#pageTopNav .utilityNav li ul li.last a { border:none!important; padding:5px 0 0 0!important; }
+	
+#pageTopNav #userNav { position: absolute; top: 0; right: 0; }
+#pageTopNav #userNav li a:hover, #pageTopNav #userNav li a.active { text-decoration: underline; color: #ffdda6!important; }
+
+#wrapper { padding: 10px 10px 30px 10px; width: 1000px; background: #fff; margin: 0 auto; clear: both; }
+.blankpage #wrapper { width: 100%; }
+
+#aboveHeader { height: 100px; position: relative; margin-bottom: 10px; }
+#aboveHeader .banner { width: 728px; }
+#aboveHeader ul { position: absolute; width: 252px; top: 50px; right: 0; font-size: 11px; font-weight: bold; color: #666; }
+#aboveHeader ul li a { color: #666; text-decoration: none; display: inline-block; margin-bottom: 8px; padding: 2px 0 2px 21px; }
+#aboveHeader ul li.item-1 a { background: url(images/layout/main_sprite.png) -294px 0px no-repeat; margin-right:10px; } 
+#aboveHeader ul li.item-1 span.SkinObject { padding-left:14px; background:url(images/layout/poll_results_dot.gif) left center no-repeat; }
+#aboveHeader ul li.item-2 a { background: url(images/layout/main_sprite.png) -294px -26px no-repeat; } 
+#aboveHeader ul li a:hover { text-decoration: underline; }
+
+/* search box */
+#aboveHeader #search { width: 252px; position: absolute; top: 0; right: 0; border: none; }
+#aboveHeader #search .gsc-input-box { vertical-align: top; width: 197px; height: 38px; line-height: 38px; border: 1px solid #ccc; font-size: 13px; color: #666; display: block; padding: 0 2px 0 12px; background: url(images/layout/main_sprite.png) no-repeat 0 0; }
+#aboveHeader #search .gsc-input-box:hover { border-color: #858585; }
+#aboveHeader #search .gsc-input-box .gsib_a { padding:0; margin:0; }
+#aboveHeader #search .gsc-input-box .gsib_a + td { width:26px; }
+#aboveHeader #search .gsc-input-box .gsc-input{ font-size: 13px; }
+
+#aboveHeader #search .gsc-search-button { position: absolute; right: -10px; top: 0; width: 50px; height: 50px; border: none; cursor: pointer; background: url(images/layout/main_sprite.png) no-repeat -211px 0; margin:0; padding:0; }
+#aboveHeader #search .gsc-search-button:hover { background-position:-211px -50px; }
+#aboveHeader #search input.gsc-search-button { position: absolute; right: -10px; top: 0; width: 50px; height: 50px; border: none; cursor: pointer; margin:0; padding:0; opacity:0; filter: alpha(opacity = 0); }
+#aboveHeader #search input.gsc-search-button:hover { background-position: bottom; }
+	
+	
+#mainHeader { height: 100px; background: url(images/layout/header.gif) no-repeat; position: relative; margin-bottom: 10px; } 
+#mainHeader a.hp { width: 243px; height: 100px; display: block; text-indent: -5000px; }
+#mainHeader .headerPane { width: 750px; height: 100px; position: absolute; top: 0; right: 0; }
+	
+#mainHeader .smsCommentBox { width: 390px; height: 74px; text-shadow: 1px 1px 1px #931218; background: url(images/layout/main_sprite.png) 0px -394px no-repeat; margin-left: 60px; padding: 16px 10px 10px 60px; }
+#mainHeader .smsCommentBox h2, #mainHeader .sdVidilica  h2 { font-size: 18px; color: #ffdda6; font-family: 'FoundryFormSansBold'; font-weight:normal; }
+#mainHeader .smsCommentBox p { font-size: 11px; color: #fff; line-height: 16px; }
+#mainHeader .smsCommentBox a, #mainHeader .sdVidilica  a { font-size: 11px;  color: #ffdda6; text-decoration: none; }
+	
+#mainHeader .sdVidilica { position: absolute; height: 100px; width: 115px; top: 0; right: 35px; text-shadow: 1px 1px 1px #931218; background: url(images/icons/vidilica.png) 0 22px no-repeat; padding-left: 70px; }
+#mainHeader .sdVidilica  p { font-size: 11px; line-height: 1.5; }
+#mainHeader .sdVidilica a { color: #fff; }
+#mainHeader .sdVidilica  h2 { padding-top: 16px; }
+	
+#mainHeader .weatherBox { position: relative; width: 210px; height: 82px; text-align: right; font-size: 12px; color: #222; padding-top: 18px; font-family: 'FoundryFormSansBold'; font-weight:normal; }
+#mainHeader .weatherBox .city { width: 210px!important; background-repeat: no-repeat; background-position: 34px 5px; background-color: transparent!important; }
+#mainHeader .weatherBox h4 { text-transform: uppercase; margin-bottom: 4px; text-shadow:0px 0px 10px #bbb; }
+#mainHeader .weatherBox .town { font-size: 18px; margin-bottom: 4px; text-shadow:0px 0px 10px #bbb; }
+#mainHeader .weatherBox .temp { font-size: 24px; color: #ed1d26; text-shadow:0px 0px 10px #bbb; }
+	
+#mainHeader .headerPane .empty { float: left; height: 100px; }
+	
+.banner { padding: 1px; background: #fff; border: 4px solid #ccc; display:none;}
+.banner img,
+.banner embed { display: block; }
+	
+/* DropDown menu */
+.mainNav { height: 40px; background: url(images/layout/main_nav.gif) #888 top repeat-x; margin-bottom: 10px; z-index: 70; position: relative; }
+.mainNav li { display: inline; float: left;  position: relative; margin-right: -1px; }
+.mainNav li a { display: block; float: left; padding: 0 32px 0 30px; font-size: 20px; color: #eee; text-decoration: none; text-shadow: 2px 2px 2px #2b2b2b; background: url(images/layout/main_nav_divider.gif) top right no-repeat; height: 32px; font-family: 'FoundryFormSansBold'; font-weight:normal;  padding-top: 8px; }
+.mainNav li.active  a { color: #ffdda6; }
+.mainNav li.l1.last a { padding-right: 0;  background: none; }
+.mainNav ul { display: none; position: absolute; top: 1.0em; margin-top: 24px;  left: -19px; background: url(images/layout/dropdown.png) bottom left no-repeat; width: 200px; padding: 0 19px 19px 19px; }
+.mainNav ul li { float: none; margin: 0; margin-bottom: -1px;    }
+.mainNav ul li a { padding: 0!important; font-size: 16px!important; color: #fff!important; width: 200px!important; height: 24px!important; text-shadow: 2px 2px 2px #5e5e5e!important; background: url(images/layout/main_sprite.png) 0px -110px no-repeat!important; text-indent: 22px!important; padding-top: 6px!important; }
+.mainNav ul li a:hover { background-position: 0px -140px!important; color: #ffdda6!important; }
+.mainNav ul li.custom a { background-position: 0px -170px!important; }
+.mainNav ul li.custom a:hover { background-position: 0px -200px!important; color: #ffdda6!important; }
+.mainNav li.last-item a { border: none; }
+.mainNav li a.highlighted { color: #ffdda6!important;  }
+.mainNav ul>li:last-child { margin-bottom: 1px; /* Mozilla fix */ }
+.mainNav a .subind { display: none; }
+.mainNav ul a .subind { display: block; float: right; }
+.mainNav a { float: left; }
+.mainNav ul a { float: none; }
+.mainNav a { float: none; }
+.mainNav li.l1 ul { display: none; }
+.mainNav li.l1:hover ul { display: block; }
+/* HACKS: IE/Win: */
+*:first-child+html .mainNav ul li { float: left; width: 100%; }
+* html .mainNav ul li { float: left; height: 1%; }
+* html .mainNav ul a { height: 1%;}
+/* End Hacks */
+.utilityNav ul { display: none; position: absolute; top: 1.0em; margin-top: 10px;  left: -16px; background: #ed1d26; width: 120px; padding: 5px 15px 15px 15px; }
+.utilityNav li { float: left;  position: relative; margin-right: -1px;}
+.utilityNav ul li { float: none; margin: 0; margin-bottom: -1px;    }
+.utilityNav ul li a { height: auto!important; padding: 5px 0!important; display: block!important; width: 120px!important; border-bottom: 1px dotted #ffc4c7!important; margin: 0!important; background: none!important;  }
+.utilityNav ul li a:hover { color: #ffdda6!important; }
+.utilityNav li.last a { border: none; background-image: none!important; }
+.utilityNav li a.highlighted { color: #ffdda6!important;  }
+.utilityNav ul>li:last-child { margin-bottom: 1px; /* Mozilla fix */ }
+.utilityNav a .subind { display: none; }
+.utilityNav ul a .subind { display: block; float: right; }
+.utilityNav li.l1 ul { display: none; z-index: 10; }
+.utilityNav li.l1:hover ul { display: block; }
+/* 'Escaped Comment' hack for horizontal menubar width in IE5/Mac */
+.utilityNav a { float: left; }
+.utilityNav ul a { float: none; }
+.utilityNav a { float: none; }
+/* HACKS: IE/Win: */
+*:first-child+html .utilityNav ul li { float: left; width: 100%; }
+* html .utilityNav ul li { float: left; height: 1%; }
+* html .utilityNav ul a { height: 1%;}
+/* End Hacks */
+	
+#mainContent { width: 680px; float: left; position: relative; }
+#mainContent .banner { margin-bottom: 10px; }
+
+.ContentTPane { height: 260px; margin-bottom: 10px; }
+.topNewsHolder { width: 680px; height: 255px;  position: relative; background-position: center center; background-repeat: no-repeat; border-bottom-width: 5px; border-bottom-style: solid;  }
+.topNewsNOVOSTI { border-bottom-color: #ed1d26; }
+.topNewsDALMACIJA { border-bottom-color: #81a7c6; }
+.topNewsSCENA { border-bottom-color: #8eb636; }
+.topNewsSPORT { border-bottom-color: #f68b16; }
+.topNewsHolder .newsTitle { position: absolute; bottom: 0; left: 0; /*width: 656px; */}
+.topNewsHolder .newsTitle h2 a,
+.frontNewsBox .fnWrapper .newsTitle h3 a , #featuredNews  .topNewsHolder .newsTitle h3 a { font-size: 24px;  font-family: 'FoundryFormSansBold'; font-weight:normal; text-decoration: none; color: #fff; text-shadow: 1px 1px 1px #030304;  background: url(images/layout/transparent.png) repeat; width: 656px; padding: 10px 12px; display: block;  }
+.topNewsHolder .newsTitle h3,
+.frontNewsBox .fnWrapper .newsTitle h4, #featuredNews .topNewsHolder .newsTitle h4 { display: inline-block;  padding: 10px 12px 0 12px; background: url(images/layout/transparent.png) repeat; font-size: 12px; text-transform: uppercase; color: #ffdda6; }
+#featuredNews h4 { line-height: 16px; }
+#featuredNews h3 {text-transform: uppercase;}
+.topNewsHolder .newsTitle h3 { margin-bottom: -1px; }
+.topNewsHolder .newsTitle h2 a:hover, .newsTitle h3 a:hover { color: #ccc!important; }
+.tabSpanHolder { position: absolute; top: 0; right: 0; z-index: 60; }
+.tabSpanHolder a { display: block; float: left; width: 26px; height: 23px; font-size: 18px; color: #666; text-decoration: none; font-family: 'FoundryFormSansBold'; font-weight:normal; text-align: center; background: url(images/layout/transparent.png) repeat; padding-top: 3px; }
+.tabSpanHolder a:hover { color:#fff; -webkit-transition: color .25s linear; -moz-transition: color .25s linear; transition: color .25s linear; }
+.tabSpanHolder a.activeSlide { background: #fff; color: #222; }
+.frontNewsBox { margin-bottom: 10px; clear: both; }
+.frontNewsBox h2, h2.sectionTitle, .sectionNews  h2, .main h2, h2.rubrikaOtherHeading, .naComments h4, .articleComments .WorkPanel div:first-child { background:url(images/layout/headings_sprite.png) repeat-x 0px -168px; height: 28px; font-size: 18px; font-family: 'FoundryFormSansBold'; font-weight:normal; text-shadow: 1px 1px 1px #2c4150; text-decoration: none; color: #fff; display: block; text-transform: uppercase; clear: both; position: relative; }
+.frontNewsBox h2 a, h2.sectionTitle span, .sectionNews h2 span, .main h2 span, h2.rubrikaOtherHeading span, .naComments h4 span.title, .articleComments .WorkPanel div span.Head { background:url(images/layout/headings_span_sprite.png) no-repeat right -168px; height:24px; padding:4px 26px 0 8px; min-width: 96px; font-size: 18px; font-family: 'FoundryFormSansBold'; font-weight:normal; text-shadow: 1px 1px 1px #2c4150; text-decoration: none; color: #fff; display: block; float:left; text-transform: uppercase; }
+.naComments h4 span.title { text-transform:none; }
+.naComments h4 span.Normal { position: absolute; top: 3px; right: 8px; }
+.naComments h4 span.Normal a { color: #fff; text-decoration: none; font: bold 13px Arial, Helvetica, sans-serif; text-transform: uppercase; }
+.frontNewsBox .fnWrapper { background: #000; }
+.frontNewsBox .fnWrapper .mainNews { width: 370px; height: 230px; float: left; position: relative; }
+.frontNewsBox .fnWrapper .newsTitle { position: absolute; bottom: 0; left: 0; }
+.frontNewsBox .fnWrapper .newsTitle h3 a { font-size: 18px; width: 346px; background: url(images/layout/transparent_frontnews.png) left bottom repeat-x; }
+.frontNewsBox .colRight { width: 310px; float: right; min-height:230px; background-color:#e5e5e5; }
+.frontNewsBox .colRight a { display: block; padding: 8px 15px; min-height: 30px; background: #e5e5e5 url(images/layout/frontnews_newslist.gif) top repeat-x; font-size: 12px; color: #222; text-shadow: 1px 1px 1px #fff; font-weight: bold; text-decoration: none; }
+.frontNewsBox .colRight a:hover { background: #d5d5d5 url(images/layout/frontnews_newslist_hover.gif) top repeat-x; }
+.frontNewsBox .colRight a span { display: block; text-transform: uppercase; color: #970006; font-size: 11px; }
+.frontNewsBox .colRight article .tooltip { display: none; z-index: 10; background: transparent url(images/layout/main_sprite.png) 0px -234px no-repeat; padding: 10px 10px 15px 10px;   }
+.frontNewsBox .colRight article .tooltip figure { width:100px; height:62px; background-repeat:no-repeat; background-position:top center;  }
+.frontNewsBox .colRight article .tooltip img { display:none; }
+
+/* fotogalerija / videogalerija ikone */
+img.photo-icon, img.video-icon { margin-left:4px; position:relative; top:2px; border:0; display:inline!important; }
+.colRight img.photo-icon, .colRight img.video-icon, 
+.sectionNews article img.photo-icon, .sectionNews article img.video-icon, 
+.innerpage .otherNewsHolder img.photo-icon, .innerpage .otherNewsHolder img.video-icon, 
+.rubrikaTopList .text img.photo-icon, .rubrikaTopList .text img.video-icon,
+.rubrikaNewsItems .text img.photo-icon, .rubrikaNewsItems .text img.video-icon,
+.jcarousel-skin-partyzona img.photo-icon, .jcarousel-skin-partyzona img.video-icon { margin-left:0px; margin-right:4px; }
+
+
+/* Naslovnica > Izdvojeno iz tiska */
+.newspaper { margin-bottom: 10px; }
+.newspaperHolder { margin-bottom: 10px; padding: 1px; background: white; border: 4px solid #CCC; clear:both; float:left; display: none; }
+.newspaperHolder header { width:170px; height:90px; float:left; background: url(images/layout/newspaper_head.jpg) no-repeat top left; }
+.newspaperHolder header h2 { text-indent:-9999px; }
+.newspaperHolder article { width:250px; height:90px; float:left; background: url(images/layout/newspaper_bg.jpg) repeat-x top left; }
+.newspaperHolder article a { width:240px; padding-left:10px; clear:both; display:inline-block; text-decoration:none; }
+.newspaperHolder article h3 { width:142px; font-size:11px; font-weight:bold; color:#fff; line-height:16px; text-shadow: 1px 1px 2px #000; text-align:right; display:block; float:left; padding:10px 0 10px 10px; }
+.newspaperHolder article figure { width:90px; height:90px; border-left: 1px solid #fff; border-right: 1px solid #fff; float:right; background-repeat:no-repeat!important; background-position:center center!important; }
+.newspaperHolder article figure img { display:none; }
+.newspaperHolder article:last-child figure, .newspaperHolder article.last figure { border-right: none; }
+	
+/* mala naslovnica */
+.innerpage #featuredNews  .topNewsHolder .newsTitle h3 { padding: 0; background: none; height: auto; text-transform: none;}
+.innerpage .topNewsHolder { margin-bottom: 10px; }
+
+/**/
+.innerpage #featuredNews .jcarousel-container { overflow:hidden; margin-bottom: 10px; }
+.innerpage #topSectionNews .jcarousel-item { background-color: black; margin-right: 10px; }
+
+/* botuni */
+.innerpage #featuredNews div.jcarousel-prev, 
+.innerpage #featuredNews div.jcarousel-next { width:25px; height:137px; background: url(images/buttons/featuredNews_buttons.png) no-repeat 0 0; display:block; visibility:hidden; padding:0; margin:0; position:absolute; transition:opacity .6s; -webkit-transition:opacity .6s; -moz-transition:opacity .6s; opacity:0; }
+.innerpage #featuredNews .jcarousel-container:hover div.jcarousel-prev,
+.innerpage #featuredNews .jcarousel-container:hover div.jcarousel-next { visibility:visible; opacity:1; }
+.innerpage #featuredNews div.jcarousel-prev { margin:0 5px 0 0; left:0; top:5px; background-position:top left; }
+.innerpage #featuredNews div.jcarousel-prev:hover { background-position:bottom left; cursor:pointer;  }
+.innerpage #featuredNews div.jcarousel-prev-disabled:hover { background-position:top left; cursor: default; }
+.innerpage #featuredNews div.jcarousel-next { margin:0 0 0 5px; right:0; top:5px; background-position:top right; }
+.innerpage #featuredNews div.jcarousel-next:hover { background-position:bottom right; cursor:pointer; }
+.innerpage #featuredNews div.jcarousel-next-disabled:hover { background-position:top right; cursor: default; }
+
+.otherNewsWrapper { background:	 url(images/layout/three_articles.gif) repeat-y; margin-bottom: 10px; }
+.innerpage .otherNewsHolder { margin-bottom: 10px; width: 220px; float: left; border-top: 5px solid #fdb94d; }
+.innerpage .banner { clear: both; }
+.innerpage .otherNewsHolder.last { margin-right: 0; }
+.innerpage .otherNewsHolder .newsText { padding: 10px 15px;  }
+.innerpage .otherNewsHolder figure { display: block; height: 137px; width: 220px; border: 0; background-position:center center; background-repeat:no-repeat; }
+/* .innerpage .otherNewsHolder img { display: block; height: 137px; width: 220px; border: 0; } */
+.innerpage .otherNewsHolder a { text-decoration: none; color: #ffdda6; display: block; }
+.innerpage .otherNewsHolder a:hover h3 { color: #9a9999; }
+.innerpage .otherNewsHolder h3 { font-size: 14px; font-family: 'FoundryFormSansBold'; font-weight:normal; margin-bottom: 5px; line-height:18px; }
+.innerpage .otherNewsHolder p { color: #fff; line-height:18px; font-size: 11px; }
+	
+/* NASLOVI */
+	
+/* Novosti */
+.frontNewsNOVOSTI h2, .L0_Novosti h2.sectionTitle, .L0_Novosti .sectionNews h2 { background-position:0px 0px; }
+.frontNewsNOVOSTI h2 a, .L0_Novosti h2.sectionTitle span, .L0_Novosti .sectionNews h2 span {  background-position:right 0px;  }
+.frontNewsNOVOSTI .fnWrapper { border-bottom: 5px solid #ed1d26; }
+.L0_Novosti .otherNewsHolder, .L0_Novosti .rubrikaTopList article { border-top: 5px solid #fdb94d; }
+/* Dalmacija */
+.frontNewsDALMACIJA h2, .L0_Dalmacija h2.sectionTitle, .L0_Dalmacija .sectionNews h2 { background-position:0px -28px; }
+.frontNewsDALMACIJA h2 a, .L0_Dalmacija h2.sectionTitle span, .L0_Dalmacija .sectionNews h2 span { background-position:right -28px; }
+.frontNewsDALMACIJA .fnWrapper { border-bottom: 5px solid #81a7c6; }
+.L0_Dalmacija .otherNewsHolder, .L0_Dalmacija .rubrikaTopList article { border-top: 5px solid #dddcdf; }
+/* Scena */
+.frontNewsSCENA h2, .L0_Scena h2.sectionTitle, .L0_Scena .sectionNews h2 { background-position:0px -56px; }
+.frontNewsSCENA h2 a, .L0_Scena h2.sectionTitle span, .L0_Scena .sectionNews h2 span { background-position:right -56px; }
+.frontNewsSCENA .fnWrapper { border-bottom: 5px solid #8eb636; }
+.L0_Scena .otherNewsHolder, .L0_Scena .rubrikaTopList article { border-top: 5px solid #e0e671; }
+/* Sport */
+.frontNewsSPORT h2, .L0_Sport h2.sectionTitle, .L0_Sport .sectionNews h2 { background-position:0px -84px; }
+.frontNewsSPORT h2 a, .L0_Sport h2.sectionTitle span, .L0_Sport .sectionNews h2 span { background-position:right -84px; }
+.frontNewsSPORT .fnWrapper { border-bottom: 5px solid #f68b16;}
+.L0_Sport .otherNewsHolder, .L0_Sport .rubrikaTopList article { border-top: 5px solid #c8ca44; }
+/* Prilozi */
+.frontNewsPRILOG h2, .L0_Prilozi h2.sectionTitle, .L0_Prilozi .sectionNews h2 { background-position:0px -112px; }
+.frontNewsPRILOG h2 a, .L0_Prilozi h2.sectionTitle span, .L0_Prilozi .sectionNews h2 span { background-position:right -112px; }
+.frontNewsPRILOG .fnWrapper { border-bottom: 5px solid #970006; }
+.L0_Prilozi .otherNewsHolder, .L0_Prilozi .rubrikaTopList article { border-top: 5px solid #b96b6e; }
+/* Ostalo / Komentar naslov u prikazu clanka */
+h2.rubrikaOtherHeading, .naComments h4 {  background:url(images/layout/headings_sprite.png) repeat-x 0px -140px; padding-top: 0; text-indent: 0; }
+h2.rubrikaOtherHeading span, .naComments h4 span.title { background:url(images/layout/headings_span_sprite.png) no-repeat right -140px; display:block; height:24px; padding:4px 26px 0 8px; min-width: 96px; }
+	
+.fotoGallery  { background: url(images/layout/fotoreportaza.gif) 0 28px repeat-x; height: 210px; width: 680px; margin-bottom:10px; }
+.fotoGallery h2 { background: url(images/layout/fotogallery_h2.gif) top repeat-x; text-indent: 8px; font-size: 16px; color: #fff; font-family: 'FoundryFormSansBold'; font-weight:normal; height: 24px; padding-top: 6px; }
+.fotoGallery h2 span { color:#ed1d26; }
+.fotoGallery h3 { font-size: 11px; font-weight: bold; color: #ffdda6; text-shadow: 1px 1px 1px #3d3d3d; padding: 8px 30px 5px 30px; }
+.fotoGallery p { font-size: 11px; color: #fff; line-height: 1.4; text-shadow: 1px 1px 1px #3d3d3d; padding: 0 30px; }
+	
+.pollBox h2 { background: url(images/layout/anketa_heading.gif) no-repeat; width: 310px; height: 31px; border-bottom: 5px solid #feba4d; text-indent: 15px; font-size: 16px; color: #333; text-shadow: 1px 1px 1px #fff; padding-top: 9px; font-family: 'FoundryFormSansBold'; font-weight:normal; }
+.innerpage .fotoPlusWrapper h2 {  background: url(images/layout/fotoplus_heading.gif) no-repeat;  border-bottom: 5px solid #feba4d; padding-top: 9px; height: 31px; }
+.innerpage .nmsPoll fieldset { border: none; color: #333; }
+.innerpage .nmsPoll p { font-size: 12px; line-height: 1.4; padding: 15px 15px 10px 15px; font-weight: bold; border-bottom: 1px solid #ddd; }
+.innerpage .nmsPoll table { font-size: 11px; width: 100%; border-collapse: collapse; }
+.innerpage .nmsPoll td { padding: 7px 15px; border-bottom: 1px solid #ddd;  background: url(images/layout/poll.gif) bottom repeat-x; }
+.innerpage .nmsPoll td input { vertical-align: middle; margin: -2px 5px 0 0; }
+.innerpage .nmsPoll .buttonHolder { float: right; margin-right: -15px; margin-top: -10px; border:none; }
+.innerpage .nmsPoll .buttonHolder a { font-size: 12px; color: #333; text-shadow: 1px 1px 1px #fff; text-decoration: none; padding: 5px 20px; background: url(images/layout/poll_btn.gif) top repeat-x; margin-bottom: 10px; display: block; float: left; margin-left: 1px; }
+.innerpage .nmsPoll .buttonHolder a:hover { background: url(images/layout/poll_btn_hover.gif) top repeat-x; }
+	
+.sectionNews { margin-bottom: 10px; background-color:#e5e5e5; }
+.sectionNews .col1, .rubrikaTopList .col1 { float: left; width: 345px; background: #e5e5e5; }
+.sectionNews .col2, .rubrikaTopList .col2 { float: left; width: 335px; background: #e5e5e5; }
+.sectionNews article { clear: both; background: url(images/layout/sectionnews.gif) transparent bottom repeat-x; margin-top: 1px; min-height: 62px; }
+.sectionNews article:hover { background: url(images/layout/sectionnews_hover.gif) transparent bottom repeat-x;}
+.sectionNews article figure { width: 100px; height: 62px; float: left; margin-right: 10px; border: 0; background-position:center center; background-repeat:no-repeat; }
+/* .sectionNews article img { width: 100px; height: 62px; float: left; border-width: 0; } */
+.sectionNews article h3 { font-size: 12px; padding-top: 10px; padding-right: 10px; }
+.sectionNews article a { color: #454444; text-shadow: 1px 1px 1px #fff; text-decoration: none; }
+	
+.rubrikaTopList { padding-top: 1px; }
+.rubrikaTopList table { width: 100%; border-collapse: collapse; }
+.rubrikaTopList table td {  vertical-align:	 top; }
+.rubrikaTopList article { clear: both; min-height: 120px; border-top: 5px solid #fdba4d; }
+.rubrikaTopList article a.article { clear: both; display:block; background: #fff url(images/layout/rubrikatoplist.gif) top repeat-x;  min-height: 120px; text-decoration:none; }
+.rubrikaTopList article a.article:hover { text-decoration:none; background: #fff url(images/layout/rubrikatoplist_hover.gif) top repeat-x; }
+.rubrikaTopList figure { width: 130px; height: 80px; float: left; margin-right: 10px; }
+.rubrikaTopList figure img { display:none; }
+.rubrikaTopList .text { width: 175px; padding-right: 20px; float: left; padding-bottom: 20px; }
+.rubrikaTopList .text cite, .rubrikaNewsItems .text cite { font-size: 11px; color: #d30006; display: block; margin: 8px 0 4px 0; font-style: normal; }
+.rubrikaTopList .text h3, .rubrikaNewsItems .text h3 { color: #444; font-size: 13px; font-weight: bold; text-decoration: none; display: block; line-height: 18px; }
+.rubrikaTopList .text h3:hover, .rubrikaNewsItems .text h3:hover { color: #222; }
+.rubrikaTopList .col2 .text { width: 175px; }
+	
+.rubrikaNewsItems { border-top: 1px solid #fff; clear: both; overflow: hidden;  }
+.rubrikaNewsItems a.article { clear: both; display:block; background: #fff url(images/layout/rubrikatoplist.gif) top repeat-x; text-decoration:none; }
+.rubrikaNewsItems a.article:hover { text-decoration:none; background: #fff url(images/layout/rubrikatoplist_hover.gif) top repeat-x; }
+.rubrikaNewsItems figure { width: 100px; height: 62px; float: left; margin-right: 10px; }
+.rubrikaNewsItems figure img { display:none; }
+.rubrikaNewsItems .text { float: left; width: 520px; padding-right: 50px; font-size: 11px; color: #444; }
+.rubrikaNewsItems .text cite { color: #666; }
+.rubrikaNewsItems .text h3 a { margin-bottom: 4px; }
+.rubrikaNewsItems .text p { font-size: 11px; color: #444; line-height: 1.4; margin-bottom: 10px; }
+	
+.pagingHolder { text-align: center; clear: both; padding-top: 20px; font-size: 14px; color: #999; font-weight: bold; }
+.pagingHolder a { padding: 5px 10px; margin: 0 10px; background: url(images/layout/pagination.gif) top repeat-x; font-size: 14px; color: #fff; text-align: center; text-decoration: none; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border: 1px solid #a9a9a9; text-shadow: 1px 1px 1px #676767; }
+.pagingHolder a:hover { background: url(images/layout/pagination_hover.gif) top repeat-x; color: #ffdda6; }
+.pagingHolder a[disabled=disabled], .pagingHolder a[disabled=disabled]:hover { text-shadow: 1px 1px 1px #fff; background: url(images/layout/pagination_first.gif) top repeat-x; border: 1px solid #ababab; color: #999; }
+.pagingHolder .vl { display: none; }
+	
+/* Detaljna stranica clanka */
+.articleDetail article { background: url(images/layout/article.gif) top repeat-x; border-top: 5px solid #DDD; margin-top:1px; }
+.articleDetail .publish { padding: 12px 24px; font-size: 11px; color: #666; }
+.articleDetail h3 { font-family: 'FoundryFormSansBold'; font-weight:normal; font-size: 26px; padding: 0 24px; margin-bottom: 12px; }
+.articleDetail h4 { padding: 0 24px; text-transform:uppercase; font-size: 12px; margin-bottom: 4px; color: #6E6E6E; }
+.articleDetail article figure { background-position:center center; background-repeat:no-repeat; width:632px; height:392px; margin:0 0 5px 24px; position:relative; /* background-size:100%;*/ }
+.articleDetail article figure .fcaption { display:block; position: absolute; bottom: 0; left: 0; padding:10px; background: url(images/layout/transparent.png) repeat; font-size: 12px; line-height:18px; color: #fff; width:612px; }
+.articleDetail article figure img { display:none; visibility:hidden; }
+
+/* Share botuni na stranicama clanaka */
+.articleDetail .share { padding: 0 24px; margin-bottom: 10px; }
+.articleDetail .share .fb, .articleDetail .share .tweet, .articleDetail .share .gplus { float:left; }
+
+/* Boje sekcija */
+.L0_Novosti .articleDetail article { border-top:5px solid #FDB94D; }
+.L0_Dalmacija .articleDetail article { border-top:5px solid #DDDCDF; }
+.L0_Scena .articleDetail article { border-top:5px solid #E0E671; }
+.L0_Sport .articleDetail article { border-top:5px solid #C8CA44; }
+.L0_Prilozi .articleDetail article { border-top:5px solid #B96B6E; }
+
+/* Komentatori */
+#komentator-pic { display:none; visibility:hidden; }
+.L0_Komentatori #komentator-pic, .L1_Parangall #komentator-pic { display:block; visibility:visible; float:left; width: 163px; height: 147px; margin:0 0 10px 24px; }
+.L1_Ante_Tomic #komentator-pic { background: url(images/other/komentator-pic-tomic.png) no-repeat 0 0; }
+.L1_Boris_Dezulovic #komentator-pic { background: url(images/other/komentator-pic-dezulovic.png) no-repeat 0 0; }
+.L1_Davor_Krile #komentator-pic { background: url(images/other/komentator-pic-krile.png) no-repeat 0 0; }
+.L1_Ivica_Ivanisevic #komentator-pic { background: url(images/other/komentator-pic-ivanisevic.png) no-repeat 0 0; }
+.L1_Josip_Jovic #komentator-pic { background: url(images/other/komentator-pic-jovic.png) no-repeat 0 0; }
+.L1_Jurica_Pavicic #komentator-pic { background: url(images/other/komentator-pic-pavicic.png) no-repeat 0 0; }
+.L1_Zlatko_Gall #komentator-pic, .L1_Parangall #komentator-pic { background: url(images/other/komentator-pic-gall.png) no-repeat 0 0; }
+.L1_Sandro_Pogutz #komentator-pic {background: url(images/other/komentator-pic-pogutz.png) no-repeat 0 0;}
+
+/* galerija / slideshow unutar clanka */
+.articleDetail article #galleryTitle { display:none; }
+.articleDetail article .jcarousel-skin-tango { width:632px; height:73px; margin:0 24px; }
+.articleDetail article .jcarousel-skin-tango .jcarousel-clip { margin:0 35px 0 31px; width:566px; height:73px; overflow:hidden; }
+.articleDetail article .jcarousel-skin-tango li.gallery_item { width:108px; height:73px; padding:0; margin:0 0 0 5px; border:none;  background-color:#000; background-image:none; }
+.articleDetail article .jcarousel-skin-tango li.gallery_item a { width:108px; height:73px; display:block; border:none; background-position: center center; background-repeat: no-repeat; opacity: 0.5!important; position:relative; filter: alpha(opacity=50); text-decoration:none; }
+.articleDetail article .jcarousel-skin-tango li.gallery_item a:hover { opacity: 1!important; filter: alpha(opacity=100); text-decoration:none; }
+.articleDetail article .jcarousel-skin-tango li.gallery_item a:hover span { background: url(images/buttons/article_gallery_plus.png) no-repeat center center; width:108px; height:73px; position:absolute; top:0; left:0; }
+	
+/* botuni */
+.articleDetail article .jcarousel-skin-tango div.jcarousel-prev, 
+.articleDetail article .jcarousel-skin-tango div.jcarousel-next { width:30px; height:73px; background: url(images/buttons/article_gallery_buttons.png) no-repeat 0 0; display:block; padding:0; margin:0; position:absolute; }
+.articleDetail article .jcarousel-skin-tango div.jcarousel-prev { margin:0 5px 0 0; left:0; top:0; background-position:top left; }
+.articleDetail article .jcarousel-skin-tango div.jcarousel-prev:hover { background-position:bottom left; cursor:pointer; }
+.articleDetail article .jcarousel-skin-tango div.jcarousel-prev-disabled:hover { background-position:top left; cursor: default; }
+.articleDetail article .jcarousel-skin-tango div.jcarousel-next { margin:0 0 0 5px; right:0; top:0; background-position:top right; }
+.articleDetail article .jcarousel-skin-tango div.jcarousel-next:hover { background-position:bottom right; cursor:pointer; }
+.articleDetail article .jcarousel-skin-tango div.jcarousel-next-disabled:hover { background-position:top right; cursor: default; }
+
+.articleDetail .content { font-size: 13px; color: #222; line-height: 18px; margin: 20px 0; padding: 0 24px; }
+.articleDetail .content h3 { font-family:Arial, Helvetica, sans-serif; font-size:13px; font-weight:bold; line-height:18px; padding:0; margin-bottom:20px; }
+.articleDetail .content p { margin-bottom:15px; }
+.articleDetail .imageDiv { text-align: left; margin: 10px 0; font-size: 11px; color: #666; }
+.articleDetail .imageDiv img, .articleDetail .content img { position: relative; background: #fff; display:block; }
+.articleDetail .imageDivR { float: right; margin: 0 0 10px 10px; }
+.articleDetail .imageDivL { float: left; margin: 0 10px 10px 0; }
+		
+/* Okviri */
+.articleDetail .content .okvirDiv { width:100%; border-top:5px solid #fce3b6; background-color:#fff7e6; margin:10px 0 5px 0; }
+.articleDetail .content .okvirDiv td { padding:20px; font-size:12px; line-height:18px; color:#222; text-shadow: 1px 1px 1px #fff; }
+.articleDetail .content .okvirDiv td h3 { font-family: 'FoundryFormSansBold'; font-weight:normal; font-size:16px; color:#ed1d26; padding:0; }
+/* Novosti */
+.L0_Novosti .articleDetail .content .okvirDiv { border-top:5px solid #ffebcb; background-color:#fff7eb; }
+.L0_Novosti .articleDetail .content .okvirDiv td h3 { color:#ee1c23; }
+/* Dalmacija */
+.L0_Dalmacija .articleDetail .content .okvirDiv { border-top:5px solid #cad4de; background-color:#e2e8ee; }
+.L0_Dalmacija .articleDetail .content .okvirDiv td h3 { color:#5b85aa; }
+/* Scena */
+.L0_Scena .articleDetail .content .okvirDiv { border-top:5px solid #e2f7b9; background-color:#f1fbdd; }
+.L0_Scena .articleDetail .content .okvirDiv td h3 { color:#80a633; }
+/* Sport */
+.L0_Sport .articleDetail .content .okvirDiv { border-top:5px solid #fce3b6; background-color:#fff7e6; }
+.L0_Sport .articleDetail .content .okvirDiv td h3 { color:#ed1d26; }
+/* Prilozi */
+.L0_Prilozi .articleDetail .content .okvirDiv { border-top:5px solid #eabdbf; background-color:#faeeef; }
+.L0_Prilozi .articleDetail .content .okvirDiv td h3 { color:#970005; }
+
+/* Dodatni linkovi*/
+.articleDetail .links { margin: 0 0 20px 24px; padding: 7px 0 0 15px; width: 617px; background: #eee; border-bottom: 5px solid #ddd; height: 23px; position: relative; }
+.articleDetail .links li { display: inline; }
+.articleDetail .links li a { display: block; float: left; font-size: 12px; font-weight: bold; color: #666; text-shadow: 1px 1px 1px #fff; text-decoration: none;  margin-right: 12px; }
+.articleDetail .links li.iconHome a { background: url(images/icons/links_star.gif) 0 0 no-repeat; padding: 2px 0 0 22px; }
+.articleDetail .links li.iconEditor a { background: url(images/icons/links_pisite_uredniku.gif) 0 1px no-repeat; padding: 2px 0 0 27px;  }
+.articleDetail .links li.iconFriend a { background: url(images/icons/links_posalji_prijatelju.gif) 0 1px no-repeat;padding: 2px 0 0 27px;   }
+.articleDetail .links li.iconPrint a { background: url(images/icons/links_ispisi.gif) 0 1px no-repeat;padding: 2px 0 0 22px;   }
+.articleDetail .links li a:hover { text-decoration: underline; }
+.articleDetail .links li.iconFacebook a, .articleDetail .links li.iconTwitter a{ display: block; width: 30px; height: 30px; text-indent: -5000px; margin: 0; position: absolute; top: 0; }
+.articleDetail .links li.iconFacebook a{ right: 30px; background: url(images/icons/links_fb.gif) no-repeat; }
+.articleDetail .links li.iconTwitter a { right: 0px; background: url(images/icons/links_twitter.gif) no-repeat; }
+.articleDetail .links li.iconFacebook a:hover, .articleDetail .links li.iconTwitter a:hover { background-position: bottom left; }
+
+/* oglasi unutar clanka */
+.articleDetail .article-banner { margin:0 24px 15px 24px; clear:both; width:632px; float:left; }
+.articleDetail .banner { width:311px; float:left; border:none; clear:none; padding:0;  }
+.articleDetail .banner h3 { font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#666; line-height:20px; display:block; padding-bottom:5px; margin-bottom:5px; border-bottom: 1px solid #ddd; }
+.articleDetail .banner.etarget { margin:0 10px 0 0; }
+.articleDetail .banner.googleads { margin:0; float:left; }
+
+/* Pisi uredniku / Posalji prijatelju */
+.articleForm { margin:10px 24px 30px 24px; }
+.articleForm h4 { font-family: Arial, Helvetica, sans-serif; font-weight:bold; font-size: 16px; color:#333; border-bottom:solid 1px #dddddd; padding:0 15px 10px 15px; margin-bottom: 15px; }
+.articleForm p { padding:0 15px; margin-bottom:15px;  }
+.articleForm p label { font-size:12px; font-weight:bold; color:#666; line-height:22px; background: url(images/layout/poll_results_dot.gif) left center no-repeat; padding-left:10px; }
+.articleForm p.captchaBox { margin-bottom:5px; }
+.articleForm div.Normal { padding:0 15px; width:582px; clear:both; display:inline-block; }
+.articleForm div.Normal img, .articleForm div.Normal input { float:left; }
+.articleForm div.buttonHolder { padding:0 15px; margin-bottom:15px; }
+
+.articleForm p .NormalTextBox, .articleForm div.Normal input { font-size:12px; background-color:#f5f5f5; border:none; border-bottom: 5px solid #ddd; margin:3px 0 0 0; width:582px; padding:6px 10px; }
+.articleForm div.Normal input { width:120px; margin:0; padding:10px; }
+.articleForm p .NormalTextBox:hover, 
+.articleForm p .NormalTextBox:focus,
+.articleForm div.Normal input:hover,
+.articleForm div.Normal input:focus { border-bottom: 5px solid #ccc; outline:none; }
+
+.articleForm div.Normal img { padding-right:20px; }
+
+.articleForm div.buttonHolder .StandardButton { background:url(images/buttons/send_button.gif) no-repeat top right; padding:8px 16px 16px 10px; font-size: 13px; font-weight: bold; color: white; text-shadow: 1px 1px 1px #686868; text-align: center; text-decoration:none; border:0; width:120px; height:41px; cursor: pointer; }
+.articleForm div.buttonHolder .StandardButton:hover { color:#ffdda6; }
+
+/* komentari */
+.naComments { font-size: 11px; padding-bottom: 12px; margin:0 24px; }
+.naComments .comment { padding-left:30px; background: url(images/icons/comment_avatar.gif) top left no-repeat; display: none; }
+.naComments .comment .data { background: url(images/layout/comment_data.gif) top repeat-x; height: 22px; color: #444; padding: 8px 10px 0 10px; margin-bottom: 10px; }
+.naComments .comment .data .comDate { color: #ed1d26; }
+.naComments .comment .content { font-size: 11px; color: #666; padding: 0 10px; margin-bottom: 10px; }
+.commentNavig { width: 638px; height: 29px; background: url(images/layout/comment_navig.gif) no-repeat; font-size: 13px; font-weight: bold; color: #fff; text-shadow: 1px 1px 1px #686868; text-align: center; text-transform: uppercase; padding-top: 6px; margin:0 18px 0 24px; }
+.commentNavig a { color: #fff; text-decoration: none; display: block; }
+.commentNavig a:hover { color:#ffdda6; }
+.commentNavig a#closeLink { display: none; }
+
+#sideBar { width: 310px; float: right; }
+#sideBar .banner { margin-bottom: 10px; clear: both; }
+#sideBar .Wrap { position: relative; z-index: 80; }
+
+/* AvatarPane - Profil slika i Private Message linkovi */
+.avatarPane { background:  #fff url(images/layout/avatarpane.gif) bottom repeat-x; position: relative; margin-bottom: 10px; padding-bottom: 10px; clear: both; overflow: hidden; display: none; }
+.avatarPane .apProfileImgHolderInner .apProfileImgLink { border: 4px solid #9c9c9c; float: left; margin-right: 10px;  }
+.avatarPane .apProfileImgHolderInner .apProfileImgLink img { width: 60px;  display: block; background: #fff; padding: 1px; }
+.avatarPane .apProfileImgHolderInner .CommandButton { font-size: 12px; font-weight: bold; text-decoration: underline; color: #ed1d26; }
+.avatarPane .pmMessageCount { position: absolute; top: 39px; left: 80px; }
+.avatarPane .pmMessageCount li { padding:3px 0; }
+.avatarPane .pmMessageCount li a { background: url(images/icons/admin_arrow.png) 0 4px no-repeat; padding-left: 9px; display: block; margin-bottom: 0; font-size: 11px; font-weight: bold; color: #666; text-shadow: 1px 1px 1px #fff; text-decoration: none; margin-bottom: 1px; }
+.avatarPane .pmMessageCount li a:hover { text-decoration:underline; }
+.UPR_All_Users .avatarPane, .UPR_Registered_Users .avatarPane { font-size: 11px; font-weight: bold; text-shadow: 1px 1px 1px #fff; color: #666; }
+.UPR_All_Users .avatarPane .pmMessageCount, .UPR_Registered_Users .avatarPane .pmMessageCount { position: relative; top: -15px; left: 0px; }
+.UPR_All_Users .pmMessageCountWrap, .UPR_Registered_Users .pmMessageCountWrap { padding-left:95px; }
+/* .UPR_Administrators .avatarPane .pmMessageCount { position: absolute!important; top: 39px!important; left: 83px!important; }  */
+.apProfileImgHolder { font-size: 11px; color: #666; text-shadow: 1px 1px 1px #fff; padding: 15px; margin-bottom: 10px; }
+.apProfileImgHolder a { font-size: 11px!important; }
+	
+/* Latest news box */
+.latestNewsTabs { background: #fafafa; height: 28px; }
+.latestNewsTabs li { display: inline; }
+.latestNewsTabs li a { display: block; float: left; font-size: 12px; color: #666; font-weight: bold; text-shadow: 1px 1px 1px #fff; text-decoration: none; padding: 0 15px; height: 22px; padding-top: 6px; }
+.latestNewsTabs li a.current { background: #eee; color: #ed1d26; }
+.latestNewsTabs li a:hover { color: #333; }
+.latestNewsTabs li a.current:hover { color: #ed1d26; }
+.latestNews { margin-bottom: 10px; border-top: 5px solid #ddd; border-bottom: 5px solid #ddd;}
+.latestNews h3 { font-size: 12px; color: #666; font-weight: bold; background: #f8f8f8; padding: 10px 15px; }
+.latestNews article { position: relative; border-bottom: 1px solid #ddd; }
+.latestNews span.time { font-weight: bold; margin-right: 5px; }
+.latestNews article a { display: block; font-size: 11px; color: #444; text-decoration: none; padding: 8px 10px 8px 80px; min-height: 28px; }
+.latestNews article a:hover { color:#222; background: #f5f5f5; text-shadow: 1px 1px 1px #fff; }
+.latestNews article figure { width: 71px; height: 44px; position: absolute; top: 0; left: 0; border-width: 0; background-position:center center; background-repeat:no-repeat; }
+.latestNews article img { width: 71px; height: 44px; position: absolute; top: 0; left: 0; border-width: 0; }
+
+
+	/* Novosti
+.L0_Novosti .latestNewsTabs li a.current { color: #ed1d26; }  */
+	/* Dalmacija
+.L0_Dalmacija .latestNewsTabs li a.current { color: #81A7C6; } */
+	/* Scena
+.L0_Scena .latestNewsTabs li a.current { color: #8EB636; } */
+	/* Sport
+.L0_Sport .latestNewsTabs li a.current { color: #F68B16; } */
+	/* Prilozi
+.L0_Prilozi .latestNewsTabs li a.current { color: #970006; } */
+
+
+
+/* Unutarnja > Urednik box */
+#sideBar .sideEditorNav { margin-bottom:10px; width: 310px; }
+#sideBar .sideEditorNav h3 { background: url(images/layout/fotoplus_heading.gif) no-repeat; width: 310px; height: 31px; border-bottom: 5px solid #feba4d; text-indent: 15px; font-size: 16px; color: #333; text-shadow: 1px 1px 1px #fff; padding-top: 9px; font-family: 'FoundryFormSansBold'; font-weight:normal; }
+#sideBar .sideEditorNav ul { padding:10px 15px; background-color:#FAFAFA; border-bottom:solid 5px #ddd; }
+#sideBar .sideEditorNav ul li { padding:5px 0; border-top: dashed 1px #ddd; }
+#sideBar .sideEditorNav ul li:first-child { border-top:none; }
+#sideBar .sideEditorNav ul li a { display:block; font-size:12px; color:#666; font-weight:bold; text-decoration:none; background: url(images/icons/admin_arrow.png) 8px 4px no-repeat; padding-left: 20px;  }
+#sideBar .sideEditorNav ul li a:hover { color:#333; }
+
+/* FotoPlus Box i Video Box */
+.fotoPlusWrapper h2 { font-size: 15px; text-shadow: 1px 1px 1px #fff; background: #f6f6f6; width: 87px; text-align: center; padding-top: 14px; height: 30px; float: left; font-family: 'FoundryFormSansBold'; font-weight:normal; margin-bottom: 5px; }
+.typeSingleGallery h2 { width: 282px; text-align: left; float: none; padding: 14px 14px 0 14px;}
+.fotoPlusWrapper h2 span, #tTopVideo  span { color: #ed1d26; }
+.fotoCat { width: 223px; height: 44px; background: #f6f6f6; float: left; }
+.fotoCat li { display: inline; }
+.fotoCat li a { display: block; float: left; font-size: 11px; font-weight: bold; text-decoration: none; padding: 0 8px; text-shadow: 1px 1px 1px #fff; color: #000; padding-top: 15px; height: 29px; }
+.fotoCat li a.active { background: #e5e5e5 url(images/layout/main_sprite.png) center -520px no-repeat; color: #ed1d26; }
+.fotoCat li a:hover { background: #e5e5e5 url(images/layout/main_sprite.png) center -520px no-repeat; }
+#fotoNewsGal .gallery_item { width: 100px; margin-right: 5px; float: left; }
+#fotoNewsGal .gallery_item a { display: block; width: 100px; height: 97px; float: left; text-indent: -5000px; position:relative; }
+#fotoNewsGal .gallery_item a.thumbLink span.hover { display:none; }
+#fotoNewsGal .gallery_item a:hover span.hover { width: 100px; height: 97px; display:block; position: absolute; top: 0; left: 0; background: url(images/layout/main_sprite.png) no-repeat -130px -599px; }
+
+.galleryName { clear: both;  background: url(images/layout/fotovideonews.gif) repeat-y; text-align: center; text-shadow: 1px 1px 1px #fff; font-size: 11px; color: #222; padding: 9px 35px 9px 35px; margin-bottom: 10px; border-top: 5px solid #fff; }
+.jcarousel-skin-sdgallery1 .jcarousel-container-horizontal { clear: both; }
+#fotoNewsGal .gallery_item a:hover, .fotoGallery .gallery_item a:hover { }
+#tTopVideo { background: url(images/layout/videogal.gif) no-repeat; width: 310px; height: 30px; padding-top: 14px; font-family: 'FoundryFormSansBold'; font-weight:normal; font-size: 15px; text-shadow: 1px 1px 1px #fff; color: #222; text-indent: 15px; margin-bottom: 5px; }
+#videoGal { position: relative; }
+#videoTitle { text-align: center; margin-top: 5px; font-size: 11px; text-shadow: 1px 1px 1px #fff; width: 190px!important; padding: 8px 60px 8px 60px; background: url(images/layout/fotovideonews.gif) top repeat-y!important; min-height: 15px; display: block; color: #000; margin-bottom: 10px!important; }
+#videoGal .gallery_item a { opacity: 0.6!important; filter: alpha(opacity=60); position: relative; }
+#videoGal .gallery_item a:hover, 
+#videoGal .gallery_item a.active { opacity: 1!important; filter: alpha(opacity=100); }
+#videoGal .gallery_item a.active span { display: block; background: url(images/layout/main_sprite.png) no-repeat -207px -171px; width: 49px; height: 49px; position: absolute; top: 27px; left: 27px; }
+
+/* Jutarnji i DWelle RSS box */
+.rssJutarnjiBox, #rssDWelleBox { margin-bottom: 10px; }
+.rssJutarnjiBox h2, #rssDWelleBox h2 { width: 310px; height: 40px; background: url(images/layout/jutarnji_sidebar.gif) no-repeat; border-bottom: 5px solid #fdba4d; text-indent: -5000px; margin-bottom: 1px; }
+#rssDWelleBox h2 { background: url(images/layout/dwelle_sidebar.gif) no-repeat; }
+.rssJutarnjiBox article { clear: both; overflow: hidden; background: url(images/layout/jutarnji_sidebar_box.gif) top repeat-x; margin-bottom: 1px; }
+.rssJutarnjiBox article a { display: block;  color: #666; text-decoration: none;}
+.rssJutarnjiBox article a figure { width: 120px; height: 60px; float: left; background-position: center center!important; }
+.rssJutarnjiBox article a p { float: left; width: 170px; margin-left: 10px; font-size: 11px; font-weight: bold; padding-top: 8px; text-indent: 9px; background: url(images/icons/admin_arrow.png) 0 12px no-repeat; line-height: 1.3; }
+.rssJutarnjiBox article a:hover p { text-decoration:underline; }
+#rssDWelleBox article { background: url(images/layout/dwelle_sidebar_box.gif) top repeat-x;}
+#rssDWelleBox article a {  padding: 8px 20px 8px 24px; font-size: 11px; font-weight: bold; color: #666; text-decoration: none; background: url(images/icons/admin_arrow.png) 15px 12px no-repeat; display: block; line-height: 1.3; }
+#rssDWelleBox article a:hover { text-decoration:underline; }
+
+#FooterPaneWrapper { background: url(images/layout/bottom_pane.png) top repeat-x; margin-top: -9px; position: relative; padding-top: 13px; padding-bottom: 2px; }
+.frontpage #FooterPaneWrapper { padding-bottom:10px; }
+#FooterPaneInner { width: 1000px; margin: 0 auto; position: relative; }
+#FooterPaneInner .gotoTop { position: absolute; top: -19px; right: 0; width: 30px; height: 29px; background: url(images/layout/main_sprite.png) no-repeat -144px -44px; display: block; text-indent: -5000px; }
+#FooterPaneInner .gotoTop:hover { background-position: -144px -73px; }
+.footerPane span.normal { display: block; float: left; width: 245px; margin-right: 10px; }
+.footerPane #dnn_ctr938_ContentPane .normal { margin-right: 0; width: 235px; }
+.footerPane .newsList li { background: url(images/layout/footer_newslist_divider.gif) top repeat-x; padding: 11px 13px 9px 13px; }
+.footerPane .newsList li a { display: block; font-size: 11px; color: #666; text-shadow: 1px 1px 1px #fff; text-decoration: none; background: url(images/icons/admin_arrow.png) 0 4px no-repeat; text-indent: 9px; } 
+.footerPane .newsList li a:hover { text-decoration: underline; }
+	
+.bottomPane { clear: both; }
+.bottomPane #kolumne { padding: 2px; border: 2px solid #b2b2b2; margin-bottom: 10px; }
+.bottomPane #kolumne li { display: inline; }
+.bottomPane #kolumne li a { display: block; float: left; width: 140px; height: 138px; position: relative; background: #c6c6c6; margin-right: 2px; color: #fff; text-shadow: 1px 1px 1px #000; text-align: center; text-decoration: none; font-size: 14px; font-size: 12px; }
+.bottomPane #kolumne li.item-7 a { margin-right: 0; }
+.bottomPane #kolumne li a h4 { width: 140px; height: 20px; padding-top: 4px; }
+.bottomPane #kolumne li a h4 strong { color: #ffdda6; }
+.bottomPane #kolumne li a p { width: 140px; height: 20px; text-align: center; padding-top: 4px; position: absolute; bottom: 0; left: 0; font-size: 12px; }
+	
+.bottomPane #kolumne li.item-1 a { background: url(images/other/tomic.gif) no-repeat; }
+.bottomPane #kolumne li.item-2 a { background: url(images/other/dezulovic.gif) no-repeat; }
+.bottomPane #kolumne li.item-3 a { background: url(images/other/krile.gif) no-repeat; }
+.bottomPane #kolumne li.item-4 a { background: url(images/other/ivanisevic.gif) no-repeat; }
+.bottomPane #kolumne li.item-5 a { background: url(images/other/jovic.gif) no-repeat; }
+.bottomPane #kolumne li.item-6 a { background: url(images/other/pavicic.gif) no-repeat; }
+.bottomPane #kolumne li.item-7 a { background: url(images/other/gall.gif) no-repeat; }
+.bottomPane #kolumne li a:hover { background-position: right; }
+	
+.ExchangeRate { width: 310px; position: relative;  }
+.ExchangeRate h3 { color: #fff; background: url(images/layout/main_sprite.png) no-repeat 0px -340px; width: 310px; height: 32px; font-size: 18px; text-indent: 52px; padding-top: 8px; text-shadow: 1px 1px 1px #700e12; font-family: 'FoundryFormSansBold'; }
+.ExchangeRate table.List { width: 100%; border-collapse: collapse; }
+.ExchangeRate table.List td, .ExchangeRate table.List th { font-size: 11px; text-shadow: 1px 1px 1px #fff; padding: 8px; text-align: center; }
+.ExchangeRate table.List th { background: url(images/layout/exchangerates_th.gif) top repeat-x; }
+.ExchangeRate table.List th span, .ExchangeRate table.Calc th span { background: url(images/layout/exchangerates_arrow.gif) 0 3px no-repeat; padding-left: 10px; }
+.ExchangeRate table.List td { background: url(images/layout/exchangerates_td.gif) top repeat-x; }
+.ExchangeRate .icon { position: absolute; right: 3px; top: 10px; z-index: 50; width: 45px; height: 50px; background: url(images/layout/main_sprite.png) no-repeat -210px -110px; }
+.ExchangeRate table.List .item-1 { width: 45px; }
+.ExchangeRate table.List .item-2 { width: 70px; }
+.ExchangeRate table.List .item-3 { width: 70px; }
+.ExchangeRate table.List .item-4 { width: 65px; }
+.ExchangeRate table.List .c4, .ExchangeRate table.List th.item-4 { padding-right: 60px!important; }
+	
+.ExchangeRate table.Calc  { width: 100%; border-collapse: collapse; text-align: left; }
+.ExchangeRate table.Calc th { font-size: 11px; text-shadow: 1px 1px 1px #fff; padding: 0 8px 8px 0;  } 
+.ExchangeRate table.Calc  input, .ExchangeRate table.Calc  select { font-size: 11px; }
+.ExchangeRate table.Calc .NormalTextBox, .ExchangeRate table.Calc .NormalDropDown { font-size: 11px; font-weight: bold; color: #222; border: 1px solid #ccc; padding: 4px; }
+.ExchangeRate table.Calc .NormalTextBox { background:url(images/layout/main_sprite.png) no-repeat 0px -50px; width: 80px; }
+.ExchangeRate table.Calc .NormalDropDown { width: 50px; margin-left: 5px; padding: 3px; }
+.ExchangeRate table.Calc .item-2 { padding-left: 5px; }
+.calcHolder .Types { padding: 14px 7px; font-size: 12px; font-weight: bold; }
+.calcHolder .Types input { vertical-align: middle; margin: -2px 5px 0 0; }
+.calcHolder .Types span { margin-right: 10px; }
+	
+.bottomPaneLeft { float: left; width: 330px; margin-right: 10px; }
+
+/* Naslovna > Vas Komentar Dana - .bottomPaneLeft  */
+.dayCommentBox { background: url(images/layout/komentar_dana.gif) no-repeat top left; width: 255px; min-height: 108px; padding: 12px 0 0 75px; margin-bottom:10px; }
+.dayCommentBox h2 { font-size: 16px; color: #333; font-family: 'FoundryFormSansBold'; font-weight:normal; margin-bottom: 3px; }
+.dayCommentBox h2 span { color: #ed1d26; }
+.dayCommentBox article { display:block; background: url(images/layout/komentar_dana.gif) no-repeat bottom right; padding:0 75px 12px 0; }
+.dayCommentBox article p { font-size: 11px; color: #333; line-height: 16px; }
+.dayCommentBox article .commentAuthor { font-size: 11px; color: #333; line-height: 16px; font-weight: bold; display: block; }
+/* Unutarnja > Vas Komentar Dana */
+.innerpage .dayCommentBox { width: 240px; padding: 12px 0 0 70px; }
+.innerpage .dayCommentBox article { padding:0 70px 12px 0;  }
+
+
+.bottomPaneLeft .banner { float: left; }
+.bottomPaneLeft .banner.last { float: right; }
+.bottomPaneMiddle { float: left; width: 340px; height: 280px; font-size: 11px; text-align: center;  }
+	
+.bottomPaneRight { width: 310px; float: right; }
+	
+#veryBottomWrap { background: url(images/layout/footer.gif) top repeat-x; padding-top: 20px; min-height: 130px; color: #fff; }
+.footerEphDigital { width: 980px; margin: 0 auto; text-align: center; font-size: 11px; text-shadow: 1px 1px 1px #3a3a3a; line-height: 1.6; }
+.footerEphDigital a, .pageFooter a { color: #fff; text-decoration: none; }
+.footerEphDigital a:hover, .pageFooter a:hover { text-decoration: underline; }
+.footerEphDigital strong { font-weight: bold; }
+	
+.pageFooter { padding-top: 20px; color: #fff; margin: 0 auto; width: 980px; text-align: center; font-size: 11px; text-shadow: 1px 1px 1px #3a3a3a; }
+.pageFooter a { font-weight: bold; }
+
+#fotoNewsGal .gallery_item a  img { height: 100px!important; }
+
+/* TopVideo i FotoPlus galerija */
+.jcarousel-skin-sdgallery1 .jcarousel-direction-rtl { direction: rtl; }
+.jcarousel-skin-sdgallery1 .jcarousel-container-horizontal { width: 310px; }
+.jcarousel-skin-sdgallery1 .jcarousel-clip { overflow: hidden; }
+.jcarousel-skin-sdgallery1 .jcarousel-clip-horizontal { width: 310px; height: 100px; }
+.jcarousel-skin-sdgallery1 .jcarousel-item { width: 100px; height: 100px; }
+.jcarousel-skin-sdgallery1 .jcarousel-item a { width: 100px; height: 100px; background-position: center center; background-repeat: no-repeat; display: block; }
+.jcarousel-skin-sdgallery1 .jcarousel-item-horizontal { margin-left: 0; margin-right: 5px; }
+.jcarousel-skin-sdgallery1 .jcarousel-direction-rtl .jcarousel-item-horizontal { margin-left: 0; margin-right: 0; }
+.jcarousel-skin-sdgallery1 .jcarousel-item-placeholder { background: #fff; color: #000; }
+.jcarousel-skin-sdgallery1 .jcarousel-next-horizontal { position: absolute; top: 105px; right: 0; width: 25px; height: 30px; cursor: pointer; background: url(images/buttons/fotonews_next.gif) no-repeat 0 0; }
+.jcarousel-skin-sdgallery1 .jcarousel-next-horizontal:hover { background-position: bottom; }
+.jcarousel-skin-sdgallery1 .jcarousel-direction-rtl .jcarousel-next-horizontal { left: 5px; right: auto; background-image: url(images/carousel/prev-horizontal.png); }
+.jcarousel-skin-sdgallery1 .jcarousel-prev-horizontal { position: absolute; top: 105px; left: 0; width: 25px; height: 30px; cursor: pointer; background: url(images/buttons/fotonews_prev.gif) no-repeat; }
+.jcarousel-skin-sdgallery1 .jcarousel-prev-horizontal:hover { background-position: bottom; }
+.jcarousel-skin-sdgallery1 .jcarousel-direction-rtl .jcarousel-prev-horizontal { left: auto; right: 0; background-image: url(images/carousel/next-horizontal.png); }
+
+/* Foto galerija na dnu male naslovnice */
+.jcarousel-skin-bottomGallery .jcarousel-clip { overflow: hidden; }
+.jcarousel-skin-bottomGallery .jcarousel-clip-horizontal { margin-left: 30px; width: 620px; height: 80px; margin-top:6px; }
+.jcarousel-skin-bottomGallery .jcarousel-item { width: 116px; height: 80px; }
+.jcarousel-skin-bottomGallery .jcarousel-item a { text-indent: -5000px; width: 116px; height: 72px; background-position: center center; background-repeat: no-repeat; display: block; background-color: white!important; -moz-box-shadow: 0px 0px 6px rgba(0,0,0,0.6); -webkit-box-shadow: 0px 0px 6px rgba(0,0,0,0.6); box-shadow: 0px 0px 6px rgba(0,0,0,0.6); margin-top:4px; position: relative; }
+.jcarousel-skin-bottomGallery .jcarousel-item a span { display:none; }
+.jcarousel-skin-bottomGallery .jcarousel-item a:hover span { width: 116px; height: 72px; display:block; position: absolute; top: 0; left: 0; background: url(images/layout/main_sprite.png) no-repeat 0px -706px; }
+.jcarousel-skin-bottomGallery .jcarousel-item-horizontal { margin-left: 0; margin-right: 10px; }
+.jcarousel-skin-bottomGallery .jcarousel-direction-rtl .jcarousel-item-horizontal { margin-left: 0; margin-right: 0; }
+.jcarousel-skin-bottomGallery .jcarousel-item-placeholder { background: #fff; color: #000; }
+.jcarousel-skin-bottomGallery .jcarousel-next-horizontal { position: absolute; top: 30px; right: 10px; width: 12px; height: 21px; cursor: pointer; background: url(images/buttons/fotoreportaza_next.png) no-repeat 0 0; }
+.jcarousel-skin-bottomGallery .jcarousel-next-horizontal:hover { background-position: bottom; }
+.jcarousel-skin-bottomGallery .jcarousel-next-disabled, .jcarousel-skin-bottomGallery .jcarousel-next-disabled:hover { background: url(images/buttons/fotoreportaza_next.png) no-repeat 0 0; cursor:default; }
+.jcarousel-skin-bottomGallery .jcarousel-direction-rtl .jcarousel-next-horizontal { left: 5px; right: auto; background-image: url(images/carousel/prev-horizontal.png); }
+.jcarousel-skin-bottomGallery .jcarousel-prev-horizontal { position: absolute; top: 27px; left: 10px; width: 12px; height: 21px; cursor: pointer; background: url(images/buttons/fotoreportaza_prev.png) no-repeat; }
+.jcarousel-skin-bottomGallery .jcarousel-prev-horizontal:hover { background-position: 0 -25px; }
+.jcarousel-skin-bottomGallery .jcarousel-prev-disabled, .jcarousel-skin-bottomGallery .jcarousel-prev-disabled:hover { background: url(images/buttons/fotoreportaza_prev.png) no-repeat; cursor:default; }
+.jcarousel-skin-bottomGallery .jcarousel-direction-rtl .jcarousel-prev-horizontal { left: auto; right: 0; background-image: url(images/carousel/next-horizontal.png); }
+
+/* Foto galerija na dnu Scene - Nocni dir */
+.fotoGallery.typeNightLife {  }
+.typeNightLife .jcarousel-clip { height:100%; }
+.typeNightLife #nightLife .gallery_item { height:100%; }
+.typeNightLife #nightLife .gallery_item a.title { text-indent:0; font-size:11px; color:#FFDDA6; background-color:transparent!important; text-align:center; -moz-box-shadow:none; -webkit-box-shadow:none; box-shadow:none; text-decoration:none; text-shadow: 1px 1px 1px #3D3D3D; }
+.typeNightLife #nightLife .gallery_item a.title div.title { color:#fff; font-weight:bold; }
+/* Party Zona na naslovnici */
+.jcarousel-skin-partyzona { background: #3c5501 url(images/layout/partyzone_bg.gif) top repeat-x; padding: 1px; border: 4px solid #ccc; width: 639px; margin-bottom: 10px; position: relative; padding-left: 31px; }
+.jcarousel-skin-partyzona .jcarousel-container { }
+.jcarousel-skin-partyzona .jcarousel-direction-rtl { direction: rtl; }
+.jcarousel-skin-partyzona .jcarousel-container-horizontal { width: 609px; }
+.jcarousel-skin-partyzona .jcarousel-clip { overflow: hidden; }
+.jcarousel-skin-partyzona .jcarousel-clip-horizontal { width: 609px; }
+.jcarousel-skin-partyzona .jcarousel-item { width: 304px; background: none; }
+.jcarousel-skin-partyzona .jcarousel-item  a { font-size: 11px; color: #fff; text-shadow: 1px 1px 1px #354b04; background-repeat: no-repeat; display: block; width: 304px; min-height: 90px; padding: 0 15px 0 0; text-decoration: none; line-height: 1.3!important; }
+.jcarousel-skin-partyzona .jcarousel-item a h4 { font-size: 11px; color: #ffdda6; margin-bottom: 4px; }
+.jcarousel-skin-partyzona .jcarousel-item a h3 { font-size: 11px; }
+.jcarousel-skin-partyzona .jcarousel-item a:hover h3 { text-decoration: underline; }
+.jcarousel-skin-partyzona .jcarousel-item .thumb { float: left; width: 120px; height: 90px; border-right: 1px solid #fff; border-left: 1px solid #fff; position:relative; }
+.jcarousel-skin-partyzona .jcarousel-item a .thumb span.hover { display:none; }
+.jcarousel-skin-partyzona .jcarousel-item a:hover .thumb span.hover { width: 120px; height: 90px; display:block; position: absolute; top: 0; left: 0; background: url(images/layout/main_sprite.png) no-repeat 1px -599px; }
+
+.jcarousel-skin-partyzona .jcarousel-item .desc { width: 152px; min-height: 80px; padding-right: 15px; float: left; padding-top: 10px; padding-left: 15px; }
+.jcarousel-skin-partyzona .jcarousel-item-horizontal { margin-left: 0; }
+.jcarousel-skin-partyzona .jcarousel-direction-rtl .jcarousel-item-horizontal { margin-left: 1px; margin-right: 0; }
+.jcarousel-skin-partyzona .jcarousel-item-placeholder { background: #fff; color: #000; }
+.jcarousel-skin-partyzona .jcarousel-next-horizontal { position: absolute; top: 0; right: -30px; width: 30px; height: 90px; cursor: pointer; background: url(images/buttons/partyzona_next.gif); }
+.jcarousel-skin-partyzona .jcarousel-next-horizontal:hover { background-position: bottom; }
+.jcarousel-skin-partyzona .jcarousel-direction-rtl .jcarousel-next-horizontal { left: 5px; right: auto; background-image: url(images/carousel/prev-horizontal.png); }
+.jcarousel-skin-partyzona .jcarousel-prev-horizontal { position: absolute; top: 0; left: -30px; width: 30px; height: 90px; cursor: pointer; background: url(images/buttons/partyzona_prev.gif); }
+.jcarousel-skin-partyzona .jcarousel-prev-horizontal:hover { background-position: bottom; }
+.jcarousel-skin-partyzona .jcarousel-direction-rtl .jcarousel-prev-horizontal { left: auto; right: 0; background-image: url(images/carousel/next-horizontal.png); }
+
+/* LightBox */
+#jquery-overlay { position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px; }
+#jquery-lightbox { position: absolute; top: 0; left: 0; width: 100%; z-index: 100; text-align: center; line-height: 0; }
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box { position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; -moz-border-radius: 15px; border-radius: 15px;}
+#lightbox-container-image { padding: 10px; }
+#lightbox-loading { position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+#lightbox-nav { position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none; }
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext { width: 49%; height: 100%; zoom: 1; display: block; }
+#lightbox-nav-btnPrev { left: 0; float: left; }
+#lightbox-nav-btnNext { right: 0; float: right; }
+#lightbox-container-image-data-box { font-size: 10px; background-color: #fff; margin: -15px auto 0 auto; line-height: 1.4em; overflow: auto; width: 100%; padding: 0 10px 0; position: relative; -moz-border-radius: 0 0 15px 15px; border-radius: 0 0 15px 15px; }
+#lightbox-container-image-data { padding: 10px; color: #666; }
+#lightbox-container-image-data #lightbox-image-details { width: 70%; float: left; text-align: left; }
+#lightbox-image-details-currentNumber { display: block; clear: left; padding-bottom: 1.0em; }
+#lightbox-secNav-btnClose { width: 66px; float: right; padding-bottom: 0.7em; }
+
+/* Dalmacija > Vodici */
+.vodiciList { margin-bottom:10px; }
+.vodiciList li a { background: url(images/other/dalmacija_vodic_sprite.png) no-repeat 0 0; display: block; text-indent: -9999px; width: 310px; height: 50px; border:0; }
+.vodiciList li a.item_114 { background-position:0px 0px; } /* Vodic kroz Split */
+.vodiciList li a.item_117 { background-position:0px -50px; } /* Vodic kroz Dubrovnik */
+.vodiciList li a.item_115 { background-position:0px -100px; } /* Vodic kroz Sibenik */
+.vodiciList li a.item_116 { background-position:0px -150px; } /* Vodic kroz Zadar */
+
+/* Scena > Recenzije */
+.recenzijeBox { margin-bottom:10px; zoom:1; display:inline-block; }
+.recenzijeBox a, .recenzijeBox a:hover { text-decoration:none; }
+.recenzijeBox h2 { display:block; text-align:right; font-family: 'FoundryFormSansBold'; font-weight:normal; font-size: 14px; font-weight:bold; color:#fff; text-shadow: 1px 1px 1px #111; width:300px; height:30px; padding:10px 10px 0 0; }
+.recenzijeBox h2 span { color:#ced466; }
+.recenzijeBox article { background: url(images/other/recenzijeBox_bg.png) #666666 repeat-x bottom left; width:290px; float:left; padding:10px; }
+.recenzijeBox article a { text-decoration:none; display:block; }
+.recenzijeBox article figure { width:60px; height:60px; float:left; margin-right:10px; background-position:center center; -webkit-box-shadow:2px 3px 7px rgba(0,0,0,0.6); -moz-box-shadow:2px 3px 7px rgba(0,0,0,0.6); box-shadow:2px 3px 7px rgba(0,0,0,0.6); }
+.recenzijeBox article .text { }
+.recenzijeBox article .text h3 { font-size:11px; font-weight:bold; color:#ced466; text-shadow: 1px 1px 1px #111; }
+.recenzijeBox article .text p { font-size:11px; color:#fff; text-shadow: 1px 1px 1px #111; padding-top:2px; }
+.recenzijeBox article a:hover .text p { text-decoration:underline; }
+/* parangall */
+.recenzijeBox.parangallBox h2 { background: url(images/other/recenzijeBox_parangall.png) no-repeat 0 0; }
+/* cinemark */
+.recenzijeBox.cinemarkBox h2 { background: url(images/other/recenzijeBox_cinemark.png) no-repeat 0 0; }
+
+/* Scena > Horoskop */
+.horoskopBox { margin-bottom:10px; width:310px; min-height:120px; }
+
+.horoskopBox .jcarousel-direction-rtl { direction: rtl; }
+.horoskopBox .jcarousel-container-horizontal { width: 310px; }
+.horoskopBox .jcarousel-clip { overflow: hidden; }
+.horoskopBox .jcarousel-clip-horizontal { width: 310px; height: 310px; }
+.horoskopBox .jcarousel-item { width: 310px; height: 180px; }
+.horoskopBox .jcarousel-item-horizontal { margin:0; }
+.horoskopBox .jcarousel-direction-rtl .jcarousel-item-horizontal { margin-left: 0; margin-right: 0; }
+.horoskopBox .jcarousel-item-placeholder { background: #fff; color: #000; }
+/* article */
+.horoskopBox .jcarousel-item article { background: url(images/layout/horoskop_headline.png) #987E2C repeat-x 0 0; height: 160px; padding:0 0 10px 0; }
+.horoskopBox .jcarousel-item article h3 { display:block; height:20px; padding:10px 15px; text-align:center; font-family: 'FoundryFormSansBold'; font-weight:normal; font-size: 14px; font-weight:bold; color:#fff; text-shadow: 1px 1px 1px #111; vertical-align:middle; }
+.horoskopBox .jcarousel-item article h3 span { color:#ffdda6; }
+.horoskopBox .jcarousel-item article figure { width:68px; float:left; margin-right:2px; }
+.horoskopBox .jcarousel-item article .text { width:230px; float:left; font-size:11px; color:#fff; text-shadow: 1px 1px 1px #111; line-height:16px; padding-right:10px; margin-top:10px; }
+/* buttons */
+.horoskopBox .jcarousel-next-horizontal { position: absolute; top:0; right: 0; width: 25px; height: 40px; cursor: pointer; background: url(images/buttons/horoskop_buttons.png) no-repeat -25px 0; }
+.horoskopBox .jcarousel-next-horizontal:hover { }
+.horoskopBox .jcarousel-direction-rtl .jcarousel-next-horizontal { left: 5px; right: auto;  }
+.horoskopBox .jcarousel-prev-horizontal { position: absolute; top:0; left: 0; width: 25px; height: 40px; cursor: pointer; background: url(images/buttons/horoskop_buttons.png) no-repeat 0 0; }
+.horoskopBox .jcarousel-prev-horizontal:hover { }
+.horoskopBox .jcarousel-direction-rtl .jcarousel-prev-horizontal { left: auto; right: 0; }
+
+/* Scena > Party Zona */
+.eventGalDetailItem h3 {padding: 5px 0 0 20px; }
+.eventGalListItem { float: left; width: 146px; margin: 12px; min-height:240px; }
+.eventGalListItem dt a { display: block; width: 140px; height: 140px; background-position: center center; background-repeat: no-repeat; border: 3px #000 solid;}
+.eventGalListItem dt a:hover { border: 3px #8EB63E solid!important; }
+.eventGalListItem dd a:link,
+.eventGalListItem dd a:visited,
+.eventGalListItem dd a:hover { font-size: 11px; font-weight: bold; text-align: center; display: block; color: #7b8d17; margin-top:2px; text-decoration:none; }
+.eventGalListItem dd a:hover {text-decoration:underline;}
+.entGalListItem dd a:hover { color:#8EB63E!important;  }
+.eventGalListSmall { padding: 5px 5px 0px 5px; }
+.eventGalItemSmall { float: left; width: 80px; margin: 5px;}
+.eventGalItemSmall a.pic { display: block; width: 80px; height: 80px; background-position: center center; background-repeat: no-repeat; border: 3px #FFF solid;}
+.eventGalItemSmall a.title { display: block; font-size: 11px; color: #000; text-align: center; }
+.eventGallery .otherNewsInSection { clear: both ; padding-top: 10px;}
+.eventGallery .otherNewsInSection .linkMore {margin-bottom:12px;}
+.eventGalleryHolder li { float: left ; padding: 12px 20px ; font-size: 11px ; text-align: center ;}
+.eventGalleryHolder a { display: block ; width: 180px ; height: 180px ; margin-bottom: 2px ; background-position: center center ; background-repeat: no-repeat ; border: solid 2px #000 ; text-decoration:none; }
+.eventGallery h4 { margin-bottom: 10px ; background-image: url("images/BackTitleVezaniClanciShowbiz.gif"); }
+
+
+.rightPane .eventGalListItem {width: 150px; margin: 9px;}
+.rightPane .eventGalListItem dt a  { width: 65px ; height: 65px ;}
+.rightPane .eventGalListItem dt { float: left ;}
+.rightPane .eventGalListItem dd { float: left ; width: 65px ; padding: 5px 0 0 10px ;}
+.rightPane .eventGalListItem dd a {text-align: left;}
+.rightPane .eventGallery { padding-bottom: 1px ; background: #e2f7b9 ; border-bottom: 3px solid #b4b4b4;}
+
+.L1_Party_zona .content { padding:0; }
+
+/* Forum > Desni Dio */
+.L0_Forum table, .L0_Profil table { border-collapse: collapse!important; border-spacing: 0!important; }
+
+/* SD Ekipa Online */
+.ekipa-onlineBox { margin-bottom:10px; }
+.ekipa-onlineBox h2 { background: url(images/layout/zastavica_sidebar.png) no-repeat; width: 310px; height: 31px; border-bottom: 5px solid #feba4d; text-indent: 15px; font-size: 16px; color: #333; text-shadow: 1px 1px 1px #fff; padding-top: 9px; font-family: 'FoundryFormSansBold'; font-weight:normal; }
+.ekipa-onlineBox .usersOnlineTable { width:100%; margin-bottom:5px; }
+.ekipa-onlineBox .usersOnlineTable div { background: url(images/layout/jutarnji_sidebar_box.gif) top repeat-x; padding:10px 10px 15px 10px; font-size: 11px; line-height: 18px; }
+.ekipa-onlineBox .usersOnlineTable div .NormalBold { font-size:12px; font-weight:bold; }
+
+/* Aktivne Teme Na Forumu */
+.aktivne-temeBox { margin-bottom:10px; border-bottom: 5px solid #DDD; }
+.aktivne-temeBox h2 { background: url(images/layout/zastavica_sidebar.png) no-repeat; width: 310px; height: 31px; border-bottom: 5px solid #feba4d; text-indent: 15px; font-size: 16px; color: #333; text-shadow: 1px 1px 1px #fff; padding-top: 9px; font-family: 'FoundryFormSansBold'; font-weight:normal; }
+.aktivne-temeBox .aFNewHolder { }
+.aktivne-temeBox .aFNewHolder article { padding:5px 10px; font-size: 11px; line-height: 18px; border-bottom: 1px solid #DDD; }
+.aktivne-temeBox .aFNewHolder article span.time { display:block; }
+.aktivne-temeBox .aFNewHolder article a { font-weight:bold; color:#222; text-decoration:none; background: url(images/icons/admin_arrow.png) 0px 4px no-repeat; padding-left:8px; text-shadow: 1px 1px 1px #fff; }
+.aktivne-temeBox .aFNewHolder article a:hover { text-decoration:underline; }
+
+/* Osmrtnice */
+.L0_Osmrtnice #mainContent .contentPane { margin-bottom:10px; }
+.L0_Osmrtnice #mainContent .contentLeftPane, .L0_Osmrtnice #mainContent .contentRightPane { width:335px; float:left; }
+.L0_Osmrtnice #mainContent .contentLeftPane { margin-right:10px; }
+.L0_Osmrtnice #mainContent .contentPane .osmrtnice-head { text-align:center; background-color:#818286; border-top: 4px solid #555; }
+.L0_Osmrtnice .osmrtnicaBox { border: 3px #000 solid; margin: 4px 0; margin: expression("9px 0"); background-color: #f4f4f4; }
+.L0_Osmrtnice .osmrtnicaBox .oTextPart1, .L0_Osmrtnice .osmrtnicaBox .oTextPart2 { padding: 10px; }
+.L0_Osmrtnice .osmrtnicaBox .oPicture { width: 90px; text-align: center; vertical-align: top; }
+.L0_Osmrtnice .osmrtnicaBox .oName { text-align: center; width: 240px; vertical-align: middle; }
+.L0_Osmrtnice .typeNoImg .oName { width: auto; }
+.L0_Osmrtnice .osmrtnicaBox .oName { font-size: 11px; }
+.L0_Osmrtnice .osmrtnicaBox TD { font-size: 12px; }
+.L0_Osmrtnice .osmrtnicaBox H3 { text-transform: uppercase; font-size: 20px; color: #000; text-align: center; }
+.L0_Osmrtnice .osmrtnicaBoxEmpty { width:330px; margin:4px 0; }
+.L0_Osmrtnice .osmrtnicaBoxEmpty .contentType H3 { background: none; text-transform: upercase; font-size: 20px; font-style:italic; color: #666; padding:2px 0 1px 0; border-bottom:#666 solid 1px; border-top:#666 solid 1px; margin:10px 0; }
+.L0_Osmrtnice .osmrtnicaBoxEmpty P { text-transform: upercase; font-size: 16px; font-weight:bold; color: #000; padding-top:10px; }
+.L0_Osmrtnice .osmrtnicaBoxEmpty .oName { font-size: 11px; padding-right:10px; }
+.L0_Osmrtnice .osmrtnicaBoxEmpty .oInfo { font-size: 12px; padding:4px 0px 10px 0; border-bottom:1px #C9C9C9 dotted; }
+
+/* Male Naslovnice > Rezultati Anketa */
+.L1_Rezultati_anketa .survayResults { }
+.L1_Rezultati_anketa .survayResults h3 { font-size: 16px; font-weight:bold; padding: 20px 20px 10px 20px; border-bottom: 1px solid #ddd; }
+.L1_Rezultati_anketa .survayResults .survayResultItem { padding: 15px 20px 15px 20px; border-bottom: 1px solid #ddd; background: url(images/layout/poll.gif) bottom repeat-x; }
+.L1_Rezultati_anketa .survayResults .survayResultItem h4 { font-size:14px; color:#666; background: url(images/layout/poll_results_dot.gif) left center no-repeat; padding-left:10px; }
+.L1_Rezultati_anketa .survayResults .survayResultItem h4 .votePers { background: url(images/layout/poll_results_dot.gif) left center no-repeat; padding-left:10px; color:#ed1d26; }
+.L1_Rezultati_anketa .survayResults .survayResultItem .bar { padding:8px 0 5px 0; }
+.L1_Rezultati_anketa .survayResults .survayResultItem .bar div { height:6px; background-color:#fdba4d; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; }
+.L1_Rezultati_anketa .survayResults .survayResultItem .survayData { font-size:12px; font-weight:bold;  }
+.L1_Rezultati_anketa .survayResults .buttonHolder { padding: 15px 20px 15px 20px; }
+.L1_Rezultati_anketa .survayResults .buttonHolder .CommandButton { font-size:14px; color:#ed1d26; font-weight:bold; text-decoration:none; }
+.L1_Rezultati_anketa .survayResults .buttonHolder .CommandButton:hover { text-decoration:underline; }
+	/* Arhiva */
+.L1_Rezultati_anketa .survayResults .RadGrid_Web20, .L1_Rezultati_anketa .survayResults .RadGrid_Web20 .MasterTable_Web20 { border:none; }
+.L1_Rezultati_anketa .survayResults .RadGrid_Web20 { margin:20px 24px; color:#222; }
+.L1_Rezultati_anketa .survayResults .RadGrid_Web20 a { font:13px Arial, Helvetica, sans-serif; font-weight:bold; }
+	/*header*/
+.GridHeader_Web20, .ResizeHeader_Web20 { padding:10px!important; background:transparent!important; text-align:left; }
+.GridHeader_Web20, .GridHeader_Web20 a { color:#ED1D26!important; text-decoration:none; font-size:14px!important; }
+	/*rows*/
+.GridRow_Web20 td, .GridAltRow_Web20 td, .GridEditRow_Web20 td { border-top:1px dashed #ccc!important; border-bottom:1px dashed #ccc!important; padding:10px!important; }
+.GridRow_Web20 a, .GridAltRow_Web20 a, .GridEditRow_Web20 a { color:#333; font-size:13px; background: url(images/layout/poll_results_dot.gif) left center no-repeat; padding-left: 10px; font-weight:bold; }
+.SelectedRow_Web20 { background:#dcfc5c; }
+.GridRowOver_Web20, .ActiveRow_Web20 { background:#e7f1ff; }
+.GridRowOver_Web20 td, .ActiveRow_Web20 td { border-bottom-color:#a5bedf; }
+.SelectedRow_Web20 td { border-bottom-color:#accb2d; }
+.GridEditRow_Web20 { background:#ffffe1; }
+.GridEditRow_Web20 td { border-bottom:1px solid #d8dde0; }
+	/*footer*/
+.GridFooterDiv_Web20, .GridFooter_Web20, .GridGroupFooter_Web20 { padding:10px; background:#fbfbfb; font-weight:bold; }
+.GridFooter_Web20, .GridFooter_Web20 a, .GridGroupFooter_Web20, .GridGroupFooter_Web20 a { color:#666; }
+.GridFooter_Web20 td, .GridGroupFooter_Web20 td { border-top:1px dashed #ccc; border-bottom:1px dashed #ccc; padding:10px; }
+	/*status*/
+.GridPager_Web20 span { color:#999; font-size:13px; }
+	/*paging*/
+.GridPager_Web20 { background:#d6d6d6; font-weight:bold; }
+.GridPager_Web20 td { padding:10px!important; }
+.GridPager_Web20 td, .GridPager_Web20 td a { color:#666; }
+.PagerLeft_Web20 { float:left; }
+.PagerRight_Web20 { float:right; }
+.PagerCenter_Web20 { text-align:center; }
+.PagerCenter_Web20 span { vertical-align:middle; } 
+.RadGrid_Web20 .rgPagePrev { }
+.RadGrid_Web20 .rgPageNext { }
+.RadGrid_Web20 .rgPageFirst { }
+.RadGrid_Web20 .rgPageLast { }
+	/*sorting, reordering*/
+.GridHeader_Web20 .rgSortAsc { display:none!important; }
+.GridHeader_Web20 .rgSortDesc { display:none!important;  }
+.BottomReorderIndicator_Web20 { }
+	/*filtering*/
+.GridFilterRow_Web20 td { padding-top:5px; padding-bottom:5px; }
+.GridFilterRow_Web20 td { border-bottom:1px solid #a5bedf; }
+.GridFilterRow_Web20 input[type="text"] { border:1px solid #6788be; border-bottom-width:2px; font:12px arial,sans-serif; color:#000; vertical-align:middle; }
+	/*grouping*/
+.GroupPanel_Web20 { border:1px dashed #ff9900; background:#ffebcc; }
+.GroupPanel_Web20 td { padding:2px 4px; }
+.GroupPanel_Web20 td td { padding:1px; }
+.GroupPanelItems_Web20 { border:1px solid #8e827f; color:#fff; padding:2px 4px; }
+.GroupHeader_Web20 td { border-bottom:2px solid #6788be; padding-top:3px; padding-bottom:4px; }
+.GroupHeader_Web20 td div { top:-0.6em; }
+.GroupHeader_Web20 td div div { top:0; }
+	/*editing*/
+.GridEditForm_Web20 { border-bottom:1px solid #d8dde0; }
+.GridEditForm_Web20 a { color:#333; }
+	/*hierarchy*/
+.DetailTable_Web20 { border-right:0; }
+	/*command row*/
+.GridCommandRow_Web20 { background:#fff; }
+.GridCommandRow_Web20 td { border:0; padding:0; }
+.GridCommandRow_Web20 a { color:#333; }
+	/*loading*/
+.LoadingPanel_Web20 { background:#f3f3e2; }
+	/*multirow select*/
+.GridRowSelector_Web20 { background:#336; }
+	/*row drag n drop*/
+.GridItemDropIndicator_Web20 { border-top:1px dashed #666; }
+	/*tooltip*/
+.GridToolTip_Web20 { border:1px solid #6788be; padding:3px; background:#e9f2ff; color:#575757; }
+	/*rtl*/
+.RadGridRTL_Web20 .GridHeader_Web20, .RadGridRTL_Web20 .ResizeHeader_Web20 { text-align:right; }
+.RadGridRTL_Web20 .PagerLeft_Web20, .RadGridRTL_Web20 .GridPager_Web20 .radslider { float:right; }
+.RadGridRTL_Web20 .PagerRight_Web20 { float:left; }
+
+/* Komentiraj clanak */
+.articleComments, .articleComments .WorkPanel .commentForm { width:100%; }
+.articleComments .WorkPanel { }
+.articleComments .WorkPanel > div input, .articleComments .WorkPanel div + div, .articleComments .WorkPanel .commentForm tr th.SubHead label a { display:none; } /* stuff to hide here */
+.articleComments .WorkPanel .commentForm { margin:20px 0; }
+.articleComments .WorkPanel .commentForm tr td p .Normal { display:block; padding:10px 20px; font-size:12px; line-height:18px; color:#222; border-top: solid 1px #ddd; border-bottom: solid 1px #ddd; }
+.articleComments .WorkPanel .commentForm tr th.SubHead { vertical-align:top; text-align:left; width:30%; }
+.articleComments .WorkPanel .commentForm tr th.SubHead label { margin:10px 0; padding:10px 20px; display:block; }
+.articleComments .WorkPanel .commentForm tr th.SubHead label span { font-size:14px; font-weight:bold; color:#666; line-height:22px; background: url(images/layout/poll_results_dot.gif) left center no-repeat; padding-left:10px; }
+.articleComments .WorkPanel .commentForm tr td .NormalTextBox { background-color:#f5f5f5; border:none; border-bottom: 5px solid #ddd; margin:10px 0; width:92%; padding:10px; }
+.articleComments .WorkPanel .commentForm tr td .NormalTextBox:hover, 
+.articleComments .WorkPanel .commentForm tr td .NormalTextBox:focus { border-bottom: 5px solid #ccc; outline:none; }
+.articleComments .WorkPanel .commentForm tr td span.NormalTextBox { border-bottom: none; background:none; padding:0; }
+.articleComments .WorkPanel .commentForm tr td span.NormalTextBox:hover { border-bottom: none; outline:none; }
+.articleComments + div.buttonHolder { text-align:right; padding:0 20px 20px 20px; }
+.articleComments + div.buttonHolder .CommandButton { background:url(images/buttons/send_button.gif) no-repeat top right; padding:8px 16px 16px 10px; font-size: 13px; font-weight: bold; color: white; text-shadow: 1px 1px 1px #686868; text-align: center; text-decoration:none; border:0; width:94px; height:17px; cursor: pointer; margin-left:15px; }
+.articleComments + div.buttonHolder .CommandButton:hover { color:#ffdda6; }
+.articleComments + div.buttonHolder .CommandButton:first-child { width:134px; background:url(images/buttons/send_button_160.gif) no-repeat top right;  }
+
+/* Stranice Vodica */
+.L1_Vodi_i { }
+.L1_Vodi_i .articleDetail .content { margin:0 0 20px 0; padding-top:20px; }
+.L1_Vodi_i .articleDetail .content ul { padding-bottom:20px; }
+
+/* Unutarnja > Komentatori > Komentatori box */
+.komentatori-box { margin-bottom:10px; background-color:#454545; }
+.komentatori-box .article { background:url(images/layout/komentatori_box_sprite.jpg) no-repeat 0 0; text-align:right; border-bottom: 2px solid #fff; width:310px; height:50px; }
+.komentatori-box .article a, .komentatori-box .article a:hover { display:block; width:280px; height:34px; padding:8px 20px 8px 10px; border:0; text-decoration:none; }
+.komentatori-box .article a h4, .komentatori-box .article a p { display: block; text-align: right; font-family: 'FoundryFormSansBold'; font-weight: normal; font-size: 14px; color: white; text-shadow: 1px 1px 1px #111; padding:0; }
+.komentatori-box .article a p { color: #ffdda6; -webkit-transition: color .45s linear; -moz-transition: color .45s linear; transition: color .45s linear; }
+.komentatori-box .article a:hover p { color: #fdba4d; -webkit-transition: color .45s linear; -moz-transition: color .45s linear; transition: color .45s linear; }
+	/**/
+.komentatori-box .article.tomic { background-position:0 0; }
+.komentatori-box .article.dezulovic { background-position:0 -50px; }
+.komentatori-box .article.krile { background-position:0 -100px; }
+.komentatori-box .article.ivanisevic { background-position:0 -150px; }
+.komentatori-box .article.jovic { background-position:0 -200px; }
+.komentatori-box .article.pavicic { background-position:0 -250px; }
+.komentatori-box .article.gall { background-position:0 -300px; }
+	/**/
+	
+/* Izbriši prvu sliku unutar clanka na Videogalerija sekciji */
+.L1_Video_galerija .articleDetail figure { display: none; }
+
+/* komentiranje unutar clanka */
+.UPR_Administrators .naComments .data a.CommandButton { padding-left:15px; color:red; font-weight:bold; }
+
+/* SD EKIPA Stranice - Prijava i Registracija */
+
+	/* Shared styles*/
+.L0_Prijava table, .L0_SD_Ekipa table, .L1_Rezultati_anketa table { border-collapse: collapse!important; border-spacing: 0!important; }
+.L0_Prijava .empty table, .L0_SD_Ekipa .empty table { width:100%; }
+.L0_Prijava .content .Normal h3, .L0_SD_Ekipa .content .Normal h3 { font-size: 16px; font-weight:bold; padding: 20px 24px 10px 24px; border-bottom: 1px solid #ddd; }
+.L0_Prijava .content .Normal h3 + p, .L0_SD_Ekipa .content .Normal h3 + p { font-size:12px; line-height:18px; padding: 10px 24px 10px 24px; border-bottom: 1px solid #ddd; }
+.L0_Prijava .loginPanel input.NormalTextBox,
+.L0_Prijava .sendPasswordBox input.NormalTextBox,
+.L0_SD_Ekipa .registracijaMainTable input.NormalTextBox,
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_trCaptcha input { font-size:12px; background-color:#f5f5f5; border:none; border-bottom: 5px solid #ddd; margin:5px 0 20px 0; width:400px; padding:10px; }
+
+.L0_Prijava .loginPanel input.NormalTextBox:hover, 
+.L0_Prijava .loginPanel input.NormalTextBox:focus,
+.L0_Prijava .sendPasswordBox input.NormalTextBox:hover, 
+.L0_Prijava .sendPasswordBox input.NormalTextBox:focus,
+.L0_SD_Ekipa .registracijaMainTable input.NormalTextBox:hover,
+.L0_SD_Ekipa .registracijaMainTable input.NormalTextBox:focus,
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_trCaptcha input:hover,
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_trCaptcha input:focus { border-bottom: 5px solid #ccc; outline:none; }
+
+/* Stranica Prijave > L0_Prijava */
+.L0_Prijava .loginPanel { margin:0 24px; padding:20px 0 20px 0; }
+.L0_Prijava .loginPanel table { width:100%; }
+.L0_Prijava .loginPanel table .LoginPanelInner table label a img { display:none; }
+.L0_Prijava .loginPanel table .LoginPanelInner table label span { font-size:14px; font-weight:bold; color:#666; background: url(images/layout/poll_results_dot.gif) left center no-repeat; padding-left:10px; }
+
+.L0_Prijava .loginPanel .StandardButton { background:url(images/buttons/send_button.gif) no-repeat top right; padding:8px 16px 16px 10px; font-size: 13px; font-weight: bold; color: white; text-shadow: 1px 1px 1px #686868; text-align: center; text-decoration:none; border:0; width:120px; height:41px; cursor: pointer; display:block; }
+.L0_Prijava .loginPanel .StandardButton:hover { color:#ffdda6; }
+
+.L0_Prijava .trRemember .Normal { padding:5px 0 20px 0; display:block; border-bottom:dashed 1px #ddd; margin-bottom:20px; }
+.L0_Prijava .trRemember .Normal label { padding:0 0 0 10px; font-size:13px; line-height:18px; }
+
+.L0_Prijava a.CommandButton { font-size:14px; color:#ed1d26; text-decoration:none; padding:5px 0; display:block; }
+.L0_Prijava a.CommandButton:hover { text-decoration:underline; }
+
+	/* error message */
+.L0_Prijava #dnn_ctr538_ctl00_imgIcon,
+.L0_SD_Ekipa #dnn_ctr669_ctl01_imgIcon { display:none; }
+.L0_Prijava #dnn_ctr538_ctl00_lblMessage.Normal,
+.L0_SD_Ekipa #dnn_ctr669_ctl01_lblMessage.Normal { font-size:12px; line-height:18px; padding: 10px 24px 10px 24px; display:block; color:#ed1d26; background-color:#f5f5f5; }
+.L0_Prijava hr, .L0_SD_Ekipa hr { border-color:#ddd; }
+
+	/* lost password */
+.L0_Prijava .sendPasswordText { font-size:13px; line-height:18px; margin:20px 24px 0 24px; }
+.L0_Prijava .sendPasswordBox { margin:20px 24px 60px 24px; }
+.L0_Prijava .sendPasswordBox td.SubHead label a { display:none; }
+.L0_Prijava .sendPasswordBox td.SubHead label span { font-size:14px; font-weight:bold; color:#666; background: url(images/layout/poll_results_dot.gif) left center no-repeat; padding-left:10px; }
+.L0_Prijava .sendPasswordBox .NormalTextBox { margin: 5px 0 5px 0!important; }
+.L0_Prijava .sendPasswordBox .CommandButton { display: block; }
+.L0_Prijava .sendPasswordBox .CommandButton input { display:none; }
+.L0_Prijava .sendPasswordBox .CommandButton a.CommandButton { background:url(images/buttons/send_button.gif) no-repeat top right; padding:8px 16px 16px 10px; font-size: 13px; font-weight: bold; color: white; text-shadow: 1px 1px 1px #686868; text-align: center; text-decoration:none; border:0; width:94px; height:18px; cursor: pointer; display:block; }
+.L0_Prijava .sendPasswordBox .CommandButton a.CommandButton:hover { color:#ffdda6; text-decoration:none!important; }
+
+/* Stranice Registracije > L0_SD_Ekipa */
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_lblTitle { display:none; }
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_lblUserHelp { font-size:12px; line-height:18px; padding: 10px 24px 10px 24px; border-bottom: 1px solid #ddd; display:block; }
+.L0_SD_Ekipa .loginPanel { margin:0 24px; padding:20px 0 20px 0; }
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_UserEditor,
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_pnlAddUser { margin:0 24px; width: 632px!important; }
+
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_UserEditor table div { width:100%!important; float:none!important; }
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_UserEditor table div div span label a { display:none; }
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_UserEditor table div div span label .SubHead { font-size:14px; font-weight:bold; color:#666; background: url(images/layout/poll_results_dot.gif) left center no-repeat; padding-left:10px; display:block; }
+
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_lblPasswordHelp { font-size: 15px; font-weight:bold; padding: 0 0 5px 0; margin-top:10px; border-bottom: 1px dashed #ddd; display:block; }
+
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_pnlAddUser .registracijaMainTable { font-size:13px; width:100%; }
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_pnlAddUser .registracijaMainTable td { display: block; zoom:1; }
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_pnlAddUser .registracijaMainTable td br { display:none; }
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_pnlAddUser .registracijaMainTable td label a { display:none; }
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_pnlAddUser .registracijaMainTable .c1,
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_pnlAddUser .registracijaMainTable .SubHead { vertical-align:top; text-align:left; }
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_pnlAddUser .registracijaMainTable .c1 label { display:block; margin-top:20px; }
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_plPassword_label { margin-top:10px!important; }
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_pnlAddUser .registracijaMainTable .SubHead label { display:block; margin-top:0px; }
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_pnlAddUser .registracijaMainTable label span { font-size:14px; font-weight:bold; color:#666; line-height:22px; background: url(images/layout/poll_results_dot.gif) left center no-repeat; padding-left:10px; }
+
+.L0_SD_Ekipa .registracijaMainTable input.NormalTextBox,
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_trCaptcha input { margin-bottom:0; margin-right:5px; }
+
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_trCaptcha .Normal div { padding:5px 0; }
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_plCaptcha_label { padding-bottom:5px; }
+
+
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_UserEditor .NormalRed,
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_pnlAddUser .NormalRed { color:#ED1D26; font-size:12px; padding:5px 0 0 10px!important; }
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_User_pnlAddUser .registracijaMainTable span.NormalRed { padding:5px 0 20px 10px!important; display:block; }
+
+.L0_SD_Ekipa p.registracijaCommandButton { padding: 5px 24px 30px 24px; }
+.L0_SD_Ekipa p.registracijaCommandButton .CommandButton input { display:none; }
+.L0_SD_Ekipa p.registracijaCommandButton .CommandButton a.CommandButton { background:url(images/buttons/send_button.gif) no-repeat top right; padding:8px 16px 16px 10px; font-size: 13px; font-weight: bold; color: white; text-shadow: 1px 1px 1px #686868; text-align: center; text-decoration:none; border:0; width:94px; height:18px; cursor: pointer; display:block; margin-left:306px; }
+.L0_SD_Ekipa p.registracijaCommandButton .CommandButton a.CommandButton:hover { color:#ffdda6; }
+
+/* Validacija registracije */
+.L0_SD_Ekipa #dnn_ctr669_ManageUsers_UP {}
+
+/* Sport > Virtualni Trener */
+.L1_Virtualni_trener { }
+.vtGlasanjePanel { background-color: #FFF; margin-bottom:15px; }
+.vtGlasanjePanel .DropDownBox { width: 160px!important; float: left; margin: 0px; margin-right: 5px;}
+.vtGlasanjePanel div.DropDownBox+div.DropDownBox,
+.vtGlasanjePanel div.DropDownBox+div.DropDownBox+div.DropDownBox { margin-left: 5px; margin-right: 5px; }
+.vtGlasanjePanel div.DropDownBox+div.DropDownBox+div.DropDownBox+div.DropDownBox { margin-right: 0; }
+.vtGlasanjePanel .ErrorText { color: Red; font-size: 12px; font-weight: bold; display: block; margin: 10px; }
+.vtGlasanjePanel .DropDownBox .Head,
+.vtRezultatiPanel .PlayerListDiv .Head { display: block; font-weight: bold; color: #518a46; margin-bottom: 5px; font-size: 14px; text-transform: uppercase; }
+.vtGlasanjePanel .RadComboBox { margin-bottom: 5px; display: inline-block!important; }
+.vtRezultatiPanel .buttonHolder,
+.vtGlasanjePanel .buttonHolder { padding:0 15px; margin:25px 0 15px 0; }
+.vtRezultatiPanel .buttonHolder { display: none; }
+.vtRezultatiPanel .CommandButton,
+.vtGlasanjePanel .CommandButton { background:url(images/buttons/send_button.gif) no-repeat top right; padding:8px 16px 16px 10px; font-size: 13px; font-weight: bold; color: white; text-shadow: 1px 1px 1px #686868; text-align: center; text-decoration:none; border:0; width:94px; height:18px; cursor: pointer; display:block; margin:0 auto; }
+.vtRezultatiPanel .CommandButton:hover,
+.vtGlasanjePanel .CommandButton:hover { color:#ffdda6; }
+.vtRezultatiPanel .LabelText { display: block; padding: 0 20px 0 50px; }
+.vtRezultatiPanel .PlayerListDiv {  width: 150px; float: left; margin: 0px;}
+.vtRezultatiPanel .PlayerListDiv li { list-style-type: circle; font-size: 14px; margin-bottom: 5px; }
+.vtRezultatiPanel .PlayerListDiv ul.PlayerList { padding-left: 15px; }
+.vtRezultatiPanel .MassageText { text-align: center; font-size: 12px; font-weight: bold; display: block; margin: 10px 0;}
+.vtEditPanel { margin-top:10px; }
+.vtEditPanel .vtEditPanelRow { margin: 10px 0; }
+.vtEditPanel .vtEditPanelRow td { padding: 2px 5px; vertical-align: middle; }
+.vtEditPanel .row2 .listBox { width: 160px; height: 100px; }
+.vtEditPanel .row2 .c1,
+.vtEditPanel .row2 .c3 { width: 160px; }
+.vtEditPanel .row2 .RadComboBox { margin-bottom: 5px; }
+.vtEditPanel .SubHead { font-size: 12px; font-weight: bold; }
+.vtEditPanel a.CommandButton { color:#ED1D26; text-decoration:none; }
+.vtEditPanel a.CommandButton:hover { text-decoration:underline; }
+.vtEditPanel .buttonHolder { padding:0 15px; margin:25px 0 15px 0; }
+.vtEditPanel .buttonHolder .CommandButton { background:url(images/buttons/send_button.gif) no-repeat top right; padding:8px 16px 16px 10px; font-size: 13px; font-weight: bold; color: white; text-shadow: 1px 1px 1px #686868; text-align: center; text-decoration:none; border:0; width:94px; height:18px; cursor: pointer; display:block; margin:0 auto; }
+.vtEditPanel .buttonHolder .CommandButton:hover { color:#ffdda6; }
+.typeEditRezuultati .row1 .c1,
+.typeEditRezuultati .row2 .c1 { width: 150px!important; }
+.vtEditPanel .vtResultsAdmin td,
+.vtEditPanel .vtResultsAdmin th { padding: 4px 10px; }
+.vtEditPanel .vtResultsAdmin th { background-color: #dddddd; }
+.vtEditPanel .vtResultsAdmin { margin: 0 auto 10px auto; }
+.vtEditPanel .vtResultsAdmin .c3 { text-align: right }
+
+/* Arhiv */
+#dnn_ctr925_Calendar_ArhivRadCalendar_wrapper table.RadCalendarMultiView_Default,
+#dnn_ctr1135_Calendar_ArhivRadCalendar_wrapper table.RadCalendarMultiView_Default{ width: 310px!important; }
+#dnn_ctr925_Calendar_ArhivRadCalendar_wrapper .RadCalendarMultiView_Default .rcCalendars .rcMainTable .rcMainTable,
+#dnn_ctr1135_Calendar_ArhivRadCalendar_wrapper .RadCalendarMultiView_Default .rcCalendars .rcMainTable .rcMainTable {width: 95%!important;}
+.naSearchResultItem h2 { background-image: none; text-shadow:none; color: #000; padding: 10px 0 0 0; }
+.naSearchResultItem { margin-bottom: 10px; font-size: 12px; }
+.naSearchResultItem h4 a { color: #ED1D26; font-size: 14px; text-decoration: none; }
+.naSearchResultItem h4 a:hover { text-decoration: underline; }
+.naSearchResultItem h3 { border-bottom: 1px #000 solid; padding: 0 0 5px 0; margin: 0 0 5px 0; }
+
+.scriptPane br { display:none; }
+.blankpage { font-size: 12px; line-height: 18px; }
+.blankpage #wrapper { padding: 0!important; }
+.blankpage h2 { margin-bottom: 5px; }
+
+/* Kontakt Stranica */
+.L1_Kontakt #dnn_ctr667_Feedback_pnlFeedbackFormFields table { padding:25px 0 20px 0; width:100%; margin:0 24px; }
+.L1_Kontakt #dnn_ctr667_Feedback_pnlFeedbackFormFields table .SubHead label a img { display:none; }
+.L1_Kontakt #dnn_ctr667_Feedback_pnlFeedbackFormFields table .SubHead label { display:block; margin-top:15px; }
+.L1_Kontakt #dnn_ctr667_Feedback_pnlFeedbackFormFields table .SubHead label span { font-size:14px; font-weight:bold; color:#666; background: url(images/layout/poll_results_dot.gif) left center no-repeat; padding-left:10px; }
+.L1_Kontakt #dnn_ctr667_Feedback_pnlFeedbackFormFields table .SubHead input,
+.L1_Kontakt #dnn_ctr667_Feedback_pnlFeedbackFormFields table .SubHead textarea { font-size:12px; background-color:#f5f5f5; border:none; border-bottom: 5px solid #ddd; margin:5px 0 5px 0; width:400px; padding:10px; }
+
+.L1_Kontakt #dnn_ctr667_Feedback_pnlFeedbackFormFields table .SubHead input:hover, 
+.L1_Kontakt #dnn_ctr667_Feedback_pnlFeedbackFormFields table .SubHead input:focus,
+.L1_Kontakt #dnn_ctr667_Feedback_pnlFeedbackFormFields table .SubHead textarea:hover, 
+.L1_Kontakt #dnn_ctr667_Feedback_pnlFeedbackFormFields table .SubHead textarea:focus { border-bottom: 5px solid #ccc; outline:none; }
+
+.L1_Kontakt #dnn_ctr667_Feedback_pnlFeedbackFormFields table .NormalRed { display:block; float:left; width:100%; padding:5px 0; }
+
+.L1_Kontakt #dnn_ctr667_Feedback_pnlFeedbackFormFields table a.CommandButton { background:url(images/buttons/send_button.gif) no-repeat top right; padding:8px 16px 16px 10px; font-size: 13px; font-weight: bold; color: white; text-shadow: 1px 1px 1px #686868; text-align: center; text-decoration:none; border:0; width:94px; height:18px; cursor: pointer; display:block; margin:15px 0 0 52px; }
+.L1_Kontakt #dnn_ctr667_Feedback_pnlFeedbackFormFields table a.CommandButton:hover { color:#ffdda6; }
+
+/* Baneri */
+.billboard {background-color: #FFFFFF; margin: 0 auto; padding: 0px 15px 6px 15px; width: 970px; display: none;}
+#floater {position:absolute; width:400px; height:400px; z-index:100; left:50%; top:50%;	margin-left:-180px;	margin-top:-100px; text-align:center;	display:none;}
+.divLeft  {height:800px; margin:30px 510px 0 0; overflow:visible; position:fixed; right:50%; width:200px; text-align:right; z-index:0;}
+.divRight {height:800px; left:50%;	margin:30px 0 0 510px; overflow:visible; position:fixed; width:200px; text-align:left; z-index:0;}
+.bg_banner {position:fixed;	top: 0px; left: 50%; margin-left:-710px; width: 1420px;	height: 800px;	z-index:-10;}
+
+/* FancyBox */
+#fancybox-loading { position: fixed; top: 50%; left: 50%; width: 40px; height: 40px; margin-top: -20px; margin-left: -20px; cursor: pointer; overflow: hidden; z-index: 1104; display: none; }
+#fancybox-loading div { position: absolute; top: 0; left: 0; width: 40px; height: 480px; background-image: url('images/fancybox/fancybox.png'); }
+#fancybox-overlay { position: absolute; top: 0; left: 0; width: 100%; z-index: 1100; display: none; }
+#fancybox-tmp { padding: 0; margin: 0; border: 0; overflow: auto; display: none; }
+#fancybox-wrap { position: absolute; top: 0; left: 0; padding: 20px; z-index: 1101; outline: none; display: none; }
+#fancybox-outer { position: relative; width: 100%; height: 100%; background: #fff; }
+#fancybox-content { width: 0; height: 0; padding: 0; outline: none; position: relative; overflow: hidden; z-index: 1102; border: 0px solid #fff; }
+#fancybox-hide-sel-frame { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: transparent; z-index: 1101; }
+#fancybox-close { position: absolute; top: -15px; right: -15px; width: 30px; height: 30px; background: transparent url('images/fancybox/fancybox.png') -40px 0px; cursor: pointer; z-index: 1103; display: none; }
+#fancybox-error { color: #444; font: normal 12px/20px Arial; padding: 14px; margin: 0; }
+#fancybox-img { width: 100%; height: 100%; padding: 0; margin: 0; border: none; outline: none; line-height: 0; vertical-align: top; }
+#fancybox-frame { width: 100%; height: 100%; border: none; display: block; }
+#fancybox-left, #fancybox-right { position: absolute; bottom: 0px; height: 100%; width: 35%; cursor: pointer; outline: none; background: transparent url('images/fancybox/blank.gif'); z-index: 1102; display: none; }
+#fancybox-left { left: 0px; }
+#fancybox-right { right: 0px; }
+#fancybox-left-ico, #fancybox-right-ico { position: absolute; top: 50%; left: -9999px; width: 30px; height: 30px; margin-top: -15px; cursor: pointer; z-index: 1102; display: block; }
+#fancybox-left-ico { background-image: url('images/fancybox/fancybox.png'); background-position: -40px -30px; }
+#fancybox-right-ico { background-image: url('images/fancybox/fancybox.png'); background-position: -40px -60px; }
+#fancybox-left:hover, #fancybox-right:hover { visibility: visible; /* IE6 */ }
+#fancybox-left:hover span { left: 20px; }
+#fancybox-right:hover span { left: auto; right: 20px; }
+.fancybox-bg { position: absolute; padding: 0; margin: 0; border: 0; width: 20px; height: 20px; z-index: 1001; }
+#fancybox-bg-n { top: -20px; left: 0; width: 100%; background-image: url('images/fancybox/fancybox-x.png'); }
+#fancybox-bg-ne { top: -20px; right: -20px; background-image: url('images/fancybox/fancybox.png'); background-position: -40px -162px; }
+#fancybox-bg-e { top: 0; right: -20px; height: 100%; background-image: url('images/fancybox/fancybox-y.png'); background-position: -20px 0px; }
+#fancybox-bg-se { bottom: -20px; right: -20px; background-image: url('images/fancybox/fancybox.png'); background-position: -40px -182px; }
+#fancybox-bg-s { bottom: -20px; left: 0; width: 100%; background-image: url('images/fancybox/fancybox-x.png'); background-position: 0px -20px; }
+#fancybox-bg-sw { bottom: -20px; left: -20px; background-image: url('images/fancybox/fancybox.png'); background-position: -40px -142px; }
+#fancybox-bg-w { top: 0; left: -20px; height: 100%; background-image: url('images/fancybox/fancybox-y.png'); }
+#fancybox-bg-nw { top: -20px; left: -20px; background-image: url('images/fancybox/fancybox.png'); background-position: -40px -122px; }
+#fancybox-title { font-family: Helvetica; font-size: 12px; z-index: 1102; }
+.fancybox-title-inside { padding-bottom: 10px; text-align: center; color: #333; background: #fff; position: relative; }
+.fancybox-title-outside { padding-top: 10px; color: #fff; }
+.fancybox-title-over { position: absolute; bottom: 0; left: 0; color: #FFF; text-align: left; }
+#fancybox-title-over { padding: 10px; background-image: url('images/fancybox/fancy_title_over.png'); display: block; }
+.fancybox-title-float { position: absolute; left: 0; bottom: -20px; height: 32px; }
+#fancybox-title-float-wrap { border: none; border-collapse: collapse; width: auto; }
+#fancybox-title-float-wrap td { border: none; white-space: nowrap; }
+#fancybox-title-float-left { padding: 0 0 0 15px; background: url('images/fancybox/fancybox.png') -40px -90px no-repeat; }
+#fancybox-title-float-main { color: #FFF; line-height: 29px; font-weight: bold; padding: 0 0 3px 0; background: url('images/fancybox/fancybox-x.png') 0px -40px; }
+#fancybox-title-float-right { padding: 0 0 0 15px; background: url('images/fancybox/fancybox.png') -55px -90px no-repeat; }
+/* IE6 */
+.fancybox-ie6 #fancybox-close { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_close.png', sizingMethod='scale'); }
+.fancybox-ie6 #fancybox-left-ico { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_left.png', sizingMethod='scale'); }
+.fancybox-ie6 #fancybox-right-ico { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_right.png', sizingMethod='scale'); }
+.fancybox-ie6 #fancybox-title-over { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_over.png', sizingMethod='scale'); zoom: 1; }
+.fancybox-ie6 #fancybox-title-float-left { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_left.png', sizingMethod='scale'); }
+.fancybox-ie6 #fancybox-title-float-main { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_main.png', sizingMethod='scale'); }
+.fancybox-ie6 #fancybox-title-float-right { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_right.png', sizingMethod='scale'); }
+.fancybox-ie6 #fancybox-bg-w, .fancybox-ie6 #fancybox-bg-e, .fancybox-ie6 #fancybox-left, .fancybox-ie6 #fancybox-right, #fancybox-hide-sel-frame { height: expression(this.parentNode.clientHeight + "px"); }
+#fancybox-loading.fancybox-ie6 { position: absolute; margin-top: 0; top: expression( (-20 + (document.documentElement.clientHeight ? document.documentElement.clientHeight/2 : document.body.clientHeight/2 ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop )) + 'px'); }
+#fancybox-loading.fancybox-ie6 div	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_loading.png', sizingMethod='scale'); }
+/* IE6, IE7, IE8 */
+.fancybox-ie .fancybox-bg { background: transparent !important; }
+.fancybox-ie #fancybox-bg-n { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_n.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-ne { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_ne.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-e { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_e.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-se { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_se.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-s { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_s.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-sw { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_sw.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-w { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_w.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-nw { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_nw.png', sizingMethod='scale'); }
+
+/* --- EDITORI --- */
+/* Shared Styles */
+.authorOnBottom {text-align: right; font-weight: bold; text-transform: uppercase; display:block; }
+
+
+/* --- ADMIN --- */
+/* Shared Styles */
+div.pane { border-width: 0!important; }
+.pane .SubHead center { display: block; font-size: 10px; text-transform: uppercase; color: #656565; display: block; }
+.pane .SubHead br { display: none; }
+.SubHead center { font-size: 10px; }
+.container { font-size:13px; }
+.L0_Urednik .CommandButton { color: #ED1D26; text-decoration:none; font-weight:bold; padding-right:10px; }
+.L0_Urednik .CommandButton:hover { text-decoration:underline; }
+
+.paAdminlist h2, .adminNewsList h2, .adminFV h2 { background:url(images/layout/headings_sprite.png) repeat-x 0px -168px; height: 28px; font-size: 18px; font-family: 'FoundryFormSansBold'; font-weight:normal; text-shadow: 1px 1px 1px #2c4150; text-decoration: none; color: #fff; display: block; text-transform: uppercase; clear: both; position: relative; margin:10px 0; }
+.paAdminlist h2 span, .adminNewsList h2 span, .adminFV h2 span { background:url(images/layout/headings_span_sprite.png) no-repeat right -168px; height:24px; padding:4px 26px 0 8px; min-width: 96px; font-size: 18px; font-family: 'FoundryFormSansBold'; font-weight:normal; text-shadow: 1px 1px 1px #2c4150; text-decoration: none; color: #fff; display: block; float:left; text-transform: uppercase; }
+
+/* Administracija > Vijesti */
+ul.NewsNavigation { display:block; float:right; }
+ul.NewsNavigation li { float:left; display:block; padding:0 15px 10px 0; }
+ul.NewsNavigation li a { font-size:12px; font-weight: bold; color: #ED1D26; text-decoration:none; }
+ul.NewsNavigation li a:hover { text-decoration:underline; }
+ul.NewsNavigation + .Normal { padding-bottom: 10px; font-size: 12px; }
+.L0_Urednik .pagingHolder a.CommandButton { color:#fff; }
+.L0_Urednik .pagingHolder a.CommandButton:hover { color:#FFDDA6 }
+.L0_Urednik .pagingHolder a[disabled=disabled], .L0_Urednik  .pagingHolder a[disabled=disabled]:hover { color: #999; }
+
+.adminNewsList article { clear: both; display:block; text-decoration:none; }
+.adminNewsList article h4 { background-color:#ddd; height: 18px; font-size: 14px; padding:5px; font-family: Arial; font-weight:bold; color: #fff; display: block; text-transform: uppercase; clear: both; }
+	/* Boje sekcija */
+.adminNewsList article.typeNOVOSTI h4 { background-color:#ED1D26; }
+.adminNewsList article.typeDALMACIJA h4 { background-color:#81A7C6; }
+.adminNewsList article.typeSCENA h4 { background-color:#8EB636; }
+.adminNewsList article.typeSPORT h4 { background-color:#F68B16; }
+.adminNewsList article.typePRILOZI h4 { background-color:#970006; }
+.adminNewsList article.typeVIDEOGALERIJA h4 { background-color:#FDBA4D; }
+/**/  
+.adminNewsList figure { width: 100px; height: 62px; float: left; margin-right: 10px; }
+.adminNewsList figure img { display:none; }
+.adminNewsList .text { float: left; width: 520px; padding-right: 50px; font-size: 11px; color: #444; }
+.adminNewsList .text cite { color: #666; display: block; margin: 8px 0 4px 0; font-size:11px; font-style: normal; }
+.adminNewsList .text h3 a:first-child { float:left; padding-right:10px; }
+.adminNewsList .text h3 a + a { margin-bottom: 4px; color: #444; font-size: 14px; font-weight: bold; text-decoration: none; display: block; line-height: 18px; float:none; }
+.adminNewsList .text p { font-size: 12px; color: #444; line-height: 18px; margin-bottom: 10px; }
+.adminNewsList .text p a { font-size:12px; font-weight: bold; color: #ED1D26; text-decoration:none; }
+
+/* Pretrazivanje clanaka */
+.L0_Urednik .articleSearch { margin:0 auto; padding:20px 0; clear:both; }
+.L0_Urednik .articleSearch tr th, .L0_Urednik .artSearchPaging { padding:10px 0; }
+.L0_Urednik .articleSearch tr th .SubHead { padding-right:10px; }
+
+.L0_Urednik #dnn_ctr401_NewsArticles_ucApproveArticles_grdArticles { margin-bottom:10px; }
+.L0_Urednik #dnn_ctr401_NewsArticles_ucApproveArticles_grdArticles td { white-space:normal!important; padding:5px; }
+
+.L0_Urednik .MasterTable_Office2007 td { white-space:normal!important; }
+
+/* Administracija > Privatne poruke */
+.L1_Privatne_Poruke .pmListBox { width:100%; text-align:left; padding: 20px 0; }
+.L1_Privatne_Poruke .pmListBox th, .L1_Privatne_Poruke .pmListBox td { padding:5px 10px; }
+.L1_Privatne_Poruke .pmListBox tr:first-child { background-color:#f5f5f5; }
+.L1_Privatne_Poruke .pmListBox .pmList td { border-bottom:dashed 1px #ccc; }
+.L1_Privatne_Poruke .pmListBox .pmList .c1, .L1_Privatne_Poruke .pmListBox .pmList .c5 { text-align:center; }
+.L1_Privatne_Poruke .pmListBox .pmOptions td { padding-top:10px; }
+
+.L1_Privatne_Poruke .buttonHolder { padding:10px; }
+.L1_Privatne_Poruke .buttonHolder a.CommandButton { background:url(images/buttons/send_button.gif) no-repeat top right; padding:8px 16px 16px 10px; font-size: 13px; font-weight: bold; color: white; text-shadow: 1px 1px 1px #686868; text-align: center; text-decoration:none; border:0; width:94px; height:18px; cursor: pointer; display:inline-block; }
+.L1_Privatne_Poruke .buttonHolder a.CommandButton:hover { color:#ffdda6; text-decoration:none!important; }
+
+	/* ucViewMessage.ascx */
+.L1_Privatne_Poruke .pmPnlReadRecipient { margin: 10px 0; }
+.L1_Privatne_Poruke .pmMessageHeader { width: 670px; margin: 0 0 10px 0; }
+.L1_Privatne_Poruke .pmMessageHeader TH { width: 100px; text-align: left; }
+.L1_Privatne_Poruke .pmMessageHeader TH, .L1_Privatne_Poruke .pmMessageHeader TD { padding: 4px 0; border-bottom: dashed 1px #ccc; }
+.L1_Privatne_Poruke .pmBox { background-color: #f5f5f5; border: 1px #CCC solid; font-size: 12px; padding: 5px; margin: 10px 0;  }
+.L1_Privatne_Poruke .pmBox .CommandButton { padding:5px; }
+.L1_Privatne_Poruke .pmMessageBody .Normal { font-size: 12px; line-height:18px; padding-bottom:20px; }
+
+.L1_Privatne_Poruke .pmInputForm { width: 670px; margin: 10px 0; }
+.L1_Privatne_Poruke .pmInputForm TH { width: 150px; text-align: left; }
+.L1_Privatne_Poruke .pmInputForm TD, .L1_Privatne_Poruke .pmInputForm TH { padding: 2px 0; }
+.L1_Privatne_Poruke .pmInputForm .pmSubject .NormalTextBox, .L1_Privatne_Poruke .pmInputForm .pmSendTo .NormalTextBox { width: 300px; }
+.L1_Privatne_Poruke .pmInputForm textarea { width: 98%!important ;}
+.L1_Privatne_Poruke .pmEmoticons TH { width: 26px; }
+.L1_Privatne_Poruke .pmEmoticons TD { text-align: left; }
+.L1_Privatne_Poruke .pmInputForm label a img { display:none; }
+	/*ucMessageSent.ascx*/
+.L1_Privatne_Poruke .pm_sentMessage { text-align: center ;}
+.L1_Privatne_Poruke .pm_sentMessage p { padding: 20px 0 ; color: red ; font-weight: bold ;}
+.L1_Privatne_Poruke .pm_sentMessage ul li { list-style: none ; padding: 10px 0 ;}
+	/* ucNoMessages.ascx */
+.L1_Privatne_Poruke .pm_noMessage { margin-top: 10px; }
+.L1_Privatne_Poruke .pm_noMessage P { font-size: 12px; font-weight: bold;}
+.L1_Privatne_Poruke .pm_noMessage UL { margin-left: 20px; }
+
+
+/* Administracija > Uvoz */
+.L1_Uvoz #mainContent, .L1_Uvoz #sideBar { width:1000px; }
+
+/* Administracija > Horoskop i Komentar dana */
+.paAdminlist { padding-bottom:40px; }
+.paAdminlist h2 { margin:10px 0; }
+.paAdminlist article { clear: both; display:block; text-decoration:none; border-bottom: dashed 1px #ccc; padding:10px 0 5px 0; }
+.paAdminlist figure { float: left; margin-right: 10px; }
+.paAdminlist h3 { margin-bottom: 4px; color: #444; font-size: 14px; font-weight: bold; text-decoration: none; display: block; line-height: 18px; }
+.paAdminlist h3 a { margin-right:5px; }
+.paAdminlist p { font-size: 12px; color: #444; line-height: 18px; margin-bottom: 10px; }
+
+/* Administracija > Media Katalog */
+.L1_Medija_Katalog .content { padding:10px; }
+.L1_Medija_Katalog .NormalBold { color:#444; text-decoration:none; font-weight:bold; font-size:12px; }
+.L1_Medija_Katalog .NormalBold:hover { text-decoration:underline; }
+
+.L1_Medija_Katalog .view .NormalBold a { color: #ED1D26; text-decoration:none; }
+.L1_Medija_Katalog .view .NormalBold a:hover { text-decoration:underline; }
+
+.L1_Medija_Katalog .SearchMediaKatalog { padding:10px 15px; background-color:#f5f5f5; margin-bottom:10px; }
+.L1_Medija_Katalog .SearchMediaKatalog a { color:#ED1D26; text-decoration:none; font-weight:bold; padding-left:5px; }
+.L1_Medija_Katalog .SearchMediaKatalog a:hover { text-decoration:underline; }
+
+.L1_Medija_Katalog #dnn_ctr536_Gallery_ViewTag_ucTopMenu_pnlCommandBar,
+.L1_Medija_Katalog #dnn_ctr536_Gallery_ViewGallery_ucTopMenu_pnlCommandBar,
+.L1_Medija_Katalog #dnn_ctr536_Gallery_Tags_ucTopMenu_pnlCommandBar { padding:5px; margin:20px 0 10px 0; }
+.L1_Medija_Katalog .View { }
+.L1_Medija_Katalog .View td { padding:5px; }
+.L1_Medija_Katalog .View + div[style="text-align:center;"] { background-color:#f5f5f5; padding:10px; margin-top:10px; }
+
+/* clipboard */
+.L1_Medija_Katalog .clipboard_holder { margin-bottom:10px; border-bottom: 5px solid #ddd; }
+.L1_Medija_Katalog .clipboard_holder .CommandButton { padding: 5px 10px; background-color:#f5f5f5; display:inline-block; font-size:12px; }
+.L1_Medija_Katalog .clipboard_holder h2 { background-color:#f5f5f5; width: 310px; height: 31px; border-bottom: 5px solid #FEBA4D; text-indent: 15px; font-size: 14px; color: #333; text-shadow: 1px 1px 1px white; padding-top: 9px; }
+.L1_Medija_Katalog #divClipboardPlaceholder { padding:10px 0; }
+.L1_Medija_Katalog #divClipboardPlaceholder .img_hld { padding:5px 10px; border-top: dashed 1px #ccc; }
+.L1_Medija_Katalog #divClipboardPlaceholder .img_hld img { max-height:40px; max-width:50px; }
+.L1_Medija_Katalog #divClipboardPlaceholder .img_hld a { padding-left:10px; font-size:12px; font-weight:bold; color: #ED1D26; cursor:pointer; vertical-align:top; }
+.L1_Medija_Katalog #divClipboardPlaceholder .img_hld a:hover { text-decoration: underline; }
+	/* tag cloud */
+.L1_Medija_Katalog #tagCloud { padding:15px; background-color:#f5f5f5; margin-bottom:10px; width:280px; }
+.L1_Medija_Katalog #tagCloud a { color: #ED1D26; text-decoration:none; font-weight:bold; padding:5px; display:inline-block; }
+.L1_Medija_Katalog #tagCloud a:hover { text-decoration:underline; }
+
+/* Forma za uredivanje vijesti */
+.articleOptionpanel { text-align: center; }
+.articleTabpanel input.NormalTextBox[type="text"] { width: 650px; padding: 4px; font-size: 14px; border: 1px #878787 solid; background-color: #f5f5f5;}
+.articleTabpanel .rForm label { font-weight: bold; display: block; padding: 3px 0; }
+.articleTabpanel .rForm br { display: none; }
+.articleTabpanel .rSectionHead img { float: left; margin-right: 10px;}
+.articleTabpanel .rSectionHead h3 { float: left; margin-top: 15px; }
+.articleTabpanel .rSectionHead { border-bottom: 1px #878787 solid; padding: 5px; }
+.articleTabpanel .categorieWrapper { background-color: #ededed; border: 1px #CCC dotted; padding: 5px; margin: 5px 15px 5px 5px; }
+.articleTabpanel .categorieWrapper td { padding: 1px 10px 1px 0; width: 200px; }
+.articleTabpanel .categorieWrapper input { margin-right: 3px; }
+.articleTabpanel textarea { font-family: Arial, Helvetica, sans-serif; font-size: 12px; border: 1px #878787 solid; background-color: #f5f5f5; padding: 10px; width: 638px; }
+.articleTabpanel .rSectionSubHead { padding: 10px 0; }
+
+/* Administracija > Foto Vijesti */
+.L1_Foto_vijesti .adminFV { }
+.L1_Foto_vijesti .adminFV .RandomView { display:block; width:100%; clear:both; float:left; }
+.L1_Foto_vijesti .adminFV a.thumbLink { display:block; width:80px; height:80px; text-indent:-9999px; float:left; margin:0 5px 10px 5px; }
+
+	/* Boje sekcija */
+.L1_Foto_vijesti .typeNOVOSTI h2 { background-position:0px 0px; }
+.L1_Foto_vijesti .typeNOVOSTI h2 span { background-position:right 0px; }
+	/**/
+.L1_Foto_vijesti .typeDALMACIJA h2 { background-position:0px -28px; }
+.L1_Foto_vijesti .typeDALMACIJA h2 span { background-position:right -28px; }
+	/**/
+.L1_Foto_vijesti .typeSCENA h2 { background-position:0px -56px; }
+.L1_Foto_vijesti .typeSCENA h2 span { background-position:right -56px; }
+	/**/
+.L1_Foto_vijesti .typeSPORT h2 { background-position:0px -84px; }
+.L1_Foto_vijesti .typeSPORT h2 span { background-position:right -84px; }
+	/**/
+
+/* Administracija > Admin */
+.L0_Urednik.L1_Admin { }
+.L0_Urednik.L1_Admin .adminLinksList { margin:15px 24px 15px 24px; }
+.L0_Urednik.L1_Admin .adminLinksList div a { display:block; padding:10px; border-bottom:dashed 1px #ccc; font-size:14px; font-weight:bold; color:#ED1D26; text-decoration:none; }
+.L0_Urednik.L1_Admin .adminLinksList div a:hover { text-decoration:underline; }
+
+/* Admin RadPanelbar menu */
+#adminMenu .RadPanelBar { width: 310px!important; }
+#adminMenu ul { background-color: #FAFAFA; padding: 10px 15px; }
+#adminMenu li { padding: 5px 0; }
+#adminMenu a { color: #666666; font-size: 12px; font-weight: bold; }
+#adminMenu a.rpSelected { color: #E11617; }
+
+/* ControlPanel */
+.ControlPanel { border: 1px #CCC solid; width: 900px; background-color: #FFF; margin: 5px auto; }
+.ControlPanel .SubHead { font-size: 10px; text-transform: uppercase; color: maroon; }
+.ControlPanel A.CommandButton:link,
+.ControlPanel A.CommandButton:visited,
+.ControlPanel A.CommandButton:hover { color: #545454; font-weight: bold; font-size: 11px; }
+.ControlPanel .NormalTextBox { font-size: 11px; }
+
+/* Admin newsNavigation - adminLinks */
+.UPR_Administrators .adminLinks { display:block; float:right; }
+.UPR_Administrators .adminLinks li { float:left; display:block; padding:0 15px 10px 0; }
+.UPR_Administrators .adminLinks li a { font-size:12px; font-weight: bold; color: #ED1D26; text-decoration:none; }
+.UPR_Administrators .adminLinks li a:hover { text-decoration:underline; }
+.UPR_Administrators .adminLinks + .Normal { padding-bottom:10px; font-size:12px; }
+/* --- ADMIN --- */

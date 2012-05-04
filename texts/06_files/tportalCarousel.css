@@ -1,0 +1,353 @@
+﻿/****************************/
+/* Portal Standard Carousel */
+/****************************/
+div.tportalCarousel
+{	width:610px;
+ 	height:270px;
+	overflow:hidden;
+	position:relative;
+	margin:0px 0px 10px 20px;
+}
+
+/* Control Block inside glider */
+div.tportalCarousel div.nav
+{	float:right;
+	text-align:right;
+	padding-right:1px;
+}
+
+div.tportalCarousel div.nav a.page
+{	display:inline-block;
+	width:8px;
+	height:10px;
+	margin:0px 3px 4px 0px;
+	background:url('../img/slide_numbers_new.gif') no-repeat 0px 0px;
+	cursor:pointer;
+	font-size:1px;
+}
+
+
+div.tportalCarousel div.nav a.pg1 {	background-position: 0px 0px;	}
+div.tportalCarousel div.nav a#sel.pg1{	background-position: 0px -10px;	}
+
+div.tportalCarousel div.nav a.pg2	{	background-position: -9px 0px;	}
+div.tportalCarousel div.nav a#sel.pg2 {	background-position: -9px -10px;	}
+
+div.tportalCarousel div.nav a.pg3 {	background-position: -18px 0px;	}
+div.tportalCarousel div.nav a#sel.pg3 {	background-position: -18px -10px;	}
+
+div.tportalCarousel div.nav a.pg4 {	background-position: -27px 0px;	}
+div.tportalCarousel div.nav a#sel.pg4 {	background-position: -27px -10px;	}
+
+div.tportalCarousel div.nav a.pg5 {	background-position: -36px 0px;	}
+div.tportalCarousel div.nav a#sel.pg5 {	background-position: -36px -10px;	}
+
+div.tportalCarousel div.nav a.pg6 {	background-position: -45px 0px;	}
+div.tportalCarousel div.nav a#sel.pg6 {	background-position: -45px -10px;	}
+
+
+/* Nav Left Right */
+div.tportalCarousel div.nav a.left,
+div.tportalCarousel div.nav a.right
+{
+	width:17px;
+	height:17px;
+	margin:0px 3px 0px 0px;
+	display:inline-block;
+	cursor:pointer;
+	font-size:1px;
+}
+
+div.tportalCarousel div.nav a.left
+{	background:url('../img/slide_left.gif') no-repeat 0px 0px;	}
+
+div.tportalCarousel div.nav a.right
+{	background:url('../img/slide_right.gif') no-repeat 0px 0px;	}
+
+
+/* Title */
+div.tportalCarousel h2
+{	color:#666666;
+	font:bold 18px Georgia;
+	display:inline-block;
+/*
+	margin-bottom:5px;
+*/
+	*display:inline;
+}
+
+div.tportalCarousel h2 a
+{	color:#666666;	
+	font:bold 18px Georgia;
+}
+
+div.titleLimit
+{	border-bottom:solid 4px #cccccc;
+	margin-bottom:5px;
+}
+
+/* Articles */
+div.tportalCarousel window
+{	width:610px;
+	overflow:hidden;
+}
+
+div.tportalCarousel div.articles
+{	width:1890px;
+	overflow:hidden;
+	background: url('../img/showtime_limiter.gif') repeat left top;
+}
+
+
+/* Article definition */
+div.tportalCarousel div.art
+{	width:190px;
+	float:left;
+	padding:0px 0px 0px 0px;
+	margin:0px 20px 0px 0px;
+}
+
+div.tportalCarousel div.art a.img
+{	width:182px;
+	border:solid 1px #cccccc;
+	background-color:White;
+	padding:3px;
+	display:block;
+	position:relative;
+	margin-bottom:5px;
+	font-size:0px;
+}
+
+/* Content marking */
+div.tportalCarousel div.art a.img span
+{	position:absolute;
+ 	display:block;
+	left:0px;
+	bottom:0px;
+	_bottom:-1px;
+
+	font:11px Verdana;
+	text-transform:uppercase;
+	margin:0px;
+	padding:0px;
+	color:White;
+	background:#9E0309;
+	/*
+	margin:0px 5px 0px 0px;
+	padding:1px 3px;
+	float:left;
+	*/
+}
+
+
+div.tportalCarousel div.art h3,
+div.tportalCarousel div.art h3 a
+{	color:#666666;
+	font:11px Verdana;
+	line-height:13px;
+	margin:0px;
+	padding: 0px 0px 3px 0px;
+	display:inline-block;
+	text-transform:uppercase;
+}
+
+div.tportalCarousel div.art h4,
+div.tportalCarousel div.art h4 a
+{	color:#2d648a;
+	margin:0px;
+	padding:0px;
+	font:18px Georgia;
+	line-height:22px;
+}
+
+div.tportalCarousel div.art a.more
+{	font:10px Verdana;
+	color:#03659d;
+	line-height:16px;
+	text-decoration:underline;
+}
+
+div.tportalCarousel div.art a.more:hover
+{	text-decoration:none;	}
+
+
+
+/****************/
+/* Big Carousel */
+/****************/
+div.tportalBigCarousel
+{	width:900px;
+ 	height:295px;
+	overflow:hidden;
+	position:relative;
+	margin: 0px auto 10px auto;
+}
+
+/* Control Block inside glider */
+div.tportalBigCarousel div.nav
+{	text-align:center;	}
+
+div.tportalBigCarousel div.nav a.page
+{	display:inline-block;
+	width:8px;
+	height:10px;
+	margin:0px 3px 4px 0px;
+	background:url('../img/slide_numbers_new.gif') no-repeat 0px 0px;
+	cursor:pointer;
+	font-size:1px;
+}
+
+
+div.tportalBigCarousel div.nav a.pg1 {	background-position: 0px 0px;	}
+div.tportalBigCarousel div.nav a#sel.pg1{	background-position: 0px -10px;	}
+
+div.tportalBigCarousel div.nav a.pg2	{	background-position: -9px 0px;	}
+div.tportalBigCarousel div.nav a#sel.pg2 {	background-position: -9px -10px;	}
+
+div.tportalBigCarousel div.nav a.pg3 {	background-position: -18px 0px;	}
+div.tportalBigCarousel div.nav a#sel.pg3 {	background-position: -18px -10px;	}
+
+div.tportalBigCarousel div.nav a.pg4 {	background-position: -27px 0px;	}
+div.tportalBigCarousel div.nav a#sel.pg4 {	background-position: -27px -10px;	}
+
+div.tportalBigCarousel div.nav a.pg5 {	background-position: -36px 0px;	}
+div.tportalBigCarousel div.nav a#sel.pg5 {	background-position: -36px -10px;	}
+
+div.tportalBigCarousel div.nav a.pg6 {	background-position: -45px 0px;	}
+div.tportalBigCarousel div.nav a#sel.pg6 {	background-position: -45px -10px;	}
+
+
+/* Nav Left Right */
+div.tportalBigCarousel a.left,
+div.tportalBigCarousel a.right
+{
+	width:17px;
+	height:51px;
+	margin:0px;
+	display:block;
+	cursor:pointer;
+	font-size:1px;
+	position:absolute;
+}
+
+div.tportalBigCarousel a.left
+{	
+	top:125px;
+	left:0px;
+	background:url('../img/slide_left_big.gif') no-repeat 0px 0px;	
+}
+
+div.tportalBigCarousel a.right
+{	
+	top:125px;
+	right:0px;
+	background:url('../img/slide_right_big.gif') no-repeat 0px 0px;	
+}
+
+
+/* Title */
+div.tportalBigCarousel h2
+{
+	width:846px;
+	color:#666666;
+	font:bold 18px Georgia;
+	margin:0px auto 10px auto;
+	padding:0px 0px 3px 0px;
+	border-bottom:solid 4px #cccccc;
+}
+
+div.tportalBigCarousel h2 a
+{	color:#666666;	
+	font:bold 18px Georgia;
+}
+
+/* Articles */
+div.tportalBigCarousel div.window
+{
+	margin:0px auto 5px auto;
+	padding:0px 13px;
+	width:820px;
+	height:240px;
+	overflow:hidden;
+	position:relative;
+	border-left:solid 1px #cccccc;
+	border-right:solid 1px #cccccc;
+}
+
+div.tportalBigCarousel div.articles
+{	width:2520px;
+	overflow:hidden;
+	background:	transparent url(../img/kategorija_Slide_limiter.gif) repeat-x scroll left 37px;
+}
+
+
+/* Article definition */
+div.tportalBigCarousel div.art
+{	width:190px;
+	float:left;
+	padding:0px 0px 0px 0px;
+	margin:0px 20px 0px 0px;
+}
+
+div.tportalBigCarousel div.art a.img
+{	width:182px;
+	border:solid 1px #cccccc;
+	background-color:White;
+	padding:3px;
+	display:block;
+	position:relative;
+	margin-bottom:5px;
+	font-size:0px;
+}
+
+/* Content marking */
+div.tportalBigCarousel div.art a.img span
+{	position:absolute;
+ 	display:block;
+	left:0px;
+	bottom:0px;
+	_bottom:-1px;
+
+	font:11px Verdana;
+	text-transform:uppercase;
+	margin:0px;
+	padding:0px;
+	color:White;
+	background:#9E0309;
+	/*
+	margin:0px 5px 0px 0px;
+	padding:1px 3px;
+	float:left;
+	*/
+}
+
+
+div.tportalBigCarousel div.art h3,
+div.tportalBigCarousel div.art h3 a
+{	color:#666666;
+	font:11px Verdana;
+	line-height:13px;
+	margin:0px;
+	padding: 0px 0px 3px 0px;
+	display:inline-block;
+	text-transform:uppercase;
+}
+
+div.tportalBigCarousel div.art h4,
+div.tportalBigCarousel div.art h4 a
+{	color:#2d648a;
+	margin:0px;
+	padding:0px;
+	font:18px Georgia;
+	line-height:22px;
+}
+
+div.tportalBigCarousel div.art a.more
+{	font:10px Verdana;
+	color:#03659d;
+	line-height:16px;
+	text-decoration:underline;
+}
+
+div.tportalBigCarousel div.art a.more:hover
+{	text-decoration:none;	}
