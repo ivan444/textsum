@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -208,17 +209,17 @@ public class Summarization {
 		StringBuffer sb = new StringBuffer();
 		List<SentenceDescriptor> sDescs = calcSntDesc(text);
 		
-		SentenceDescriptor sd = sDescs.get(0);
-		sb.append(sd.getScore()+ " " + sd.sntNum).append('\n');
-		sb.append(sd.sentence).append('\n');
+		List<SentenceDescriptor> choosenSnts = sDescs.subList(0, 3);
+		Collections.sort(choosenSnts, new Comparator<SentenceDescriptor>() {
+			@Override
+			public int compare(SentenceDescriptor o1, SentenceDescriptor o2) {
+				return o1.sntNum-o2.sntNum;
+			}
+		});
 		
-		sd = sDescs.get(1);
-		sb.append(sd.getScore()+ " " + sd.sntNum).append('\n');
-		sb.append(sd.sentence).append('\n');
-		
-		sd = sDescs.get(2);
-		sb.append(sd.getScore()+ " " + sd.sntNum).append('\n');
-		sb.append(sd.sentence).append('\n');
+		for (SentenceDescriptor sd : choosenSnts) {
+			sb.append(sd.sentence).append(sd.stype).append(' ');
+		}
 		
 		return sb.toString();
 	}
