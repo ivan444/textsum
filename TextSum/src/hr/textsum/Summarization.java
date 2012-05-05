@@ -240,7 +240,9 @@ public class Summarization {
 	
 	public static void main(String[] args) throws IOException {
 		Summarization s = new Summarization("resource/fwords.txt");
-		String sum = s.genSummarization(TextUtils.readFile("texts/02.txt"));
+		//String text = TextUtils.readFile("texts/02.txt");
+		String text = ArticleGetter.dlArticle("http://www.vecernji.hr/biznis/porez-imovinu-natjerat-ce-vlasnike-rasprodaju-stanova-clanak-405445");
+		String sum = s.genSummarization(text);
 		System.out.println(sum);
 	}
 	
